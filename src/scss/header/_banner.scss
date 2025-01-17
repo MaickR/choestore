@@ -1,0 +1,78 @@
+.c-banner {
+    position: relative;
+    width: 100%;
+    max-height: 100vh; // El banner ocupa el alto total del viewport
+    overflow: hidden;
+  
+    // Aseguramos que el carrusel y sus inner items llenen el contenedor verticalmente.
+    .carousel,
+    .carousel-inner,
+    .carousel-item {
+      height: 100%;
+    }
+  
+    .c-banner__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%; // Cada item ocupa todo el espacio vertical.
+      
+      // Importante: No forzar el height:100% en <a> ni <picture>.
+      // Sólo la imagen debe ocupar todo el espacio.
+      a, picture {
+        width: 100%;
+        display: block;
+      }
+    }
+  
+    .c-banner__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+  
+    .c-banner__control {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      z-index: 2;
+      padding: 0; // Eliminar cualquier padding por defecto
+  
+      i {
+        font-size: 1.8rem;
+        color: #222;
+        transition: color 0.3s ease;
+      }
+  
+      &:hover i {
+        color: #d05278;
+      }
+    }
+  
+    .c-banner__control--prev {
+        left: 0.5rem;
+    }
+    .c-banner__control--next {
+        right: 0.5rem;
+    }
+  
+    @media (max-width: 600px) {
+        .c-banner__control i {
+            font-size: 1.3rem; // Aún más pequeñas en pantallas pequeñas
+          }
+
+          .c-banner__control--prev {
+            left: 0.3rem;
+          }
+
+          .c-banner__control--next {
+            right: 0.3rem;
+          }
+
+    }
+  }
+  

@@ -1,0 +1,267 @@
+.promo-slider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .promo-controls {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px; // Wider to accommodate horizontal layout
+    height: 50px; // Reduced height
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      position: relative; // Changed from absolute
+      width: 50px;
+      height: 50px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 50%;
+
+      &.promo-up {
+        // Remove positioning
+        background: #fff;
+        color: #111;
+      }
+
+      &.promo-down {
+        // Remove positioning
+        background: #111;
+        color: #fff;
+      }
+
+      &:hover {
+        opacity: 0.8;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .promo-controls {
+      width: 100px;
+      
+      button {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .promo-controls {
+      width: 80px;
+      
+      button {
+        width: 35px;
+        height: 35px;
+
+        i {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .promo-controls {
+      width: 70px;
+      
+      button {
+        width: 30px;
+        height: 30px;
+
+        i {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .promo-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 100%;
+  }
+
+  .promo-left,
+  .promo-right {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* .promo-slide {
+    width: 100%;
+    height: 100%;
+    transition: margin-top 0.5s ease-in-out;
+  } */
+
+  .promo-left {
+    .promo-slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem;
+      background: #fff;
+      height: 100%;
+      width: 100%;
+    height: 100%;
+      transition: margin-top 0.5s ease-in-out;
+    }
+
+    .promo-title {
+      font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        color: #333;
+    }
+
+    .promo-text {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+    
+    .promo-btn {
+      width: auto;
+        min-width: 200px;
+        margin: 0 auto;
+        padding: 15px 30px;
+        background: #d05278;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: #b04563;
+          transform: translateY(-2px);
+        }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(208, 82, 120, 0.3);
+      }
+    }
+  }
+
+  .promo-right {
+    .promo-slide {
+      position: relative;
+      height: 100%;
+      aspect-ratio: 16/9; // Mantiene relación de aspecto
+      overflow: hidden;
+    }
+
+    picture,
+    img {
+      position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .promo-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transform: scale(1.01); // Evita bordes blancos
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .promo-left {
+      .promo-slide {
+        padding: 2rem;
+
+        .promo-title {
+          font-size: 2rem;
+        }
+
+        .promo-btn {
+          min-width: 180px;
+          padding: 12px 24px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .promo-wrapper {
+      flex-direction: column;
+    }
+
+    .promo-left,
+    .promo-right {
+      width: 100%;
+      height: 50vh;
+    }
+
+    .promo-left {
+      .promo-slide {
+        padding: 1.5rem;
+        min-height: 300px;
+
+        .promo-title {
+          font-size: 1.8rem;
+          text-align: center;
+        }
+
+        .promo-text {
+          font-size: 1rem;
+        }
+
+        .promo-btn {
+          min-width: 160px;
+          padding: 10px 20px;
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .promo-controls {
+      width: 80px;
+      height: 80px;
+
+      button {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+  }
+
+  @media (max-width: 480px) {
+
+     .promo-wrapper {
+      flex-direction: column;
+    } 
+    .promo-left {
+      .promo-slide {
+        padding: 1rem;
+        min-height: 250px;
+
+        .promo-btn {
+          width: 100%;
+          min-width: auto;
+          padding: 12px;
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+}

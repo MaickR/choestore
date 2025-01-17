@@ -1,0 +1,447 @@
+/***********************************************************
+ * SECCIÓN: Productos Destacados - CHOE
+ * Archivo: _destacados.scss
+ * Adaptado para margen lateral, flechas en los extremos,
+ * y sin recortes de tarjetas en tamaños móviles.
+ **********************************************************/
+
+ .trending {
+  padding-top: 100px;
+  padding-bottom: 130px;
+
+  .trending-top {
+    text-align: center;
+    margin-bottom: 59px;
+
+    .saint-text {
+      font-family: "Pistoletto-Black", sans-serif;
+      font-size: 40px;
+      color: #d05278;
+      display: block;
+
+      @media (max-width: 768px) {
+        font-size: 32px;
+      }
+      @media (max-width: 480px) {
+        font-size: 28px;
+      }
+    }
+
+    .saint-title {
+      font-family: "Merienda", cursive;
+      font-size: 42px;
+      line-height: 54px;
+      color: #222;
+      margin-top: 10px;
+
+      @media (max-width: 768px) {
+        font-size: 36px;
+        line-height: 48px;
+      }
+      @media (max-width: 480px) {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+
+    .saint-p {
+      font-family: "Merienda", cursive;
+      font-size: 16px;
+      line-height: 170%;
+      color: #666;
+      max-width: 456px;
+      margin: 18px auto 0;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 160%;
+      }
+      @media (max-width: 480px) {
+        font-size: 14px;
+        line-height: 150%;
+      }
+    }
+  }
+
+  /* ===============================================
+     Tabs y contenido interno
+  =============================================== */
+  .trending-tabs {
+    .nav-tabs {
+      border-bottom: 2px solid #eee;
+
+      .nav-link {
+        font-family: "Merienda", cursive;
+        font-size: 16px;
+        color: #d05278;
+        background: #faf9ff;
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin: 0.5rem 5px;
+        transition: background 0.3s, color 0.3s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        &.active {
+          background: #d05278;
+          color: #fff;
+        }
+
+        @media (max-width: 480px) {
+          font-size: 14px;
+          padding: 0.375rem 0.75rem;
+        }
+      }
+    }
+
+    .box-tab-cont {
+      .tab-pane {
+        padding-top: 20px;
+
+        /* Swiper contenedor principal */
+        .swiper,
+        .swiper-container {
+          // Ancho por defecto para pantallas grandes
+        width: 100%;
+        max-width: 1200px; // Para evitar que se expanda demasiado en pantallas muy grandes
+        min-width: 320px; // Para asegurar un mínimo de legibilidad en pantallas muy pequeñas
+
+          
+
+          // Media query para pantallas pequeñas (móviles)
+          @media (max-width: 480px) {
+           width: 50%; // No 50% para ocupar toda la pantalla en móviles pequeños
+           max-width: 480px; // Asegura que no se extienda más allá del tamaño del móvil
+           min-width: 70%;
+          }
+
+          // Media query para tablets en modo horizontal o pantallas medianas
+          @media (min-width: 481px) and (max-width: 768px) {
+          width: 90%; // Ocupa el 90% del ancho disponible para mejor visualización en tablets
+          }
+
+          // Media query para pantallas super pequeñas
+          @media (max-width: 321px) {
+            min-width: 75%;
+        
+            // Ajustar el tamaño de las slides dentro del swiper
+            .swiper-slide {
+              width: calc(100% - 20px); // Restamos un poco para evitar problemas de margen
+              margin: 0 10px; // Añadir margen para evitar que se corten por el borde
+            }
+          }
+
+          // Para pantallas grandes
+          @media (min-width: 769px) {
+          width: 80%; // Para pantallas más grandes, quizás no quieras ocupar todo el ancho
+          }
+          
+        }
+
+        /* Ejemplo: Añadir contenedor interno para margen lateral */
+        /* Si no deseas añadirlo en el HTML, puedes forzar margin a .dest-card-wrapper */
+        /* Este contenedor le da el 'overflow:hidden' y el 'margin: 0 30px;' */
+        .dest-slide-container {
+          margin: 0 30px;
+          overflow: hidden;
+        }
+
+        /* Wrapper de tarjetas */
+        .swiper-wrapper.dest-card-wrapper {
+          display: flex;
+          /* gap: 20px; */
+          /* Si no usas un contenedor extra, puedes usar: margin: 0 30px; */
+        }
+
+        /* Cada tarjeta */
+        .swiper-slide.dest-card {
+          background: #fff;
+          border-radius: 8px;
+          overflow: hidden;
+          transition: transform 0.3s, box-shadow 0.3s;
+          width: 100%;
+          margin: 0 auto;
+          position: relative;
+
+          &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+            .trending-products-item__hover {
+              opacity: 1 !important;
+              pointer-events: auto;
+            }
+          }
+
+          /* Imagen del producto */
+          .dest-image-box {
+            position: relative;
+            width: 100%;
+            padding-top: 125%; /* Mantener tu relación de aspecto vertical */
+            overflow: hidden;
+
+            img.c-product-img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+              display: block;
+              border-radius: 8px 8px 0 0;
+            }
+          }
+
+          /* Etiqueta de descuento / tipo de producto */
+          .trending-products-item__type {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 2;
+
+            .trending-products-item__sale {
+              background: #a3d2a2;
+              padding: 10px 25px;
+              text-transform: uppercase;
+              color: #ffffff;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 100%;
+              border-bottom-left-radius: 8px;
+              display: block;
+            }
+          }
+
+          /* Hover con íconos */
+          .trending-products-item__hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(34, 34, 34, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+
+            .trending-products-item__hover-options {
+              display: flex;
+              gap: 10px;
+
+              i {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #fff;
+                box-shadow: 0 4px 10px rgba(34, 34, 34, 0.15);
+                color: #222;
+                cursor: pointer;
+                transition: background 0.3s, color 0.3s;
+                font-size: 20px;
+
+                &:hover {
+                  background: #222;
+                  color: #fff;
+                }
+
+                &.bi-whatsapp:hover {
+                  background: #25d366;
+                  color: #fff;
+                }
+              }
+            }
+          }
+
+          /* Info del producto (Nombre, precio, etc.) */
+          .trending-products-item__info {
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 24px;
+
+            .trending-products-item__name {
+              font-size: 18px;
+              font-family: "Merienda", cursive;
+              color: #d05278;
+              margin-bottom: 8px;
+              font-weight: bold;
+              text-transform: capitalize;
+              letter-spacing: 1px;
+
+              @media (max-width: 768px) {
+                font-size: 16px;
+              }
+              @media (max-width: 480px) {
+                font-size: 14px;
+              }
+            }
+
+            .trending-products-item__cost {
+              font-size: 18px;
+              color: #222;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-family: "Merienda", cursive;
+              margin-top: 8px;
+
+              span {
+                color: #999;
+                font-size: 14px;
+                font-family: "Pistoletto-Black", sans-serif;
+                margin-right: 5px;
+                text-decoration: line-through;
+
+                @media (max-width: 768px) {
+                  font-size: 12px;
+                }
+                @media (max-width: 480px) {
+                  font-size: 10px;
+                }
+              }
+
+              &.no-discount {
+                span {
+                  display: none;
+                  text-decoration: none;
+                  color: #666;
+                }
+              }
+            }
+          }
+        }
+
+        /* Ajustes de ancho responsivo de las tarjetas (si usabas width calc) */
+        .swiper-slide.dest-card {
+          width: 100%; /* Deja que Swiper calcule cuántas slides caben, según slidesPerView */
+        }
+
+        /* Flechas y paginación */
+        .swiper-button-next,
+        .swiper-button-prev {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 40px;
+          height: 40px;
+          background: #fff;
+          color: #000;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: background 0.3s, color 0.3s;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          z-index: 1000;
+
+          &::after {
+            font-size: 18px;
+            color: inherit;
+          }
+
+          &:hover {
+            background: #d05278;
+            color: #fff;
+
+            &::after {
+              color: #fff;
+            }
+          }
+
+          @media screen and (max-width: 770px) {
+            display: none; /* Oculta flechas en móvil, si quieres */
+          }
+        }
+
+        .swiper-button-next {
+          right: 10px;
+          top: 40%;
+        }
+        .swiper-button-prev {
+          left: 10px;
+          top: 40%;
+        }
+
+        .swiper-pagination {
+          
+          text-align: center;
+          font-family: 'Pistoletto-Black';
+
+          @media (min-width: 1024px) {
+              display: none !important;
+            
+          }
+
+          @media (max-width: 768px) {
+            font-size: 12px;
+        
+          }
+
+          
+          
+
+          .swiper-pagination-bullet {
+            background-color: #000;
+            width: 10px;
+            height: 10px;
+            opacity: 1;
+            margin: 0 5px;
+            transition: background-color 0.3s;
+
+            &.swiper-pagination-bullet-active {
+              background-color: #d05278;
+            }
+
+            &:hover {
+              background-color: #d05278;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Ajustes responsive generales (si lo deseas) */
+@media (max-width: 768px) {
+  .trending-products-item {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .trending-products-item {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+
+    &__img {
+      padding-top: 125%;
+    }
+
+    &__info {
+      padding: 10px;
+
+      .trending-products-item__name {
+        font-size: 14px;
+      }
+
+      .trending-products-item__cost {
+        font-size: 14px;
+
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
