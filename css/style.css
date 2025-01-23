@@ -2808,10 +2808,10 @@ h1 {
 }
 
 h2 {
-	font-size: 42px;
+	/* font-size: 42px; */
 	line-height: 54px;
 	margin-top: 10px;
-	color: #222222;
+	/* color: #222222; */
 	font-family: "Merienda", cursive;
 	text-transform: capitalize;
 	font-weight: 400;

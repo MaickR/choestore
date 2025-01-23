@@ -1,0 +1,143 @@
+// Variables
+$transiccion: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+$color-instagram: #d05278;
+$color-hover: rgba($color-instagram, 0.85);
+
+.instagram-feed {
+  width: 100%;
+
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+
+  .insta-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.insta-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0;
+  width: 100%;
+  margin: 0;
+
+  @media (min-width: 1440px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.insta-photo-container {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: #f8f8f8;
+  margin: 0;
+  
+  &:hover {
+    z-index: 2;
+  }
+}
+
+.insta-photo {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform-origin: center center;
+  margin: 0;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s $transiccion;
+    will-change: transform;
+    display: block;
+  }
+
+  &__hover {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    opacity: 0;
+    transition: $transiccion;
+    backdrop-filter: blur(2px);
+    margin: 0;
+    padding: 0;
+
+    i {
+      color: #fff;
+      font-size: 2.2rem;
+      transform: scale(0.8);
+      transition: $transiccion;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.05);
+    }
+
+    .insta-photo__hover {
+      opacity: 1;
+      background: $color-hover;
+      margin: 0;
+      
+      i {
+        transform: scale(1);
+      }
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-instagram;
+    outline-offset: -2px;
+  }
+}
+
+// Media Queries ajustadas
+@media (max-width: 1024px) {
+  .insta-photos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .instagram-feed {
+    padding:0;
+    
+    .insta-wrapper {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  /* .insta-photos {
+    grid-template-columns: repeat(2, 1fr);
+  } */
+
+  .insta-photo {
+    &__hover i {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .insta-photos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  .insta-photo {
+    &__hover i {
+      font-size: 1.5rem;
+    }
+  }
+}

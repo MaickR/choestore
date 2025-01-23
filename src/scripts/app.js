@@ -264,50 +264,60 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //! PRODUCTOS CON SWIPER.JS
 
+//? DESCUENTOS TEMPORADA
 
-//* CAROUSEL DESCUENTOS
-
-let promoSlider = document.querySelector(".promo-slider");
-let promoCurrentSlide = 0;
-let promoTotalSlides = promoSlider.querySelectorAll(".promo-wrapper .promo-left > div").length - 1;
-
-// Función para determinar si estamos en tablet o teléfono
-const isMobile = () => window.innerWidth <= 768;
-
-// Función para actualizar el slider
-const updateSlider = () => {
-  let leftDiv = promoSlider.querySelector(".promo-wrapper .promo-left div");
-  let rightDiv = promoSlider.querySelector(".promo-wrapper .promo-right div");
-
-  // Limitar el desplazamiento a -200vh en dispositivos móviles
-  if (isMobile() && promoCurrentSlide > 2) {
-    promoCurrentSlide = 2; // Máximo 2 slides (0, 1, 2)
+// Initialize Swiper
+const topCategoriesSlider = new Swiper('.top-categories__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    }
   }
-
-  // Actualizar margin-top de los contenedores según el dispositivo
-  let marginValue = isMobile() ? promoCurrentSlide * -50 : promoCurrentSlide * -100;
-  leftDiv.style.marginTop = `${marginValue}vh`;
-  rightDiv.style.marginTop = `${marginValue}vh`;
-};
-
-// Evento para el botón "Arriba"
-promoSlider.querySelector(".promo-controls .promo-up").addEventListener("click", function () {
-  if (promoCurrentSlide == 0) return;
-  promoCurrentSlide--;
-  updateSlider();
 });
 
-// Evento para el botón "Abajo"
-promoSlider.querySelector(".promo-controls .promo-down").addEventListener("click", function () {
-  if (promoCurrentSlide == promoTotalSlides) return;
-  promoCurrentSlide++;
-  updateSlider();
+//! DESCUENTOS TEMPORADA
+
+//? INSTAGRAM PHOTOS
+document.addEventListener('DOMContentLoaded', () => {
+  // Mobile touch handling only
+  if (window.innerWidth < 768) {
+    const instaPhotos = document.querySelectorAll('.insta-photo');
+    
+    instaPhotos.forEach(photo => {
+      photo.addEventListener('click', (e) => {
+        const hover = photo.querySelector('.insta-photo__hover');
+        if (hover && !hover.classList.contains('active')) {
+          e.preventDefault();
+          // Remove active class from all hovers
+          document.querySelectorAll('.insta-photo__hover').forEach(h => {
+            h.classList.remove('active');
+          });
+          // Add active class to clicked hover
+          hover.classList.add('active');
+        }
+      });
+    });
+  }
 });
-//! CAROUSEL DESCUENTOS
-
-
-
-
+//! INSTAGRAM PHOTOS
 
 
 

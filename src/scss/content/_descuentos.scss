@@ -1,11 +1,10 @@
 .promo-slider {
   width: 100%;
-  height: 100vh;
   position: relative;
   overflow: hidden;
 
   .promo-controls {
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -14,7 +13,7 @@
     z-index: 2;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 
     button {
       position: relative; // Changed from absolute
@@ -44,7 +43,7 @@
     }
   }
 
-  @media (max-width: 1024px) {
+  /* @media (max-width: 1024px) {
     .promo-controls {
       width: 100px;
       
@@ -53,9 +52,9 @@
         height: 45px;
       }
     }
-  }
+  } */
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .promo-controls {
       width: 80px;
       
@@ -68,9 +67,9 @@
         }
       }
     }
-  }
+  } */
 
-  @media (max-width: 480px) {
+  /* @media (max-width: 480px) {
     .promo-controls {
       width: 70px;
       
@@ -83,13 +82,21 @@
         }
       }
     }
-  }
+  } */
 
   .promo-wrapper {
     display: flex;
+    align-items: stretch;
+    width: 100%;
+    height: 50vh;
     flex-direction: row-reverse;
+  }
+
+  .promo-image {
+    flex: 1;
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 
   .promo-left,
@@ -98,12 +105,6 @@
     height: 100%;
     overflow: hidden;
   }
-
-  /* .promo-slide {
-    width: 100%;
-    height: 100%;
-    transition: margin-top 0.5s ease-in-out;
-  } */
 
   .promo-left {
     .promo-slide {
@@ -114,14 +115,14 @@
       background: #fff;
       height: 100%;
       width: 100%;
-    height: 100%;
       transition: margin-top 0.5s ease-in-out;
     }
 
     .promo-title {
       font-size: 2.5rem;
-        margin-bottom: 1.5rem;
-        color: #333;
+      margin-bottom: 1.5rem;
+      color: #333;
+      font-weight: 700;
     }
 
     .promo-text {
@@ -129,25 +130,27 @@
       line-height: 1.6;
       color: #666;
       margin-bottom: 2rem;
+      font-family: "Merienda", cursive;
     }
-    
+
     .promo-btn {
       width: auto;
-        min-width: 200px;
-        margin: 0 auto;
-        padding: 15px 30px;
-        background: #d05278;
-        color: #fff;
-        border: none;
-        border-radius: 8px;
-        font-size: 1.1rem;
-        cursor: pointer;
-        transition: all 0.3s ease;
+      min-width: 200px;
+     /*  margin: 0 auto; */
+      padding: 15px 30px;
+      font-family: "Merienda", cursive;;
+      background: #d05278;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
 
-        &:hover {
-          background: #b04563;
-          transform: translateY(-2px);
-        }
+      &:hover {
+        background: #b04563;
+        transform: translateY(-2px);
+      }
 
       &:focus {
         outline: none;
@@ -167,10 +170,10 @@
     picture,
     img {
       position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
 
     .promo-img {
@@ -189,7 +192,10 @@
         padding: 2rem;
 
         .promo-title {
-          font-size: 2rem;
+          font-size: 1.5rem;
+        text-align: center;
+        letter-spacing: -2px;
+        margin: 0;
         }
 
         .promo-btn {
@@ -203,18 +209,19 @@
   @media (max-width: 768px) {
     .promo-wrapper {
       flex-direction: column;
+      height: auto;
     }
 
     .promo-left,
     .promo-right {
       width: 100%;
-      height: 50vh;
+      height: auto;
     }
 
     .promo-left {
       .promo-slide {
         padding: 1.5rem;
-        min-height: 300px;
+        min-height: auto;
 
         .promo-title {
           font-size: 1.8rem;
@@ -223,6 +230,7 @@
 
         .promo-text {
           font-size: 1rem;
+          text-align: center;
         }
 
         .promo-btn {
@@ -233,7 +241,15 @@
       }
     }
 
-    .promo-controls {
+    .promo-right {
+      order: 2;
+      .promo-slide {
+        height: 300px;
+        aspect-ratio: auto;
+      }
+    }
+
+    /* .promo-controls {
       width: 80px;
       height: 80px;
 
@@ -241,19 +257,27 @@
         width: 40px;
         height: 40px;
       }
-    }
-
+    } */
   }
 
   @media (max-width: 480px) {
-
-     .promo-wrapper {
+    .promo-wrapper {
       flex-direction: column;
-    } 
+      height: auto;
+    }
+
     .promo-left {
       .promo-slide {
         padding: 1rem;
-        min-height: 250px;
+        min-height: auto;
+
+        .promo-title {
+          font-size: 1.5rem;
+        }
+
+        .promo-text {
+          font-size: 0.9rem;
+        }
 
         .promo-btn {
           width: 100%;
@@ -261,6 +285,13 @@
           padding: 12px;
           font-size: 0.85rem;
         }
+      }
+    }
+
+    .promo-right {
+      order: 2;
+      .promo-slide {
+        height: 250px;
       }
     }
   }

@@ -1173,42 +1173,43 @@
   
 			<!--* PROMOCIONES -->
 			<section class="promo-slider" aria-label="Promociones destacadas">
-				<div class="promo-controls" role="navigation" aria-label="Controles de navegación">
+
+				<!-- <div class="promo-controls" role="navigation" aria-label="Controles de navegación">
 				  <button class="promo-up" aria-label="Deslizar hacia arriba">
 					<i class="bi bi-caret-up-fill" aria-hidden="true"></i>
 				  </button>
 				  <button class="promo-down" aria-label="Deslizar hacia abajo">
 					<i class="bi bi-caret-down-fill" aria-hidden="true"></i>
 				  </button>
-				</div>
+				</div> -->
 				
 				<div class="promo-wrapper">
 				  <!-- Contenedor de textos -->
 				  <article class="promo-left">
 						<!--? TEXTOS & TITULOS -->
 					<div class="promo-slide" aria-labelledby="promo-title-1">
-					  <h2 id="promo-title-1" class="promo-title">Mar</h2>
+					  <h2 id="promo-title-1" class="promo-title">¡BIENVENIDO A LA REVOLUCIÓN HELMET!</h2>
 					  <p class="promo-text">
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam repellendus accusantium voluptate.
+						Transforma tu casco en una experiencia sensorial única. Descubre nuestras fragancias premium que no solo eliminan olores, sino que crean una burbuja de frescura y bienestar en cada kilómetro de tu viaje. ¡Tu aventura sobre ruedas nunca olió tan bien!
 					  </p>
 					  <button class="promo-btn">Ver más</button>
 					</div>
 
-					<div class="promo-slide" aria-labelledby="promo-title-2">
+					<!-- <div class="promo-slide" aria-labelledby="promo-title-2">
 					  <h2 id="promo-title-2" class="promo-title">Palmeras</h2>
 					  <p class="promo-text">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minus mollitia deleniti deserunt.
 					  </p>
 					  <button class="promo-btn">Ver más</button>
-					</div>
+					</div> -->
 
-					<div class="promo-slide" aria-labelledby="promo-title-3">
+					<!-- <div class="promo-slide" aria-labelledby="promo-title-3">
 					  <h2 id="promo-title-3" class="promo-title">Puente</h2>
 					  <p class="promo-text">
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium corporis assumenda rerum quisquam.
 					  </p>
 					  <button class="promo-btn">Ver más</button>
-					</div>
+					</div> -->
 
 				  </article>
 				  
@@ -1220,16 +1221,16 @@
 
          				 <source 
 						 type="image/avif" 
-                 		 srcset="images/mar.avif"
+                 		 srcset="build/assets/img/avif/choe-promocional.avif"
                   		 media="(min-width: 768px)" >
 
          				 <source 
 						 type="image/webp" 
-                  		 srcset="images/mar.webp"
+                  		 srcset="build/assets/img/webp/choe-promocional.webp"
                   		 media="(min-width: 768px)" >
 
          				 <img class="promo-img" 
-              			 src="images/mar.jpg"
+              			 src="build/assets/img/choe-promocional.jpg"
               			 alt="Vista panorámica del mar"
               			 loading="lazy"
               			 width="800"
@@ -1238,364 +1239,171 @@
         				</picture>
 					</div>
 					
-					<div class="promo-slide">
+					<!-- <div class="promo-slide">
 					  <img class="promo-img" 
 						   src="https://images.unsplash.com/photo-1604230923884-52e805c5ac7e?auto=format&fit=crop&w=1024&q=100" 
 						   alt="Palmeras tropicales junto al mar"
 						   loading="lazy">
-					</div>
-					<div class="promo-slide">
+					</div> -->
+					<!-- <div class="promo-slide">
 					  <img class="promo-img" 
 						   src="https://images.unsplash.com/photo-1562979314-bee7453e911c?auto=format&fit=crop&w=1024&q=100" 
 						   alt="Puente arquitectónico moderno"
 						   loading="lazy">
-					</div>
+					</div> -->
 				  </article>
 				</div>
 			  </section>	  
 			<!--! PROMOCIONES   -->
 
-			<!-- BEGIN ADVANTAGES -->
-			<div class="advantages">
-				<div class="wrapper">
-					<div class="advantages-items">
-						<div class="advantages-item">
-							<div class="advantages-item__icon">
+			<!--? CARDS VENTAJAS CHOE-->
+			<section class="advantages" aria-labelledby="advantages-title">
+				<div class="advantages-wrapper">
+					<h2 id="advantages-title" class="saint-title text-center mb-4">Ventajas de los Productos</h2>
+					<div class="advantages-items" role="list">
+						
+						<article class="advantages-item" role="listitem">
+							<div class="advantages-item__icon" aria-hidden="true">
 								<i class="icon-natural"></i>
 							</div>
-							 <h4 class="icons-title">Natural</h4>
-                			<p class="icons-text">Fragancias hechas con ingredientes naturales para una experiencia segura y auténtica, cuidando de ti y del entorno.</p>
-						</div>
-						<div class="advantages-item">
-							<div class="advantages-item__icon">
+							<h3 class="icons-title">Natural</h3>
+							<p class="icons-text">
+								Fragancias elaboradas con ingredientes 100% naturales para una experiencia segura y auténtica, 
+								<span class="emphasis">cuidando de ti y del medio ambiente</span>.
+							</p>
+						</article>
+
+						<article class="advantages-item" role="listitem">
+							<div class="advantages-item__icon" aria-hidden="true">
 								<i class="icon-quality"></i>
 							</div>
-							<h4 class="icons-title">Calidad</h4>
-							<p class="icons-text">Productos elaborados con altos estándares, garantizando fragancias duraderas y de gran satisfacción en cada uso.</p>
-						</div>
-						<div class="advantages-item">
-							<div class="advantages-item__icon">
+							<h3 class="icons-title">Calidad Premium</h3>
+							<p class="icons-text">
+								Productos elaborados bajo rigurosos estándares de calidad, 
+								<span class="emphasis">garantizando fragancias duraderas y satisfacción total en cada uso</span>.
+							</p>
+						</article>
+
+						<article class="advantages-item" role="listitem">
+							<div class="advantages-item__icon" aria-hidden="true">
 								<i class="ico-organic ico"></i>
 							</div>
-							<h4 class="icons-title">Artesanal</h4>
-               				 <p class="icons-text">Cada esencia es creada artesanalmente con dedicación y detalle, asegurando exclusividad en cada fragancia.</p>
-						</div>
+							<h3 class="icons-title">Artesanal</h3>
+							<p class="icons-text">
+								Cada esencia es creada artesanalmente con dedicación y atención al detalle, 
+								<span class="emphasis">asegurando exclusividad y distinción en cada fragancia</span>.
+							</p>
+						</article>
+
 					</div>
-				</div>
-			</div>
-			<!-- ADVANTAGES EOF   -->
-
-			<!-- BEGIN TOP CATEGORIES -->
-			<section class="top-categories">
-				<div class="top-categories__text">
-					<span class="saint-text">¡Es hora de Consentirte!</span>
-					<h2>Ofertas Irresistibles para Black Friday</h2>
-					<p>Disfruta los productos más queridos de Choe con descuentos exclusivos solo 
-						por Black Friday. Esta es tu oportunidad de llenar tu hogar de aromas frescos, 
-						cuidar tu cuerpo con esencias únicas y transformar tu ambiente con precios
-						 irresistibles. ¡Hazlo ahora, antes de que se acaben!</p>
-				</div>
-				
-				<div class="top-categories__items">
-
-					<a href="pages/black-friday/difusores-2-3.html" target="_blank" class="top-categories__item">
-						<img src="img/productos/Black-friday/difusor2-3.jpg" class="js-img" alt="Pague 2 lleve 3 difusores">
-						<div class="top-categories__item-hover">
-							<!-- <h5>Corporal</h5> -->
-							<span>2 * 3 en difusores</span>
-							<i class="icon-arrow-lg"></i>
-						</div>
-					</a>
-
-					<!-- Categoría Entornos -->
-					<a href="pages/black-friday/aceite-helmet.html" target="_blank" class="top-categories__item">
-						<img src="img/productos/Black-friday/aceite+helmet.jpg" class="js-img" alt="Promocion aceite + helmet">
-						<div class="top-categories__item-hover">
-							<!-- <h5>Aceite + Helmet</h5> -->
-							<span>aceite + helmet</span>
-							<i class="icon-arrow-lg"></i>
-						</div>
-					</a>
-					
-					<!-- Categoría Corporal -->
-					<a href="pages/black-friday/difusor+helmet.html" target="_blank" class="top-categories__item">
-						<img  src="img/productos/Black-friday/difusor+helmet.jpg" class="js-img" alt="Promocion de difusor con helmet">
-						<div class="top-categories__item-hover">
-							<!-- <h5>Corporal</h5> -->
-							<span>difusor + helmet</span>
-							<i class="icon-arrow-lg"></i>
-						</div>
-					</a>
-					
-					<!-- Categoría Capilar -->
-					<a href="pages/black-friday/splash-aceite.html" target="_blank" class="top-categories__item">
-						<img src="img/productos/Black-friday/splash+aceite.jpg" class="js-img" alt="Promocion splash + aceite">
-						<div class="top-categories__item-hover">
-							<!-- <h5>Capilar</h5> -->
-							<span>Splash + Aceite</span>
-							<i class="icon-arrow-lg"></i>
-						</div>
-					</a>
-					
-					<!-- Categoría Vehicular -->
-					<a href="pages/black-friday/splash-difusor.html" target="_blank" class="top-categories__item">
-						<img  src="img/productos/Black-friday/splash+difusor.jpg" class="js-img" alt="Promocion en splash - difusor">
-						<div class="top-categories__item-hover">
-							<!-- <h5>Vehicular</h5> -->
-							<span>Splash + difusor</span>
-							<i class="icon-arrow-lg"></i>
-						</div>
-					</a>
 				</div>
 			</section>
-			
-			<!-- TOP CATEGORIES EOF   -->
-			
-			<!--? SUSCRIPCIONES  -->
+			<!--! CARDS VENTAJAS CHOE-->
 
-
-			<!-- <div class="sus-slider">
-
-				<div class="sus-controls">
-					
-
-					<div class="sus-up">
-						<i class="bi bi-arrow-up-square"></i>
-					</div>
-
-					<div class="sus-down">
-						<i class="bi bi-arrow-down-square"></i>
-					</div>
-
-				</div>
-
-				<div class="sus-wrapper">
-					<div class="sus-left">
-						<div>
-							<h2>Choe Shits</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut doloremque, 
-								dolorem quaerat natus cumque tenetur possimus, repudiandae provident
-								et dolore praesentium inventore! Inventore libero vitae odit eos? Beatae, 
-								illum minus?</p>
-						</div>
-
-						<div>
-							<h2>Choe Shits</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut doloremque, 
-								dolorem quaerat natus cumque tenetur possimus, repudiandae provident
-								et dolore praesentium inventore! Inventore libero vitae odit eos? Beatae, 
-								illum minus?</p>
-						</div>
-
-						<div>
-							<h2>Choe Shits</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut doloremque, 
-								dolorem quaerat natus cumque tenetur possimus, repudiandae provident
-								et dolore praesentium inventore! Inventore libero vitae odit eos? Beatae, 
-								illum minus?</p>
-						</div>
-						
-					</div>
-					<div class="sus-right">
-						<div>
-							<img src="img/choe-suscripcion.jpg" alt="">
-						</div>
-
-						<div>
-							<img src="img/choe-suscripcion.jpg" alt="">
-						</div>
-
-						<div>
-							<img src="img/choe-suscripcion.jpg" alt="">
-						</div>
-					</div>
-				</div>
-			</div> -->
-		
-
-			<!--! SUSCRIPCIONES  -->
-
-			
-			
-			<!-- BEGIN INFO BLOCKS -->
-
-			<div class="sus-slider">
-				<div class="sus-controls">
-					<div class="sus-up"><i class="bi bi-arrow-bar-up"></i></div>
-					<div class="sus-down"><i class="bi bi-arrow-bar-down"></i></div>
-				</div>
-				<div class="sus-wrapper">
-					<!-- Sección izquierda: Texto -->
-					<div class="sus-left">
-						<div>
-							<span class="saint-text">¡Un mundo de fragancias te espera!</span>
-							<h2>Experiencia Exclusiva Choe</h2>
-							
-							<p>
-								Únete por <strong>$50.000</strong> al mes y disfruta de precios especiales, contenido exclusivo, muestras anticipadas y diseños únicos. 
-								Vive una experiencia que solo Choe puede ofrecerte.
-							  </p>
-							<a href="subscribe.html" class="btn sus-btn" target="_blank">¡Suscríbete ahora!</a>
-						</div>
-						
-					</div>
-
-					
-					<!-- Sección derecha: Imágenes -->
-					<div class="sus-right">
-						<div>
-							<img src="img/choe-suscripcion.jpg" alt="Suscripción Choe">
-						</div>
-						<div>
-							<img src="img/choe-helmet.png" alt="Ventajas Exclusivas Choe">
-						</div>
-					</div>
-				</div>
-			</div>
-			
-
-			<!-- <div class="info-blocks">
-			
-				<div class="info-blocks__item js-img" src="">
-
-					
-
-
-					<div class="wrapper">
-						<div class="info-blocks__item-img">
-							<img src="img/choe-suscripcion.jpg" class="js-img" alt="Suscripción Choe">
-						</div>
-						<div class="info-blocks__item-text">
-							<span class="saint-text">Suscríbete y Gana</span>
-							<h2>Experiencia Exclusiva Choe</h2>
-							<span class="info-blocks__item-descr">Accede a beneficios únicos para los amantes de las fragancias y el bienestar.</span>
-							<p>Únete por <strong>$50.000</strong> al mes y disfruta de precios especiales, contenido exclusivo, participación en el diseño de nuevos productos, muestras anticipadas de nuestras fragancias y accesorios exclusivos como camisetas, gorras,  entre otros de la marca Choe.</p>
-							<a href="subscribe.html" class="btn" target="_blank">¡Suscríbete ahora!</a>
-						</div>
-					</div>
+			<!--? DESCUENTOS DE TEMPORADA-->
+			<section class="top-categories" aria-labelledby="offers-title">
+				<div class="top-categories__text">
+				  <span class="saint-text" aria-label="Llamado a la acción">¡Descuentos Exclusivos!</span>
+				  <h2 id="offers-title">Descubre Nuestra Colección Black Friday</h2>
+				  <p>Transforma tu experiencia sensorial con nuestras fragancias premium ahora con descuentos increíbles. 
+					 Aprovecha hasta 50% OFF en productos seleccionados y lleva la magia de Choe a tu hogar.
+					 ¡Ofertas por tiempo limitado!</p>
 				</div>
 				
-			</div> -->
+				<!-- Swiper Container -->
+				<div class="swiper top-categories__slider">
+				  <div class="swiper-wrapper">
+					<!-- Slider 1 -->
+					<div class="swiper-slide">
+					  <a href="pages/black-friday/difusores-2-3.html" 
+						 class="top-categories__item"
+						 aria-label="Promoción: Pague 2 lleve 3 en difusores">
+						<img src="img/productos/Black-friday/difusor2-3.jpg" 
+							 alt="Promoción especial en difusores" 
+							 loading="lazy">
+						<div class="top-categories__item-hover">
+						  <span>¡3 Difusores al Precio de 2!</span>
+						  <i class="icon-arrow-lg" aria-hidden="true"></i>
+						</div>
+					  </a>
+					</div>
+
+					<!-- Slider 2 -->
+					<div class="swiper-slide">
+						<a href="pages/black-friday/difusores-2-3.html" 
+						   class="top-categories__item"
+						   aria-label="Promoción: Pague 2 lleve 3 en difusores">
+						  <img src="img/productos/Black-friday/difusor2-3.jpg" 
+							   alt="Promoción especial en difusores" 
+							   loading="lazy">
+						  <div class="top-categories__item-hover">
+							<span>¡3 Difusores al Precio de 2!</span>
+							<i class="icon-arrow-lg" aria-hidden="true"></i>
+						  </div>
+						</a>
+					  </div>
+
+					  <!-- Slider 3 -->
+					<div class="swiper-slide">
+						<a href="pages/black-friday/difusores-2-3.html" 
+						   class="top-categories__item"
+						   aria-label="Promoción: Pague 2 lleve 3 en difusores">
+						  <img src="img/productos/Black-friday/difusor2-3.jpg" 
+							   alt="Promoción especial en difusores" 
+							   loading="lazy">
+						  <div class="top-categories__item-hover">
+							<span>¡3 Difusores al Precio de 2!</span>
+							<i class="icon-arrow-lg" aria-hidden="true"></i>
+						  </div>
+						</a>
+					  </div>
+
+					  <!-- Slider 4 -->
+					<div class="swiper-slide">
+						<a href="pages/black-friday/difusores-2-3.html" 
+						   class="top-categories__item"
+						   aria-label="Promoción: Pague 2 lleve 3 en difusores">
+						  <img src="img/productos/Black-friday/difusor2-3.jpg" 
+							   alt="Promoción especial en difusores" 
+							   loading="lazy">
+						  <div class="top-categories__item-hover">
+							<span>¡3 Difusores al Precio de 2!</span>
+							<i class="icon-arrow-lg" aria-hidden="true"></i>
+						  </div>
+						</a>
+					  </div>
+
+					  <!-- Slider 5 -->
+					<div class="swiper-slide">
+						<a href="pages/black-friday/difusores-2-3.html" 
+						   class="top-categories__item"
+						   aria-label="Promoción: Pague 2 lleve 3 en difusores">
+						  <img src="img/productos/Black-friday/difusor2-3.jpg" 
+							   alt="Promoción especial en difusores" 
+							   loading="lazy">
+						  <div class="top-categories__item-hover">
+							<span>¡3 Difusores al Precio de 2!</span>
+							<i class="icon-arrow-lg" aria-hidden="true"></i>
+						  </div>
+						</a>
+					  </div>
+			  
+					<!-- Additional slides follow same pattern -->
+					...
+				  </div>
+				  
+				  <!-- Swiper Navigation -->
+				  <div class="swiper-button-prev"></div>
+				  <div class="swiper-button-next"></div>
+				  
+				  <!-- Swiper Pagination -->
+				  <div class="swiper-pagination"></div>
+				</div>
+			  </section>
+			<!--! DESCUENTOS DE TEMPORADA-->
 			
-			<!-- INFO BLOCKS EOF   -->
 
-
-			<!-- BEGIN NEW ARRIVALS -->
-			<!-- <section class="arrivals">
-				<div class="trending-top">
-					<span class="saint-text">Cosmetics</span>
-					<h2>New arrivals</h2>
-					<p>Nourish your skin with toxin-free cosmetic products. With the offers that you can’t refuse.</p>
-				</div>
-				<div class="products-items js-products-items">
-					<a href="#" class="products-item">
-						<div class="products-item__type">
-							<span class="products-item__sale">sale</span>
-							<span class="products-item__new">new</span>
-						</div>
-						<div class="products-item__img">
-							<img data-src="https://via.placeholder.com/400x570" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-								class="js-img" alt="">
-							<div class="products-item__hover">
-								<i class="icon-search"></i>
-								<div class="products-item__hover-options">
-									<i class="icon-heart"></i>
-									<i class="icon-cart"></i>
-								</div>
-							</div>
-						</div>
-						<div class="products-item__info">
-							<span class="products-item__name">Detox body Cream</span>
-							<span class="products-item__cost"><span>$249.95</span> $200.95</span>
-						</div>
-					</a>
-					<a href="#" class="products-item">
-						<div class="products-item__type">
-							<span class="products-item__new">new</span>
-						</div>
-						<div class="products-item__img">
-							<img data-src="https://via.placeholder.com/400x570" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-								class="js-img" alt="">
-							<div class="products-item__hover">
-								<i class="icon-search"></i>
-								<div class="products-item__hover-options">
-									<i class="icon-heart"></i>
-									<i class="icon-cart"></i>
-								</div>
-							</div>
-						</div>
-						<div class="products-item__info">
-							<span class="products-item__name">Detox body Cream</span>
-							<span class="products-item__cost">$200.95</span>
-						</div>
-					</a>
-					<a href="#" class="products-item">
-						<div class="products-item__type">
-							<span class="products-item__new">new</span>
-						</div>
-						<div class="products-item__img">
-							<img data-src="https://via.placeholder.com/400x570" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-								class="js-img" alt="">
-							<div class="products-item__hover">
-								<i class="icon-search"></i>
-								<div class="products-item__hover-options">
-									<i class="icon-heart"></i>
-									<i class="icon-cart"></i>
-								</div>
-							</div>
-						</div>
-						<div class="products-item__info">
-							<span class="products-item__name">Detox body Cream</span>
-							<span class="products-item__cost">$200.95</span>
-						</div>
-					</a>
-					<a href="#" class="products-item">
-						<div class="products-item__type">
-							<span class="products-item__sale">sale</span>
-							<span class="products-item__new">new</span>
-						</div>
-						<div class="products-item__img">
-							<img data-src="https://via.placeholder.com/400x570" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-								class="js-img" alt="">
-							<div class="products-item__hover">
-								<i class="icon-search"></i>
-								<div class="products-item__hover-options">
-									<i class="icon-heart"></i>
-									<i class="icon-cart"></i>
-								</div>
-							</div>
-						</div>
-						<div class="products-item__info">
-							<span class="products-item__name">Detox body Cream</span>
-							<span class="products-item__cost"><span>$249.95</span> $200.95</span>
-						</div>
-					</a>
-					<a href="#" class="products-item">
-						<div class="products-item__type">
-							<span class="products-item__sale">sale</span>
-						</div>
-						<div class="products-item__img">
-							<img data-src="https://via.placeholder.com/400x570" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-								class="js-img" alt="">
-							<div class="products-item__hover">
-								<i class="icon-search"></i>
-								<div class="products-item__hover-options">
-									<i class="icon-heart"></i>
-									<i class="icon-cart"></i>
-								</div>
-							</div>
-						</div>
-						<div class="products-item__info">
-							<span class="products-item__name">Detox body Cream</span>
-							<span class="products-item__cost"><span>$249.95</span> $200.95</span>
-						</div>
-					</a>
-				</div>
-			</section> -->
-			<!-- NEW ARRIVALS EOF   -->
-
-			<!-- BEGIN LATEST NEWS -->
-
+			<!--? BLOG -->
 			<!-- <section class="latest-news">
 				<div class="wrapper">
 					<div class="trending-top">
@@ -1636,12 +1444,11 @@
 						<a href="#" class="btn">Read blog</a>
 					</div>
 				</div>
-			</section> -->
+			</section>  -->
+			<!--! BLOG -->
 
-			<!-- LATEST NEWS EOF   -->
-			<!-- BEGIN SUBSCRIBE -->
-
-			<!-- <div class="subscribe">
+			<!--? SUSCRIPCION NEWSLETTER -->
+			<!--  <div class="subscribe">
 				<div class="wrapper">
 					<div class="subscribe-form">
 						<div class="subscribe-form__img">
@@ -1663,154 +1470,313 @@
 						
 					</div>
 				</div>
-			</div>
-			 -->
-			<!-- SUBSCRIBE EOF   -->
-			<!-- BEGIN INSTA PHOTOS -->
-			<!-- <div class="insta-photos">
-				<a href="#" class="insta-photo">
-					<img data-src="https://via.placeholder.com/320" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="js-img"
-						alt="">
-					<div class="insta-photo__hover">
-						<i class="icon-insta"></i>
-					</div>
-				</a>
-				<a href="#" class="insta-photo">
-					<img data-src="https://via.placeholder.com/320" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="js-img"
-						alt="">
-					<div class="insta-photo__hover">
-						<i class="icon-insta"></i>
-					</div>
-				</a>
-				<a href="#" class="insta-photo">
-					<img data-src="https://via.placeholder.com/320" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="js-img"
-						alt="">
-					<div class="insta-photo__hover">
-						<i class="icon-insta"></i>
-					</div>
-				</a>
-				<a href="#" class="insta-photo">
-					<img data-src="https://via.placeholder.com/320" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="js-img"
-						alt="">
-					<div class="insta-photo__hover">
-						<i class="icon-insta"></i>
-					</div>
-				</a>
-				<a href="#" class="insta-photo">
-					<img data-src="https://via.placeholder.com/320" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="js-img"
-						alt="">
-					<div class="insta-photo__hover">
-						<i class="icon-insta"></i>
-					</div>
-				</a>
-				<a href="#" class="insta-photo">
-					<img data-src="https://via.placeholder.com/320" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="js-img"
-						alt="">
-					<div class="insta-photo__hover">
-						<i class="icon-insta"></i>
-					</div>
-				</a>
 			</div> -->
-			<!-- INSTA PHOTOS EOF   -->
+			<!--! SUSCRIPCION NEWSLETTER -->
+
+			<!-- Sección Instagram - Versión Mejorada -->
+<!-- Sección Instagram - Versión Mejorada -->
+<section class="instagram-feed" aria-labelledby="instagram-title">
+    <div class="insta-wrapper">
+        <h2 id="instagram-title" class="visually-hidden">Publicaciones destacadas de Instagram</h2>
+        
+        <div class="insta-photos" role="list">
+            <!-- Foto 1 -->
+            <article class="insta-photo-container" role="listitem">
+                <a href="https://www.instagram.com/p/DFGltrghcYm/" 
+                   class="insta-photo" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Ver publicación de Instagram sobre San Valentin">
+                    <picture>
+                        <source type="image/avif" srcset="build/assets/img/avif/insta/insta-01.avif">
+                        <source type="image/webp" srcset="build/assets/img/webp/insta/insta-01.webp">
+                        <img src="build/assets/img/insta/insta-01.jpg"
+                             alt="Este San Valentín, sorprende a las niñas y mujeres especiales de tu vida"
+                             loading="lazy"
+                             width="320"
+                             height="320"
+                             decoding="async">
+                    </picture>
+                    <div class="insta-photo__hover">
+                        <i class="bi bi-instagram" aria-hidden="true" role="presentation"></i>
+                    </div>
+                </a>
+                <meta itemprop="image" content="build/assets/img/insta/insta-01.jpg">
+            </article>
+
+            <!-- Foto 2 -->
+            <article class="insta-photo-container" role="listitem">
+                <a href="https://www.instagram.com/p/DDxOyB6RfkN/" 
+                   class="insta-photo" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Ver publicación de Instagram sobre Bolsa navideña Choe">
+                    <picture>
+                        <source type="image/avif" srcset="build/assets/img/avif/insta/insta-02.avif">
+                        <source type="image/webp" srcset="build/assets/img/webp/insta/insta-02.webp">
+                        <img src="build/assets/img/insta/insta-02.jpg"
+                             alt="Esta Navidad regala experiencias únicas con nuestra exclusiva bolsa navideña Choe"
+                             loading="lazy"
+                             width="320"
+                             height="320"
+                             decoding="async">
+                    </picture>
+                    <div class="insta-photo__hover">
+                        <i class="bi bi-instagram" aria-hidden="true" role="presentation"></i>
+                    </div>
+                </a>
+                <meta itemprop="image" content="build/assets/img/insta/insta-02.jpg">
+            </article>
+
+            <!-- Foto 3 -->
+            <article class="insta-photo-container" role="listitem">
+                <a href="https://www.instagram.com/p/DCsHDK_RVGu/" 
+                   class="insta-photo" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Ver publicación de Instagram sobre aceite de coco artesanal">
+                    <picture>
+                        <source type="image/avif" srcset="build/assets/img/avif/insta/insta-03.avif">
+                        <source type="image/webp" srcset="build/assets/img/webp/insta/insta-03.webp">
+                        <img src="build/assets/img/insta/insta-03.jpg"
+                             alt="Aceite de Coco Artesanal para la Piel"
+                             loading="lazy"
+                             width="320"
+                             height="320"
+                             decoding="async">
+                    </picture>
+                    <div class="insta-photo__hover">
+                        <i class="bi bi-instagram" aria-hidden="true" role="presentation"></i>
+                    </div>
+                </a>
+                <meta itemprop="image" content="build/assets/img/insta/insta-03.jpg">
+            </article>
+
+            <!-- Foto 4 -->
+            <article class="insta-photo-container" role="listitem">
+                <a href="https://www.instagram.com/p/DCpy6_qx_xD/" 
+                   class="insta-photo" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Ver publicación de Instagram sobre Aceite Corporal de Uva - Artesanal y Natural">
+                    <picture>
+                        <source type="image/avif" srcset="build/assets/img/avif/insta/insta-04.avif">
+                        <source type="image/webp" srcset="build/assets/img/webp/insta/insta-04.webp">
+                        <img src="build/assets/img/insta/insta-04.jpg"
+                             alt="Aceite Corporal de Uva - Artesanal y Natural"
+                             loading="lazy"
+                             width="320"
+                             height="320"
+                             decoding="async">
+                    </picture>
+                    <div class="insta-photo__hover">
+                        <i class="bi bi-instagram" aria-hidden="true" role="presentation"></i>
+                    </div>
+                </a>
+                <meta itemprop="image" content="build/assets/img/insta/insta-04.jpg">
+            </article>
+
+            <!-- Foto 5 -->
+            <article class="insta-photo-container" role="listitem">
+                <a href="https://www.instagram.com/p/DCj4rN_Rj4d/" 
+                   class="insta-photo" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Ver publicación de Instagram sobre fragancias vehiculares">
+                    <picture>
+                        <source type="image/avif" srcset="build/assets/img/avif/insta/insta-05.avif">
+                        <source type="image/webp" srcset="build/assets/img/webp/insta/insta-05.webp">
+                        <img src="build/assets/img/insta/insta-05.jpg"
+                             alt="Nuestro desodorante para casco elimina los malos olores"
+                             loading="lazy"
+                             width="320"
+                             height="320"
+                             decoding="async">
+                    </picture>
+                    <div class="insta-photo__hover">
+                        <i class="bi bi-instagram" aria-hidden="true" role="presentation"></i>
+                    </div>
+                </a>
+                <meta itemprop="image" content="build/assets/img/insta/insta-05.jpg">
+            </article>
+
+            <!-- Foto 6 -->
+            <article class="insta-photo-container" role="listitem">
+                <a href="https://www.instagram.com/p/DBU4wpRRnNW/" 
+                   class="insta-photo" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Ver publicación de Instagram sobre difusores de entorno">
+                    <picture>
+                        <source type="image/avif" srcset="build/assets/img/avif/insta/insta-06.avif">
+                        <source type="image/webp" srcset="build/assets/img/webp/insta/insta-06.webp">
+                        <img src="build/assets/img/insta/insta-06.jpg"
+                             alt="Difusor de entornos con fragancias naturales"
+                             loading="lazy"
+                             width="320"
+                             height="320"
+                             decoding="async">
+                    </picture>
+                    <div class="insta-photo__hover">
+                        <i class="bi bi-instagram" aria-hidden="true" role="presentation"></i>
+                    </div>
+                </a>
+                <meta itemprop="image" content="build/assets/img/insta/insta-06.jpg">
+            </article>
+        </div>
+    </div>
+</section>
+			<!--! INSTA PHOTOS -->
 
 		</main>
 
-		<!-- CONTENT EOF   -->
 
-		
+		<!--? FOOTER -->
 
-
-		
-
-
-		<!-- HEADER EOF   -->
-
-		<!-- BEGIN FOOTER -->
-
-		<footer class="footer">
-			<div class="wrapper">
-				<div class="footer-top">
+		<footer class="footer" role="contentinfo" aria-label="Pie de página">
+			<div class="footer-wrapper">
+				<!-- Social Media Section -->
+				<section class="footer-top" aria-label="Redes sociales y métodos de pago">
 					<div class="footer-top__social">
-						<span>Siguenos:</span>
-						<ul>
-							<li><a href="https://web.facebook.com/sandra.quitian/" target="_blank"><i class="icon-facebook"></i></a></li>
-							<!-- <li><a href="#"><i class="icon-twitter"></i></a></li> -->
-							<li><a href="https://www.instagram.com/choe_fragancias_frutales/" target="_blank"><i class="icon-insta"></i></a></li>
-							<li><a href="https://wa.me/573103624742?text=Bienvenido%20a%20choe.com,%20estamos%20aquí%20para%20ayudarte.%20¿En%20qué%20puedo%20informarte%20sobre%20nuestros%20productos%20o%20nuestra%20marca?" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+						<h2 class="footer-heading">Síguenos en redes sociales</h2>
+						<ul class="social-list" role="list">
+							<li>
+								<a href="https://web.facebook.com/sandra.quitian/" 
+								   target="_blank" 
+								   rel="noopener noreferrer"
+								   aria-label="Síguenos en Facebook">
+									<i class="icon-facebook" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/choe_fragancias_frutales/" 
+								   target="_blank" 
+								   rel="noopener noreferrer"
+								   aria-label="Síguenos en Instagram">
+									<i class="icon-insta" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://wa.me/573103624742?text=Bienvenido%20a%20choe.com,%20estamos%20aquí%20para%20ayudarte.%20¿En%20qué%20puedo%20informarte%20sobre%20nuestros%20productos%20o%20nuestra%20marca?" 
+								   target="_blank"
+								   rel="noopener noreferrer" 
+								   aria-label="Contáctanos por WhatsApp">
+									<i class="bi bi-whatsapp" aria-hidden="true"></i>
+								</a>
+							</li>
 						</ul>
 					</div>
-					<div class="footer-top__logo">
-						<a href="index.html">
-						<img src="img/choe-logo.png"  style="width:114px; height:50px"
-							class="js-img" alt="Logo Choe">
+
+					<!-- Logo Section -->
+					<div class="footer-top__logo" itemscope itemtype="https://schema.org/Organization">
+						<a href="index.html" aria-label="Ir a página principal">
+							<img src="build/assets/img/logo.png"
+								 alt="Logo Choe" 
+								 
+								 loading="lazy"
+								 itemprop="logo">
 						</a>
 					</div>
+
+					<!-- Payment Methods -->
 					<div class="footer-top__payments">
-						<span>Metodos de pago</span>
-						<ul>
-							<li><img src="img/daviplata.jpg"
-									class="js-img" alt="Daviplata"></li>
-							<li><img src="img/nequi.jpg"
-									class="js-img" alt="Nequi"></li>
-							<li><img src="img/efecty.jpg"
-									class="js-img" alt=""></li>
-							<li><img src="img/transfiya.jpg"
-									class="js-img" alt="Transfiya"></li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer-nav">
-					<div class="footer-nav__col">
-						<span class="footer-nav__col-title">Más Sobre Choe</span>
-						<ul>
-							<li><a href="about.html">Sobre Choe</a></li>
-							<li><a href="categories.html">Productos</a></li>
-							<li><a href="faq.html">Preguntas Frecuentes</a></li>
-							<li><a href="contacts.html">Contacto</a></li>
-						</ul>
-					</div>
-					<div class="footer-nav__col">
-						<span class="footer-nav__col-title">Categorias</span>
-						<ul>
-                            <li><a href="categories.html#difusores">Entorno</a></li>
-                            <li><a href="categories.html#corporal">Corporal</a></li>
-                            <li><a href="categories.html#capilar">Capilar</a></li>
-                            <li><a href="categories.html#vehicular">Vehicular</a></li>
-                        </ul>
-					</div>
-					<!-- <div class="footer-nav__col">
-						<span class="footer-nav__col-title">Useful links</span>
-						<ul>
-							<li><a href="#">Careers</a></li>
-							<li><a href="#">Privacy policy</a></li>
-							<li><a href="#">Terms of use</a></li>
-							<li><a href="#">Support</a></li>
-							<li><a href="#">Shipping details</a></li>
-							<li><a href="#">Information</a></li>
-						</ul>
-					</div> -->
-					<div class="footer-nav__col">
-						<span class="footer-nav__col-title">Contacto</span>
-						<ul>
-							<li><i class="icon-map-pin"></i> Villavicencio - Colombia</li>
+						<h2 class="footer-heading">Métodos de pago aceptados</h2>
+						<ul class="payment-list" role="list">
 							<li>
-								<i class="icon-smartphone"></i>
+								<img src="build/assets/img/daviplata.jpg"
+									 alt="Pago con Daviplata"
+									 loading="lazy"
+									 width="67" 
+									 height="40">
+							</li>
+							<li>
+								<img src="build/assets/img/nequi.jpg"
+									 alt="Pago con Nequi"
+									 loading="lazy"
+									 width="67"
+									 height="40">
+							</li>
+							<li>
+								<img src="build/assets/img/efecty.jpg"
+									 alt="Pago en Efecty"
+									 loading="lazy"
+									 width="67"
+									 height="40">
+							</li>
+							<li>
+								<img src="build/assets/img/transfiya.jpg"
+									 alt="Pago con Transfiya"
+									 loading="lazy"
+									 width="67"
+									 height="40">
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- Navigation Sections -->
+				<nav class="footer-nav" aria-label="Enlaces del pie de página">
+					<div class="footer-nav__col">
+						<h2 class="footer-nav__col-title">Más Sobre Choe</h2>
+						<ul role="list">
+							<li><a href="about.html" aria-label="Conoce más sobre Choe">Sobre Choe</a></li>
+							<li><a href="categories.html" aria-label="Ver todos nuestros productos">Productos</a></li>
+							<li><a href="faq.html" aria-label="Consulta preguntas frecuentes">Preguntas Frecuentes</a></li>
+							<li><a href="contacts.html" aria-label="Contáctanos">Contacto</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-nav__col">
+						<h2 class="footer-nav__col-title">Categorías</h2>
+						<ul role="list">
+							<li><a href="categories.html#difusores" aria-label="Ver productos de entorno">Entorno</a></li>
+							<li><a href="categories.html#corporal" aria-label="Ver productos corporales">Corporal</a></li>
+							<li><a href="categories.html#capilar" aria-label="Ver productos capilares">Capilar</a></li>
+							<li><a href="categories.html#vehicular" aria-label="Ver productos vehiculares">Vehicular</a></li>
+						</ul>
+					</div>
+
+					<!-- Contact Information -->
+					<div class="footer-nav__col" itemscope itemtype="https://schema.org/LocalBusiness"">
+						<h2 class="footer-nav__col-title">Contacto</h2>
+						<ul role="list">
+							<li>
+								<i class="icon-map-pin" aria-hidden="true"></i>
+								<span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+									<span itemprop="addressLocality">Villavicencio</span> - 
+									<span itemprop="addressCountry">Colombia</span>
+								</span>
+							</li>
+							<li>
+								<i class="icon-smartphone" aria-hidden="true"></i>
 								<div class="footer-nav__col-phones">
-									<a href="https://wa.me/573103624742?text=Bienvenido%20a%20choe.com,%20estamos%20aquí%20para%20ayudarte.%20¿En%20qué%20puedo%20informarte%20sobre%20nuestros%20productos%20o%20nuestra%20marca?">+57 3103624742</a>
-									
+									<a href="https://wa.me/573103624742" 
+									   itemprop="telephone"
+									   aria-label="Llamar al +57 3103624742">
+										+57 3103624742
+									</a>
 								</div>
 							</li>
-							<li><i class="icon-mail"></i><a href="mailto:info@choe.com">info@choe.com</a></li>
+							<li>
+								<i class="icon-mail" aria-hidden="true"></i>
+								<a href="mailto:info@choe.com" 
+								   itemprop="email"
+								   aria-label="Enviar correo a info@choe.com">
+									info@choe.com
+								</a>
+							</li>
 						</ul>
 					</div>
-				</div>
-				<div class="footer-copy">
-					<span>&copy; Todos los derechos reservados. Choe 2024</span>
+				</nav>
+
+				<!-- Copyright -->
+				<div class="footer-copy" role="contentinfo">
+					<p>&copy; <time datetime="2025">2025</time> Todos los derechos reservados. <span>Choe</span> </p>
 				</div>
 			</div>
 		</footer>
 
-		<!-- FOOTER EOF   -->
+		<!--! FOOTER -->
 
 
 
