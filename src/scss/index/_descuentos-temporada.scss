@@ -2,7 +2,7 @@
 $transicion: all 0.3s ease;
 
 .top-categories {
-    padding: 1rem 0;
+    padding: 2rem 0;
     
     &__text {
       max-width: 800px;
@@ -10,6 +10,7 @@ $transicion: all 0.3s ease;
       text-align: center;
       
       .saint-text {
+        font-family: "Pistoletto-Black" Arial, Helvetica, sans-serif;
         color: #d05278;
         font-size: 2.2rem;
         margin-bottom: 1rem;
@@ -17,13 +18,16 @@ $transicion: all 0.3s ease;
       }
       
       h2 {
-        font-size: 2rem;
+        font-family: "Merienda", cursive, Arial, Helvetica, sans-serif;
+        font-size: 38px;
         margin-bottom: 1.5rem;
       }
       
       p {
-        font-size: 1.1rem;
+        font-family: "Merienda", cursive, Arial, Helvetica, sans-serif;
+        font-size: 20px;
         line-height: 1.6;
+        color: #666666;
       }
     }
 
@@ -135,15 +139,15 @@ $transicion: all 0.3s ease;
 
         &__text {
             .saint-text {
-              font-size: 2.2rem;
+              font-size: 36px;
             }
             
             h2 {
-              font-size: 2.4rem;
+              font-size: 38px;
             }
             
             p {
-              font-size: 1rem;
+              font-size: 20xp;
             }
           }
 
@@ -174,15 +178,21 @@ $transicion: all 0.3s ease;
   // Small tablets
   @media (max-width: 768px) {
     .top-categories {
-        &__text {
-            .saint-text {
-              font-size: 1.8rem;
-            }
-            
-            h2 {
-              font-size: 2rem;
-            }
-          }
+      &__text {
+        .saint-text {
+          font-size: 30px;
+        }
+        
+        h2 {
+          font-size: 32px;
+        }
+        
+        p {
+          font-size: 16px;
+          margin: 0 auto;
+          max-width: 80%;
+        }
+      }
 
           .swiper {
             &-button-next,
@@ -222,16 +232,19 @@ $transicion: all 0.3s ease;
 
         &__text {
             .saint-text {
-              font-size: 1.5rem;
+              font-size: 22px;
             }
             
             h2 {
-              font-size: 1.8rem;
+              font-size: 24px;
+              max-width: 80%;
+              margin: 0 auto;
             }
             
             p {
               font-size: 0.9rem;
               line-height: 1.5;
+              margin-top: 12px;
             }
           }
 

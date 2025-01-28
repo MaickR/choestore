@@ -180,143 +180,158 @@ NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="build/assets/img/p
 NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="build/assets/img/productos/Destacados/vehicular/helmet-frutos-rojos.jpg" alt="Helmet con aroma a Frutos rojos" loading="lazy" class="c-product-img">||c-product-img|1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
 NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="build/assets/img/productos/Destacados/vehicular/helmet-frutos-rojos.jpg" alt="Helmet con aroma a Frutos rojos" loading="lazy" class="c-product-img">||c-product-img|1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
 NOTICE|WCAG2A.Principle3.Guideline3_2.3_2_1.G107|<button class="promo-btn">Ver más</button>||promo-btn|1195|7|Check that a change of context does not occur when this input field receives focus.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img class="promo-img" src="images/mar.jpg" alt="Vista panorámica del mar" loading="lazy" width="800" height="600">||promo-img|1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img class="promo-img" src="images/mar.jpg" alt="Vista panorámica del mar" loading="lazy" width="800" height="600">||promo-img|1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-WARNING|WCAG2A.Principle1.Guideline1_3.1_3_1_A.G141|<h4 class="icons-title">Natural</h4>||icons-title|1267|8|The heading structure is not logically nested. This h4 element should be an h3 to be properly nested.
-WARNING|WCAG2A.Principle1.Guideline1_3.1_3_1.H48|<div class="top-categories__items">
-
-					<a href="pages/black-friday/difusores-2-3.html" target="_blank" class="top-categories__item">
-						<img src="img/productos/Black-friday/difusor2-3.jpg" class="js-img" alt="Pague 2 lleve 3 difusores">
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img class="promo-img" src="build/assets/img/choe-promocional.jpg" alt="Vista panorámica del mar" loading="lazy" width="800" height="600">||promo-img|1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img class="promo-img" src="build/assets/img/choe-promocional.jpg" alt="Vista panorámica del mar" loading="lazy" width="800" height="600">||promo-img|1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="pages/black-friday/difusores-2-3.html" class="top-categories__item" aria-label="Promoción: Pague 2 lleve 3 en difusores">
+						<img src="img/productos/Black-friday/difusor2-3.jpg" alt="Promoción especial en difusores" loading="lazy">
 						<div class="top-categories__item-hover">
-							<!-- <h5>Corporal</h5> -->
-							<span>2 * 3 en difusores</span>
-							<i class="icon-arrow-lg"></i>
+						  <span>¡3 Difusores al Precio de 2!</span>
+						  <i class="icon-arrow-lg" aria-hidden="true"></i>
 						</div>
-					</a>
-
-					<!-- Categoría Entornos -->
-					<a href="pages/black-friday/aceite-helmet.html" target="_blank" class="top-categories__item">
-						<img src="img/productos/Black-friday/aceite+helmet.jpg" class="js-img" alt="Promocion aceite + helmet">
-						<div class="top-categories__item-hover">
-							<!-- <h5>Aceite + Helmet</h5> -->
-							<span>aceite + helmet</span>
-							<i class="icon-arrow-lg"></i>
-						</div>
-					</a>
-					
-					<!-- Categoría Corporal -->
-					<a href="pages/black-friday/difusor+helmet.html" target="_blank" class="top-categories__item">
-						<img src="img/productos/Black-friday/difusor+helmet.jpg" class="js-img" alt="Promocion de difusor con helmet">
-						<div class="top-categories__item-hover">
-							<!-- <h5>Corporal</h5> -->
-							<span>difusor + helmet</span>
-							<i class="icon-arrow-lg"></i>
-						</div>
-					</a>
-					
-					<!-- Categoría Capilar -->
-					<a href="pages/black-friday/splash-aceite.html" target="_blank" class="top-categories__item">
-						<img src="img/productos/Black-friday/splash+aceite.jpg" class="js-img" alt="Promocion splash + aceite">
-						<div class="top-categories__item-hover">
-							<!-- <h5>Capilar</h5> -->
-							<span>Splash + Aceite</span>
-							<i class="icon-arrow-lg"></i>
-						</div>
-					</a>
-					
-					<!-- Categoría Vehicular -->
-					<a href="pages/black-friday/splash-difusor.html" target="_blank" class="top-categories__item">
-						<img src="img/productos/Black-friday/splash+difusor.jpg" class="js-img" alt="Promocion en splash - difusor">
-						<div class="top-categories__item-hover">
-							<!-- <h5>Vehicular</h5> -->
-							<span>Splash + difusor</span>
-							<i class="icon-arrow-lg"></i>
-						</div>
-					</a>
-				</div>||top-categories__items|1|0|If this element contains a navigation section, it is recommended that it be marked up as a list.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="pages/black-friday/difusores-2-3.html" target="_blank" class="top-categories__item">
-						<img src="img/productos/Black-friday/difusor2-3.jpg" class="js-img" alt="Pague 2 lleve 3 difusores">
-						<div class="top-categories__item-hover">
-							<!-- <h5>Corporal</h5> -->
-							<span>2 * 3 en difusores</span>
-							<i class="icon-arrow-lg"></i>
-						</div>
-					</a>||top-categories__item|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="img/productos/Black-friday/difusor2-3.jpg" class="js-img" alt="Pague 2 lleve 3 difusores">||js-img|1303|6|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="img/productos/Black-friday/difusor2-3.jpg" class="js-img" alt="Pague 2 lleve 3 difusores">||js-img|1303|6|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="pages/black-friday/aceite-helmet.html" target="_blank" class="top-categories__item">
-						<img src="img/productos/Black-friday/aceite+helmet.jpg" class="js-img" alt="Promocion aceite + helmet">
-						<div class="top-categories__item-hover">
-							<!-- <h5>Aceite + Helmet</h5> -->
-							<span>aceite + helmet</span>
-							<i class="icon-arrow-lg"></i>
-						</div>
-					</a>||top-categories__item|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="img/productos/Black-friday/aceite+helmet.jpg" class="js-img" alt="Promocion aceite + helmet">||js-img|1313|6|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="img/productos/Black-friday/aceite+helmet.jpg" class="js-img" alt="Promocion aceite + helmet">||js-img|1313|6|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="pages/black-friday/difusor+helmet.html" target="_blank" class="top-categories__item">
-						<img src="img/productos/Black-friday/difusor+helmet.jpg" class="js-img" alt="Promocion de difusor con helmet">
-						<div class="top-categories__item-hover">
-							<!-- <h5>Corporal</h5> -->
-							<span>difusor + helmet</span>
-							<i class="icon-arrow-lg"></i>
-						</div>
-					</a>||top-categories__item|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="img/productos/Black-friday/difusor+helmet.jpg" class="js-img" alt="Promocion de difusor con helmet">||js-img|1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="img/productos/Black-friday/difusor+helmet.jpg" class="js-img" alt="Promocion de difusor con helmet">||js-img|1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="pages/black-friday/splash-aceite.html" target="_blank" class="top-categories__item">
-						<img src="img/productos/Black-friday/splash+aceite.jpg" class="js-img" alt="Promocion splash + aceite">
-						<div class="top-categories__item-hover">
-							<!-- <h5>Capilar</h5> -->
-							<span>Splash + Aceite</span>
-							<i class="icon-arrow-lg"></i>
-						</div>
-					</a>||top-categories__item|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="img/productos/Black-friday/splash+aceite.jpg" class="js-img" alt="Promocion splash + aceite">||js-img|1333|6|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="img/productos/Black-friday/splash+aceite.jpg" class="js-img" alt="Promocion splash + aceite">||js-img|1333|6|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="pages/black-friday/splash-difusor.html" target="_blank" class="top-categories__item">
-						<img src="img/productos/Black-friday/splash+difusor.jpg" class="js-img" alt="Promocion en splash - difusor">
-						<div class="top-categories__item-hover">
-							<!-- <h5>Vehicular</h5> -->
-							<span>Splash + difusor</span>
-							<i class="icon-arrow-lg"></i>
-						</div>
-					</a>||top-categories__item|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="img/productos/Black-friday/splash+difusor.jpg" class="js-img" alt="Promocion en splash - difusor">||js-img|1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="img/productos/Black-friday/splash+difusor.jpg" class="js-img" alt="Promocion en splash - difusor">||js-img|1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-WARNING|WCAG2A.Principle1.Guideline1_3.1_3_1.H42|<div class="sus-up"><i class="bi bi-arrow-bar-up"></i></div>||sus-up|1425|5|Heading markup should be used if this content is intended as a heading.
-WARNING|WCAG2A.Principle1.Guideline1_3.1_3_1.H42|<div class="sus-down"><i class="bi bi-arrow-bar-down"></i></div>||sus-down|1426|5|Heading markup should be used if this content is intended as a heading.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="subscribe.html" class="btn sus-btn" target="_blank">¡Suscríbete ahora!</a>||btn sus-btn|1439|7|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="img/choe-suscripcion.jpg" alt="Suscripción Choe">|||1448|7|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="img/choe-suscripcion.jpg" alt="Suscripción Choe">|||1448|7|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="img/choe-helmet.png" alt="Ventajas Exclusivas Choe">|||1451|7|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="img/choe-helmet.png" alt="Ventajas Exclusivas Choe">|||1451|7|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-ERROR|WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent|<a href="https://web.facebook.com/sandra.quitian/" target="_blank"><i class="icon-facebook"></i></a>|||1737|11|Anchor element found with a valid href attribute, but no link content has been supplied.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://web.facebook.com/sandra.quitian/" target="_blank"><i class="icon-facebook"></i></a>|||1737|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-ERROR|WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent|<a href="https://www.instagram.com/choe_fragancias_frutales/" target="_blank"><i class="icon-insta"></i></a>|||1739|11|Anchor element found with a valid href attribute, but no link content has been supplied.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://www.instagram.com/choe_fragancias_frutales/" target="_blank"><i class="icon-insta"></i></a>|||1739|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-ERROR|WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent|<a href="https://wa.me/573103624742?text=Bienvenido%20a%20choe.com,%20estamos%20aquí%20para%20ayudarte.%20¿En%20qué%20puedo%20informarte%20sobre%20nuestros%20productos%20o%20nuestra%20marca?" target="_blank"><i class="bi bi-whatsapp"></i></a>|||1740|11|Anchor element found with a valid href attribute, but no link content has been supplied.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://wa.me/573103624742?text=Bienvenido%20a%20choe.com,%20estamos%20aquí%20para%20ayudarte.%20¿En%20qué%20puedo%20informarte%20sobre%20nuestros%20productos%20o%20nuestra%20marca?" target="_blank"><i class="bi bi-whatsapp"></i></a>|||1740|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="index.html">
-						<img src="img/choe-logo.png" style="width:114px; height:50px" class="js-img" alt="Logo Choe">
+					  </a>||top-categories__item|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="img/productos/Black-friday/difusor2-3.jpg" alt="Promoción especial en difusores" loading="lazy">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="img/productos/Black-friday/difusor2-3.jpg" alt="Promoción especial en difusores" loading="lazy">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="pages/black-friday/difusores-2-3.html" class="top-categories__item" aria-label="Promoción: Pague 2 lleve 3 en difusores">
+						  <img src="img/productos/Black-friday/difusor2-3.jpg" alt="Promoción especial en difusores" loading="lazy">
+						  <div class="top-categories__item-hover">
+							<span>¡3 Difusores al Precio de 2!</span>
+							<i class="icon-arrow-lg" aria-hidden="true"></i>
+						  </div>
+						</a>||top-categories__item|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="img/productos/Black-friday/difusor2-3.jpg" alt="Promoción especial en difusores" loading="lazy">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="img/productos/Black-friday/difusor2-3.jpg" alt="Promoción especial en difusores" loading="lazy">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="pages/black-friday/difusores-2-3.html" class="top-categories__item" aria-label="Promoción: Pague 2 lleve 3 en difusores">
+						  <img src="img/productos/Black-friday/difusor2-3.jpg" alt="Promoción especial en difusores" loading="lazy">
+						  <div class="top-categories__item-hover">
+							<span>¡3 Difusores al Precio de 2!</span>
+							<i class="icon-arrow-lg" aria-hidden="true"></i>
+						  </div>
+						</a>||top-categories__item|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="img/productos/Black-friday/difusor2-3.jpg" alt="Promoción especial en difusores" loading="lazy">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="img/productos/Black-friday/difusor2-3.jpg" alt="Promoción especial en difusores" loading="lazy">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="pages/black-friday/difusores-2-3.html" class="top-categories__item" aria-label="Promoción: Pague 2 lleve 3 en difusores">
+						  <img src="img/productos/Black-friday/difusor2-3.jpg" alt="Promoción especial en difusores" loading="lazy">
+						  <div class="top-categories__item-hover">
+							<span>¡3 Difusores al Precio de 2!</span>
+							<i class="icon-arrow-lg" aria-hidden="true"></i>
+						  </div>
+						</a>||top-categories__item|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="img/productos/Black-friday/difusor2-3.jpg" alt="Promoción especial en difusores" loading="lazy">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="img/productos/Black-friday/difusor2-3.jpg" alt="Promoción especial en difusores" loading="lazy">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="pages/black-friday/difusores-2-3.html" class="top-categories__item" aria-label="Promoción: Pague 2 lleve 3 en difusores">
+						  <img src="img/productos/Black-friday/difusor2-3.jpg" alt="Promoción especial en difusores" loading="lazy">
+						  <div class="top-categories__item-hover">
+							<span>¡3 Difusores al Precio de 2!</span>
+							<i class="icon-arrow-lg" aria-hidden="true"></i>
+						  </div>
+						</a>||top-categories__item|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="img/productos/Black-friday/difusor2-3.jpg" alt="Promoción especial en difusores" loading="lazy">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="img/productos/Black-friday/difusor2-3.jpg" alt="Promoción especial en difusores" loading="lazy">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://www.instagram.com/p/DFGltrghcYm/" class="insta-photo" target="_blank" rel="noopener noreferrer" aria-label="Ver publicación de Instagram sobre San Valentin">
+                    <picture>
+                        <source type="image/avif" srcset="build/assets/img/avif/insta/insta-01.avif">
+                        <source type="image/webp" srcset="build/assets/img/webp/insta/insta-01.webp">
+                        <img src="build/assets/img/insta/insta-01.jpg" alt="Este San Valentín, sorprende a las niñas y mujeres especiales de tu vida" loading="lazy" width="320" height="320" decoding="async">
+                    </picture>
+                    <div class="insta-photo__hover">
+                        <i class="bi bi-instagram" aria-hidden="true" role="presentation"></i>
+                    </div>
+                </a>||insta-photo|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="build/assets/img/insta/insta-01.jpg" alt="Este San Valentín, sorprende a las niñas y mujeres especiales de tu vida" loading="lazy" width="320" height="320" decoding="async">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="build/assets/img/insta/insta-01.jpg" alt="Este San Valentín, sorprende a las niñas y mujeres especiales de tu vida" loading="lazy" width="320" height="320" decoding="async">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://www.instagram.com/p/DDxOyB6RfkN/" class="insta-photo" target="_blank" rel="noopener noreferrer" aria-label="Ver publicación de Instagram sobre Bolsa navideña Choe">
+                    <picture>
+                        <source type="image/avif" srcset="build/assets/img/avif/insta/insta-02.avif">
+                        <source type="image/webp" srcset="build/assets/img/webp/insta/insta-02.webp">
+                        <img src="build/assets/img/insta/insta-02.jpg" alt="Esta Navidad regala experiencias únicas con nuestra exclusiva bolsa navideña Choe" loading="lazy" width="320" height="320" decoding="async">
+                    </picture>
+                    <div class="insta-photo__hover">
+                        <i class="bi bi-instagram" aria-hidden="true" role="presentation"></i>
+                    </div>
+                </a>||insta-photo|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="build/assets/img/insta/insta-02.jpg" alt="Esta Navidad regala experiencias únicas con nuestra exclusiva bolsa navideña Choe" loading="lazy" width="320" height="320" decoding="async">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="build/assets/img/insta/insta-02.jpg" alt="Esta Navidad regala experiencias únicas con nuestra exclusiva bolsa navideña Choe" loading="lazy" width="320" height="320" decoding="async">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://www.instagram.com/p/DCsHDK_RVGu/" class="insta-photo" target="_blank" rel="noopener noreferrer" aria-label="Ver publicación de Instagram sobre aceite de coco artesanal">
+                    <picture>
+                        <source type="image/avif" srcset="build/assets/img/avif/insta/insta-03.avif">
+                        <source type="image/webp" srcset="build/assets/img/webp/insta/insta-03.webp">
+                        <img src="build/assets/img/insta/insta-03.jpg" alt="Aceite de Coco Artesanal para la Piel" loading="lazy" width="320" height="320" decoding="async">
+                    </picture>
+                    <div class="insta-photo__hover">
+                        <i class="bi bi-instagram" aria-hidden="true" role="presentation"></i>
+                    </div>
+                </a>||insta-photo|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="build/assets/img/insta/insta-03.jpg" alt="Aceite de Coco Artesanal para la Piel" loading="lazy" width="320" height="320" decoding="async">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="build/assets/img/insta/insta-03.jpg" alt="Aceite de Coco Artesanal para la Piel" loading="lazy" width="320" height="320" decoding="async">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://www.instagram.com/p/DCpy6_qx_xD/" class="insta-photo" target="_blank" rel="noopener noreferrer" aria-label="Ver publicación de Instagram sobre Aceite Corporal de Uva - Artesanal y Natural">
+                    <picture>
+                        <source type="image/avif" srcset="build/assets/img/avif/insta/insta-04.avif">
+                        <source type="image/webp" srcset="build/assets/img/webp/insta/insta-04.webp">
+                        <img src="build/assets/img/insta/insta-04.jpg" alt="Aceite Corporal de Uva - Artesanal y Natural" loading="lazy" width="320" height="320" decoding="async">
+                    </picture>
+                    <div class="insta-photo__hover">
+                        <i class="bi bi-instagram" aria-hidden="true" role="presentation"></i>
+                    </div>
+                </a>||insta-photo|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="build/assets/img/insta/insta-04.jpg" alt="Aceite Corporal de Uva - Artesanal y Natural" loading="lazy" width="320" height="320" decoding="async">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="build/assets/img/insta/insta-04.jpg" alt="Aceite Corporal de Uva - Artesanal y Natural" loading="lazy" width="320" height="320" decoding="async">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://www.instagram.com/p/DCj4rN_Rj4d/" class="insta-photo" target="_blank" rel="noopener noreferrer" aria-label="Ver publicación de Instagram sobre fragancias vehiculares">
+                    <picture>
+                        <source type="image/avif" srcset="build/assets/img/avif/insta/insta-05.avif">
+                        <source type="image/webp" srcset="build/assets/img/webp/insta/insta-05.webp">
+                        <img src="build/assets/img/insta/insta-05.jpg" alt="Nuestro desodorante para casco elimina los malos olores" loading="lazy" width="320" height="320" decoding="async">
+                    </picture>
+                    <div class="insta-photo__hover">
+                        <i class="bi bi-instagram" aria-hidden="true" role="presentation"></i>
+                    </div>
+                </a>||insta-photo|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="build/assets/img/insta/insta-05.jpg" alt="Nuestro desodorante para casco elimina los malos olores" loading="lazy" width="320" height="320" decoding="async">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="build/assets/img/insta/insta-05.jpg" alt="Nuestro desodorante para casco elimina los malos olores" loading="lazy" width="320" height="320" decoding="async">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://www.instagram.com/p/DBU4wpRRnNW/" class="insta-photo" target="_blank" rel="noopener noreferrer" aria-label="Ver publicación de Instagram sobre difusores de entorno">
+                    <picture>
+                        <source type="image/avif" srcset="build/assets/img/avif/insta/insta-06.avif">
+                        <source type="image/webp" srcset="build/assets/img/webp/insta/insta-06.webp">
+                        <img src="build/assets/img/insta/insta-06.jpg" alt="Difusor de entornos con fragancias naturales" loading="lazy" width="320" height="320" decoding="async">
+                    </picture>
+                    <div class="insta-photo__hover">
+                        <i class="bi bi-instagram" aria-hidden="true" role="presentation"></i>
+                    </div>
+                </a>||insta-photo|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="build/assets/img/insta/insta-06.jpg" alt="Difusor de entornos con fragancias naturales" loading="lazy" width="320" height="320" decoding="async">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="build/assets/img/insta/insta-06.jpg" alt="Difusor de entornos con fragancias naturales" loading="lazy" width="320" height="320" decoding="async">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://web.facebook.com/sandra.quitian/" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Facebook">
+									<i class="icon-facebook" aria-hidden="true"></i>
+								</a>|||1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://www.instagram.com/choe_fragancias_frutales/" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Instagram">
+									<i class="icon-insta" aria-hidden="true"></i>
+								</a>|||1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://wa.me/573103624742?text=Bienvenido%20a%20choe.com,%20estamos%20aquí%20para%20ayudarte.%20¿En%20qué%20puedo%20informarte%20sobre%20nuestros%20productos%20o%20nuestra%20marca?" target="_blank" rel="noopener noreferrer" aria-label="Contáctanos por WhatsApp">
+									<i class="bi bi-whatsapp" aria-hidden="true"></i>
+								</a>|||1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="index.html" aria-label="Ir a página principal">
+							<img src="build/assets/img/logo.png" alt="Logo Choe" loading="lazy" itemprop="logo">
 						</a>|||1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="img/choe-logo.png" style="width:114px; height:50px" class="js-img" alt="Logo Choe">||js-img|1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="img/choe-logo.png" style="width:114px; height:50px" class="js-img" alt="Logo Choe">||js-img|1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="img/daviplata.jpg" class="js-img" alt="Daviplata">||js-img|1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="img/daviplata.jpg" class="js-img" alt="Daviplata">||js-img|1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="img/nequi.jpg" class="js-img" alt="Nequi">||js-img|1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="img/nequi.jpg" class="js-img" alt="Nequi">||js-img|1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-WARNING|WCAG2A.Principle1.Guideline1_1.1_1_1.H67.2|<img src="img/efecty.jpg" class="js-img" alt="">||js-img|1|0|Img element is marked so that it is ignored by Assistive Technology.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="img/efecty.jpg" class="js-img" alt="">||js-img|1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="img/transfiya.jpg" class="js-img" alt="Transfiya">||js-img|1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="img/transfiya.jpg" class="js-img" alt="Transfiya">||js-img|1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="about.html">Sobre Choe</a>|||1767|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="categories.html">Productos</a>|||1768|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="faq.html">Preguntas Frecuentes</a>|||194|8|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="contacts.html">Contacto</a>|||1770|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="categories.html#difusores">Entorno</a>|||1776|32|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="categories.html#corporal">Corporal</a>|||1777|32|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="categories.html#capilar">Capilar</a>|||1778|32|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="categories.html#vehicular">Vehicular</a>|||1779|32|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://wa.me/573103624742?text=Bienvenido%20a%20choe.com,%20estamos%20aquí%20para%20ayudarte.%20¿En%20qué%20puedo%20informarte%20sobre%20nuestros%20productos%20o%20nuestra%20marca?">+57 3103624742</a>|||1800|9|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="mailto:info@choe.com">info@choe.com</a>|||1804|36|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="build/assets/img/logo.png" alt="Logo Choe" loading="lazy" itemprop="logo">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="build/assets/img/logo.png" alt="Logo Choe" loading="lazy" itemprop="logo">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="build/assets/img/daviplata.jpg" alt="Pago con Daviplata" loading="lazy" width="67" height="40">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="build/assets/img/daviplata.jpg" alt="Pago con Daviplata" loading="lazy" width="67" height="40">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="build/assets/img/nequi.jpg" alt="Pago con Nequi" loading="lazy" width="67" height="40">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="build/assets/img/nequi.jpg" alt="Pago con Nequi" loading="lazy" width="67" height="40">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="build/assets/img/efecty.jpg" alt="Pago en Efecty" loading="lazy" width="67" height="40">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="build/assets/img/efecty.jpg" alt="Pago en Efecty" loading="lazy" width="67" height="40">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="build/assets/img/transfiya.jpg" alt="Pago con Transfiya" loading="lazy" width="67" height="40">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="build/assets/img/transfiya.jpg" alt="Pago con Transfiya" loading="lazy" width="67" height="40">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="about.html" aria-label="Conoce más sobre Choe">Sobre Choe</a>|||1722|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="categories.html" aria-label="Ver todos nuestros productos">Productos</a>|||1723|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="faq.html" aria-label="Consulta preguntas frecuentes">Preguntas Frecuentes</a>|||1724|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="contacts.html" aria-label="Contáctanos">Contacto</a>|||1725|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="categories.html#difusores" aria-label="Ver productos de entorno">Entorno</a>|||1732|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="categories.html#corporal" aria-label="Ver productos corporales">Corporal</a>|||1733|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="categories.html#capilar" aria-label="Ver productos capilares">Capilar</a>|||1734|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="categories.html#vehicular" aria-label="Ver productos vehiculares">Vehicular</a>|||1735|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://wa.me/573103624742" itemprop="telephone" aria-label="Llamar al +57 3103624742">
+										+57 3103624742
+									</a>|||1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="mailto:info@choe.com" itemprop="email" aria-label="Enviar correo a info@choe.com">
+									info@choe.com
+								</a>|||1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.

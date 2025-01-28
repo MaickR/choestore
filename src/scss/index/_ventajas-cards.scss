@@ -18,8 +18,9 @@ $transition: all 0.3s ease;
 }
 
 // Title Styles
-.saint-title {
-  font-size: 3rem;
+.advantages-saint-title {
+  font-family: "Merienda", cursive;
+  font-size: 38px;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 3rem;
@@ -31,6 +32,8 @@ $transition: all 0.3s ease;
     color: $primary-color;
     margin-left: 0.5rem;
   }
+
+  
 }
 
 // Main Section
@@ -82,6 +85,28 @@ $transition: all 0.3s ease;
           width: 56px;
           display: block;
           margin: 0 auto;
+          background-image: url(../assets/img/natural.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        &.ico-premium {
+          height: 57px;
+          width: 56px;
+          display: block;
+          margin: 0 auto;
+          background-image: url(../assets/img/premium.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        &.ico-artesanal {
+          height: 57px;
+          width: 56px;
+          display: block;
+          margin: 0 auto;
           background-image: url(../assets/img/artesanal.svg);
           background-size: contain;
           background-repeat: no-repeat;
@@ -95,6 +120,7 @@ $transition: all 0.3s ease;
 // Text Styles
 .icons {
   &-title {
+    font-family: "Pistoletto-Black", Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     color: $title-color;
     margin-bottom: 1rem;
@@ -139,7 +165,7 @@ $transition: all 0.3s ease;
 }
 
 @media (max-width: 768px) {
-  .saint-title {
+  .advantages-saint-title {
     font-size: 2rem;
     margin-bottom: 2rem;
   }
@@ -164,13 +190,13 @@ $transition: all 0.3s ease;
   }
 
   .icons-title {
-    font-size: 1.25rem;
+    font-size: 24px;
   }
 }
 
 @media (max-width: 480px) {
-  .saint-title {
-    font-size: 1.75rem;
+  .advantages-saint-title {
+    font-size: 24px;
     margin-bottom: 1.5rem;
   }
 

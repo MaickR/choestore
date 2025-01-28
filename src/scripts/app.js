@@ -14,95 +14,90 @@ window.addEventListener('load', function () {
   }
 });
 
-// Evento para detectar el tamaño del viewport dinámicamente (si es necesario)
-window.addEventListener('resize', () => {
-  const viewportWidth = window.innerWidth;
-  const viewportHeight = window.innerHeight;
-  console.log(`Viewport actualizado: Ancho ${viewportWidth}px, Alto ${viewportHeight}px`);
-});
-
 //? AJUSTES BARRA DE NAVEGACION
 
 document.addEventListener('DOMContentLoaded', () => {
-  const header = document.querySelector('header');
-  const burger = document.querySelector('.c-header__burger');
-  const menu = document.querySelector('.c-header__menu');
-  const closeButton = menu.querySelector('.c-header__close');
+  // Cacheo de elementos DOM
+  const DOM = {
+    header: document.querySelector('header'),
+    burger: document.querySelector('.c-header__burger'),
+    menu: document.querySelector('.c-header__menu'),
+    closeButton: document.querySelector('.c-header__close'),
+    navbar: document.querySelector('.navbar'),
+    submenuIcons: document.querySelectorAll('.c-header__submenu-icon')
+  };
 
-  // Obtener la sección "trending" para saber a partir de qué punto se fija la barra de navegación
-  const trendingSection = document.querySelector('.trending');
+  // Configuración de comportamiento
+  const SCROLL_THRESHOLD = 1; // 1px de scroll para activar el efecto
+  let lastScrollPosition = 0;
 
-  // Verificamos si existe la sección trending
-  let trendingOffset = 0;
-  if (trendingSection) {
-    // Obtenemos la posición superior de la sección trending en relación al viewport
-    trendingOffset = trendingSection.getBoundingClientRect().top + window.scrollY;
-    // Esto nos da la distancia desde el top del documento hasta la sección trending
-  }
+  // Control de header fijo con throttling para mejor performance
+  const handleScroll = () => {
+    const currentScroll = window.scrollY;
+    
+    // Solo actualizar si hay cambio real en la posición
+    if (Math.abs(currentScroll - lastScrollPosition) < 5) return;
 
-  // Evento de scroll para controlar la barra de navegación
-  window.addEventListener('scroll', () => {
-    // Si la posición del scroll es mayor que la posición de la sección trending - un margen
-    // significa que el usuario ya pasó antes de entrar a trending, y queremos fijar el header.
-    // Puedes ajustar el margen según preferencia, aquí no se resta nada, se fija justo antes de trending.
-    if (window.scrollY > trendingOffset - 50) { 
-      // 50px antes de llegar a trending, ajusta este valor si quieres más distancia
-      if (!header.classList.contains('c-header-fixed')) {
-        header.classList.add('c-header-fixed');
-        const navbar = header.querySelector('.navbar');
-        // Forzar un reflow para que se apliquen las propiedades iniciales (opacity:0, translateY(-10px))
-        navbar.offsetHeight; 
-        // Ahora agregamos la clase c-animate para iniciar la transición a opacity:1, translateY(0)
-        navbar.classList.add('c-animate');
+    if (currentScroll > SCROLL_THRESHOLD) {
+      if (!DOM.header.classList.contains('c-header-fixed')) {
+        DOM.header.classList.add('c-header-fixed');
+        DOM.navbar.classList.add('c-animate');
       }
     } else {
-      // Si el scroll es menor que el offset de trending - 50, remover el estado fijo
-      if (header.classList.contains('c-header-fixed')) {
-        header.classList.remove('c-header-fixed');
-        const navbar = header.querySelector('.navbar');
-        navbar.classList.remove('c-animate');
-      }
+      DOM.header.classList.remove('c-header-fixed');
+      DOM.navbar.classList.remove('c-animate');
     }
+    lastScrollPosition = currentScroll;
+  };
+
+  // Evento de scroll con passive true y throttling
+  window.addEventListener('scroll', () => {
+    requestAnimationFrame(handleScroll);
+  }, { passive: true });
+
+  // Control del menú móvil
+  const toggleMenu = (state) => {
+    DOM.menu.classList.toggle('active', state);
+    DOM.burger.setAttribute('aria-expanded', state);
+    DOM.menu.setAttribute('aria-hidden', !state);
+  };
+
+  DOM.burger.addEventListener('click', () => {
+    toggleMenu(!DOM.menu.classList.contains('active'));
   });
 
-  // Mostrar/ocultar menú móvil al hacer clic en el ícono de menú
-  burger.addEventListener('click', () => {
-    menu.classList.toggle('active');
+  DOM.closeButton.addEventListener('click', () => {
+    toggleMenu(false);
   });
 
-  // Cerrar el menú móvil al hacer clic en la "X"
-  closeButton.addEventListener('click', () => {
-    menu.classList.remove('active');
-  });
-
-  // Cerrar el menú al hacer clic fuera del menú (en cualquier área del documento)
+  // Cerrar menú al hacer clic fuera
   document.addEventListener('click', (e) => {
-    if (!menu.contains(e.target) && !burger.contains(e.target)) {
-      menu.classList.remove('active');
+    if (!DOM.menu.contains(e.target) && !DOM.burger.contains(e.target)) {
+      toggleMenu(false);
     }
   });
 
-  // Control de submenús en el menú móvil
-  const submenuIcons = menu.querySelectorAll('.c-header__submenu-icon');
-  submenuIcons.forEach(icon => {
-    icon.addEventListener('click', () => {
-      const submenu = icon.closest('.dropdown').querySelector('.c-header__submenu-mobile');
-      if (submenu.style.display === 'block') {
-        submenu.style.display = 'none';
-        icon.textContent = '►'; // Cambiar el icono al estado cerrado
-      } else {
-        submenu.style.display = 'block';
-        icon.textContent = '▼'; // Cambiar el icono al estado abierto
-      }
+  // Control de submenús con accesibilidad mejorada
+  DOM.submenuIcons.forEach(icon => {
+    icon.addEventListener('click', (e) => {
+      const submenu = e.target.closest('.dropdown').querySelector('.c-header__submenu-mobile');
+      const isExpanded = submenu.style.display === 'block';
+      
+      submenu.style.display = isExpanded ? 'none' : 'block';
+      icon.setAttribute('aria-expanded', !isExpanded);
+      icon.textContent = isExpanded ? '►' : '▼';
     });
   });
 
-  // Cerrar menú móvil al hacer clic en un link dentro de él
-  menu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      menu.classList.remove('active');
-    });
+  // Cerrar menú al seleccionar opción
+  DOM.menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => toggleMenu(false));
   });
+
+  // Mejoras de accesibilidad iniciales
+  DOM.menu.setAttribute('aria-hidden', true);
+  DOM.burger.setAttribute('aria-haspopup', 'true');
+  DOM.burger.setAttribute('aria-expanded', 'false');
 });
 
 //! AJUSTES BARRA DE NAVEGACION
