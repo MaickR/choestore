@@ -1,0 +1,198 @@
+/***********************************************
+ * SCSS de la sección de información del producto
+ ***********************************************/
+ .product-information {
+    margin-top: 2rem;
+  
+    /* ------------ Navegación de pestañas ------------ */
+    .product-info-tabs {
+      display: flex;
+      border-bottom: 1px solid #ccc;
+  
+      .tab-link {
+        background: none;
+        border: none;
+        padding: 1rem 1.5rem;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: #eee;
+        }
+  
+        &.active {
+          color: #fff;
+          background-color: #f06292;
+        }
+      }
+    }
+  
+    /* ------------- Contenido de pestañas ------------- */
+    .tab-content {
+      padding: 1rem 0;
+  
+      &[hidden] {
+        display: none;
+      }
+  
+      /* --------- Distribución de reseñas y formulario --------- */
+      .reviews-layout {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+  
+        /* 
+          Ajusta la proporción de cada bloque según tus necesidades.
+          En pantallas grandes estarán lado a lado.
+        */
+        .review-list {
+          flex: 1 1 60%;
+        }
+  
+        .review-form {
+          flex: 1 1 35%;
+          background-color: #fde4ec;
+          padding: 2rem;
+          border-radius: 0.5rem;
+          position: relative;
+  
+          header {
+            margin-bottom: 1rem;
+  
+            h2 {
+              margin-bottom: 0.2rem;
+            }
+            p {
+              font-size: 0.9rem;
+              color: #555;
+            }
+          }
+  
+          form {
+            display: flex;
+            flex-direction: column;
+  
+            .star-rating {
+              display: flex;
+              justify-content: flex-start;
+              margin-bottom: 1rem;
+  
+              /* Ocultamos los inputs, mostrando solo las estrellas */
+              input[type='radio'] {
+                display: none;
+              }
+  
+              label {
+                font-size: 1.5rem;
+                color: #ccc;
+                cursor: pointer;
+                margin-right: 0.2rem;
+  
+                &:hover,
+                &:hover ~ label {
+                  color: #f06292;
+                }
+              }
+  
+              /* 
+                Si quisieras destacar visualmente la estrella seleccionada,
+                podrías usar un selector como:
+                input[type='radio']:checked ~ label {}
+                pero la lógica exacta varía según la marca que desees.
+              */
+            }
+  
+            label {
+              margin-bottom: 0.4rem;
+              font-weight: 600;
+            }
+  
+            input,
+            textarea {
+              margin-bottom: 1rem;
+              padding: 0.6rem;
+              border-radius: 4px;
+              border: 1px solid #ccc;
+            }
+  
+            button {
+              align-self: flex-start;
+              padding: 0.6rem 1.2rem;
+              background-color: #000;
+              color: #fff;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              font-weight: bold;
+              transition: background-color 0.3s;
+  
+              &:hover {
+                background-color: #333;
+              }
+            }
+          }
+  
+          /* 
+            Si quieres añadir una figura decorativa en la esquina, 
+            podrías hacerlo con un pseudo-elemento:
+          */
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 80px;
+            height: 80px;
+            background-image: url('tu-figura-rosada.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.4;
+            pointer-events: none;
+          }
+        }
+      }
+  
+      /* ------------- Estilos de las reseñas ------------- */
+      .review-item {
+        border: 1px solid #ccc;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 0.25rem;
+  
+        header {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          margin-bottom: 0.5rem;
+  
+          .reviewer-avatar img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 1rem;
+          }
+  
+          .reviewer-info {
+            display: flex;
+            flex-direction: column;
+            margin-right: auto;
+            .reviewer-name {
+              font-weight: bold;
+            }
+            time {
+              font-size: 0.85rem;
+              color: #888;
+            }
+          }
+  
+          .rating {
+            color: #f39c12; /* Color dorado para las estrellas */
+            font-weight: bold;
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+  

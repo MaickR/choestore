@@ -77,7 +77,7 @@
         <loc>http://localhost:3000/</loc>
     
         
-        <lastmod>2025-01-26T00:14:35.538Z</lastmod>
+        <lastmod>2025-01-28T19:51:42.137Z</lastmod>
     
     </url>
     <url>
@@ -178,55 +178,15 @@
     </url>
     <url>
         
-        <loc>http://localhost:3000/black-friday/aceite-helmet.html</loc>
+        <loc>http://localhost:3000/productos/capilar/jengibre-romero.html</loc>
     
         
-        <lastmod>2024-11-28T22:36:02.815Z</lastmod>
-    
-    </url>
-    <url>
-        
-        <loc>http://localhost:3000/black-friday/difusor+helmet.html</loc>
-    
-        
-        <lastmod>2024-11-28T22:41:50.598Z</lastmod>
+        <lastmod>2025-01-28T20:10:22.393Z</lastmod>
     
     </url>
     <url>
         
-        <loc>http://localhost:3000/black-friday/difusores-2-3.html</loc>
-    
-        
-        <lastmod>2024-11-28T22:25:02.875Z</lastmod>
-    
-    </url>
-    <url>
-        
-        <loc>http://localhost:3000/black-friday/splash-aceite.html</loc>
-    
-        
-        <lastmod>2024-11-28T22:48:13.708Z</lastmod>
-    
-    </url>
-    <url>
-        
-        <loc>http://localhost:3000/black-friday/splash-difusor.html</loc>
-    
-        
-        <lastmod>2024-11-28T22:53:35.748Z</lastmod>
-    
-    </url>
-    <url>
-        
-        <loc>http://localhost:3000/capilar/jengibre-romero.html</loc>
-    
-        
-        <lastmod>2024-11-28T21:18:15.094Z</lastmod>
-    
-    </url>
-    <url>
-        
-        <loc>http://localhost:3000/corporal/aceite-coco.html</loc>
+        <loc>http://localhost:3000/productos/corporal/aceite-coco.html</loc>
     
         
         <lastmod>2024-11-28T20:49:06.555Z</lastmod>
@@ -234,7 +194,7 @@
     </url>
     <url>
         
-        <loc>http://localhost:3000/corporal/aceite-uva.html</loc>
+        <loc>http://localhost:3000/productos/corporal/aceite-uva.html</loc>
     
         
         <lastmod>2024-11-28T20:56:32.198Z</lastmod>
@@ -242,7 +202,7 @@
     </url>
     <url>
         
-        <loc>http://localhost:3000/corporal/rollon-lavanda.html</loc>
+        <loc>http://localhost:3000/productos/corporal/rollon-lavanda.html</loc>
     
         
         <lastmod>2024-11-28T21:04:33.061Z</lastmod>
@@ -250,7 +210,7 @@
     </url>
     <url>
         
-        <loc>http://localhost:3000/corporal/splash-coco-vainilla.html</loc>
+        <loc>http://localhost:3000/productos/corporal/splash-coco-vainilla.html</loc>
     
         
         <lastmod>2024-11-28T23:04:06.172Z</lastmod>
@@ -258,7 +218,7 @@
     </url>
     <url>
         
-        <loc>http://localhost:3000/corporal/splash-coco.html</loc>
+        <loc>http://localhost:3000/productos/corporal/splash-coco.html</loc>
     
         
         <lastmod>2024-11-28T19:35:46.040Z</lastmod>
@@ -266,7 +226,7 @@
     </url>
     <url>
         
-        <loc>http://localhost:3000/corporal/splash-frutos-rojos.html</loc>
+        <loc>http://localhost:3000/productos/corporal/splash-frutos-rojos.html</loc>
     
         
         <lastmod>2024-11-28T23:53:42.754Z</lastmod>
@@ -274,7 +234,7 @@
     </url>
     <url>
         
-        <loc>http://localhost:3000/corporal/splash-maracuya.html</loc>
+        <loc>http://localhost:3000/productos/corporal/splash-maracuya.html</loc>
     
         
         <lastmod>2024-11-28T19:36:26.584Z</lastmod>
@@ -282,7 +242,7 @@
     </url>
     <url>
         
-        <loc>http://localhost:3000/corporal/splash-mazana-verde-vainilla.html</loc>
+        <loc>http://localhost:3000/productos/corporal/splash-mazana-verde-vainilla.html</loc>
     
         
         <lastmod>2024-11-28T20:30:00.765Z</lastmod>
@@ -290,7 +250,7 @@
     </url>
     <url>
         
-        <loc>http://localhost:3000/corporal/splash-mazana-verde.html</loc>
+        <loc>http://localhost:3000/productos/corporal/splash-mazana-verde.html</loc>
     
         
         <lastmod>2024-11-28T20:30:04.296Z</lastmod>
@@ -298,7 +258,47 @@
     </url>
     <url>
         
-        <loc>http://localhost:3000/difusores/frutos-bosque.html</loc>
+        <loc>http://localhost:3000/productos/descuentos/aceite-helmet.html</loc>
+    
+        
+        <lastmod>2024-11-28T22:36:02.815Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>http://localhost:3000/productos/descuentos/difusor+helmet.html</loc>
+    
+        
+        <lastmod>2024-11-28T22:41:50.598Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>http://localhost:3000/productos/descuentos/difusores-2-3.html</loc>
+    
+        
+        <lastmod>2024-11-28T22:25:02.875Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>http://localhost:3000/productos/descuentos/splash-aceite.html</loc>
+    
+        
+        <lastmod>2024-11-28T22:48:13.708Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>http://localhost:3000/productos/descuentos/splash-difusor.html</loc>
+    
+        
+        <lastmod>2024-11-28T22:53:35.748Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>http://localhost:3000/productos/difusores/frutos-bosque.html</loc>
     
         
         <lastmod>2024-11-28T16:41:55.134Z</lastmod>
@@ -306,7 +306,7 @@
     </url>
     <url>
         
-        <loc>http://localhost:3000/difusores/frutos-rojos.html</loc>
+        <loc>http://localhost:3000/productos/difusores/frutos-rojos.html</loc>
     
         
         <lastmod>2024-11-28T16:17:03.749Z</lastmod>
@@ -314,7 +314,7 @@
     </url>
     <url>
         
-        <loc>http://localhost:3000/difusores/kiwi.html</loc>
+        <loc>http://localhost:3000/productos/difusores/kiwi.html</loc>
     
         
         <lastmod>2024-11-28T16:28:12.169Z</lastmod>
@@ -322,7 +322,7 @@
     </url>
     <url>
         
-        <loc>http://localhost:3000/difusores/manzana-verde.html</loc>
+        <loc>http://localhost:3000/productos/difusores/manzana-verde.html</loc>
     
         
         <lastmod>2024-11-28T16:42:29.561Z</lastmod>
@@ -330,7 +330,7 @@
     </url>
     <url>
         
-        <loc>http://localhost:3000/difusores/maracuya.html</loc>
+        <loc>http://localhost:3000/productos/difusores/maracuya.html</loc>
     
         
         <lastmod>2024-11-28T16:23:16.347Z</lastmod>
@@ -338,7 +338,7 @@
     </url>
     <url>
         
-        <loc>http://localhost:3000/vehicular/helmet-frutos-rojos.html</loc>
+        <loc>http://localhost:3000/productos/vehicular/helmet-frutos-rojos.html</loc>
     
         
         <lastmod>2024-11-28T21:39:10.985Z</lastmod>
@@ -346,7 +346,7 @@
     </url>
     <url>
         
-        <loc>http://localhost:3000/vehicular/helmet-kiwi.html</loc>
+        <loc>http://localhost:3000/productos/vehicular/helmet-kiwi.html</loc>
     
         
         <lastmod>2024-11-28T21:34:54.530Z</lastmod>

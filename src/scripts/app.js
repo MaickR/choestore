@@ -185,7 +185,6 @@ const banners = [
 //! ANIMACIONES DEL BANNER
 
 //? PRODUCTOS CON SWIPER.JS
-
 document.addEventListener("DOMContentLoaded", () => {
   // Seleccionar todos los contenedores de Swiper
   document.querySelectorAll(".dest-container.swiper").forEach(swiperContainer => {
@@ -256,12 +255,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
 //! PRODUCTOS CON SWIPER.JS
 
 //? DESCUENTOS TEMPORADA
-
-// Initialize Swiper
 const topCategoriesSlider = new Swiper('.top-categories__slider', {
   slidesPerView: 1,
   spaceBetween: 20,
@@ -287,7 +283,6 @@ const topCategoriesSlider = new Swiper('.top-categories__slider', {
     }
   }
 });
-
 //! DESCUENTOS TEMPORADA
 
 //? INSTAGRAM PHOTOS
@@ -313,6 +308,133 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 //! INSTAGRAM PHOTOS
+
+//? IMAGENES PRODUCTOS
+const createGalleryManager = () => {
+  // 1. Generar datos dinámicamente desde el HTML (sin duplicación)
+  const generateImageData = () => {
+    return Array.from(document.querySelectorAll('.img-item')).map(thumbnail => {
+      const picture = thumbnail.querySelector('picture');
+      return {
+        sources: Array.from(picture.querySelectorAll('source')).map(source => ({
+          srcset: source.srcset,
+          type: source.type
+        })),
+        img: {
+          src: picture.querySelector('img').src,
+          alt: picture.querySelector('img').alt.replace(' thumbnail', ''),
+          width: 640,
+          height: 640
+        }
+      };
+    });
+  };
+
+  // 2. Usar datos generados dinámicamente
+  const imagesData = generateImageData();
+  const mainContainer = document.querySelector('.img-showcase');
+
+  // 3. Método optimizado para actualizar imágenes
+  const updateMainImage = (index) => {
+    const fragment = document.createDocumentFragment();
+    const { sources, img } = imagesData[index];
+
+    // Clonar sources desde datos
+    sources.forEach(({ srcset, type }) => {
+      const source = document.createElement('source');
+      source.srcset = srcset;
+      source.type = type;
+      fragment.appendChild(source);
+    });
+
+    // Crear imagen principal
+    const mainImg = new Image();
+    Object.assign(mainImg, {
+      ...img,
+      loading: 'lazy',
+      decoding: 'async',
+      itemprop: 'image'
+    });
+    
+    fragment.appendChild(mainImg);
+
+    // Actualización eficiente del DOM
+    mainContainer.querySelector('picture').replaceChildren(fragment);
+  };
+
+  // 4. Manejador de eventos mejorado
+  const handleThumbnailClick = (event, index) => {
+    event.preventDefault();
+    updateMainImage(index);
+  };
+
+  // 5. Inicialización automática con validación
+  const initialize = () => {
+    document.querySelectorAll('.img-item').forEach((thumbnail, index) => {
+      thumbnail.addEventListener('click', (e) => handleThumbnailClick(e, index));
+    });
+  };
+
+  return { initialize };
+};
+// 6. Inicialización controlada con checks de performance
+document.addEventListener('DOMContentLoaded', () => {
+  requestAnimationFrame(() => {
+    const gallery = createGalleryManager();
+    gallery.initialize();
+  });
+});
+//! IMAGENES PRODUCTOS
+
+//? CONTROL DE CANTIDAD DE PRODUCTOS
+document.addEventListener('DOMContentLoaded', function () {
+  const quantityInput = document.getElementById('quantity');
+  const decreaseButton = document.querySelector('.quantity-decrease');
+  const increaseButton = document.querySelector('.quantity-increase');
+
+  decreaseButton.addEventListener('click', function () {
+    let currentValue = parseInt(quantityInput.value);
+    if (currentValue > 1) {
+      quantityInput.value = currentValue - 1;
+    }
+  });
+
+  increaseButton.addEventListener('click', function () {
+    let currentValue = parseInt(quantityInput.value);
+    quantityInput.value = currentValue + 1;
+  });
+});
+//! CONTROL DE CANTIDAD DE PRODUCTOS
+
+// Script para alternar entre las pestañas (Descripción y Reviews).
+document.addEventListener('DOMContentLoaded', function () {
+  const tabLinks = document.querySelectorAll('.tab-link');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  tabLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // Desactivar todos los tabs
+      tabLinks.forEach(item => {
+        item.classList.remove('active');
+        item.setAttribute('aria-selected', 'false');
+      });
+
+      // Ocultar todos los paneles
+      tabContents.forEach(content => {
+        content.hidden = true;
+      });
+
+      // Activar el tab actual
+      link.classList.add('active');
+      link.setAttribute('aria-selected', 'true');
+
+      // Mostrar el panel correspondiente
+      const panelId = link.getAttribute('aria-controls');
+      const tabPanel = document.getElementById(panelId);
+      tabPanel.hidden = false;
+    });
+  });
+});
 
 
 

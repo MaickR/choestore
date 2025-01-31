@@ -87,8 +87,8 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 	
     <!--? CSS -->
-    <link rel="preload" href="../../../css/style.css" as="style">
-    <link rel="stylesheet" href="../../../css/style.css">
+    <!-- <link rel="preload" href="../../../css/style.css" as="style">
+    <link rel="stylesheet" href="../../../css/style.css"> -->
 
     <link rel="preload" href="../../../build/css/app.css" as="style">
     <link rel="stylesheet" href="../../../build/css/app.css">
@@ -212,301 +212,543 @@
 		</div>
 	  </header> 
 
-    <div class="main-wrapper">
+    <div >
 
         <!-- BEGIN CONTENT -->
 
         <main class="content">
 
-            <!-- BEGIN DETAIL MAIN BLOCK -->
-            <section class="detail-block detail-block_margin" aria-label="Detalles del producto">
+            <!--? HEADER DETALLES DEL PRODUCTO -->
+            <section class="detail-block detail-block_margin"
+                role="region" 
+                aria-label="Detalles del producto"
+                itemscope 
+                itemtype="https://schema.org/Product"
+                aria-labelledby="product-details-heading">
                 <div class="wrapper">
-                    <div class="detail-block__content">
-                        <h1>Detalles del producto</h1>
-                        <ul class="bread-crumbs">
-                            <li class="bread-crumbs__item">
-                                <a href="index.html" class="bread-crumbs__link">Inicio</a>
+                    <header class="detail-block__content">
+                        <h1 itemprop="name">Detalles del producto</h1>
+
+                        <ul class="bread-crumbs"
+                            aria-label="Ruta de navegación" 
+                            itemscope 
+                            itemtype="https://schema.org/BreadcrumbList">
+
+                            <li class="bread-crumbs__item"
+                            itemprop="itemListElement" 
+                            itemscope 
+                            itemtype="https://schema.org/ListItem" 
+                            itemprop="position" 
+                            content="1">
+                                <a href="index.html" class="bread-crumbs__link" itemprop="item">
+                                    <span itemprop="name">Inicio</span>
+                                </a>
                             </li>
-                            <li class="bread-crumbs__item">
-                                <a href="product.html" class="bread-crumbs__link">Producto</a>
+
+                            <li class="bread-crumbs__item" 
+                                itemprop="itemListElement" 
+                                itemscope 
+                                itemtype="https://schema.org/ListItem" 
+                                itemprop="position" 
+                                content="2">
+                                    <a href="product.html" class="bread-crumbs__link" itemprop="item">
+                                         <span itemprop="name">Producto</span>
+                                     </a>
                             </li>
-                            <li class="bread-crumbs__item"> Tónico de jengibre y romero</li>
+
+                            <li class="bread-crumbs__item" 
+                                itemprop="itemListElement" 
+                                itemscope 
+                                itemtype="https://schema.org/ListItem" 
+                                itemprop="position" 
+                                content="3">
+                                    <!-- Último ítem de la ruta no suele llevar enlace -->
+                                    <span itemprop="item">
+                                     <span itemprop="name">Tónico de jengibre y romero</span>
+                                    </span>
+                            </li>
                         </ul>
-                    </div>
+
+                    </header>
                 </div>
+            </section>
+            <!--! HEADER DETALLES DEL PRODUCTO -->
+
+            <!--? PRODUCTO -->
+             <section 
+    class="card-wrapper" 
+    itemscope 
+    itemtype="https://schema.org/Product"
+    aria-labelledby="product-title">
+
+    <!-- 
+      Componente principal de la tarjeta de producto.
+      <article> es semánticamente apto para un contenido independiente como un producto.
+    -->
+    <article class="card">
+
+      <!-- 
+        Galería de imágenes: <aside> con rol de contenido complementario.
+        aria-label describe su función a los lectores de pantalla.
+      -->
+      <aside class="product-imgs" role="complementary" aria-label="Galería de imágenes del producto">
+        <div class="img-display" role="group" aria-roledescription="carousel">
+          <div class="img-showcase">
+            
+            <!-- 
+              <picture> con soporte para AVIF, WebP y JPG (fallback).
+              Se añade loading="lazy" y decoding="async" para optimizar la carga.
+              itemprop="image" para SEO (imagen principal del producto).
+            -->
+            <picture>
+              <source 
+                srcset="https://dummyimage.com/640x640/d1c2d1/000000.avif" 
+                type="image/avif" />
+              <source 
+                srcset="https://dummyimage.com/640x640/d1c2d1/000000.webp" 
+                type="image/webp" />
+              <img 
+                src="https://dummyimage.com/640x640/d1c2d1/000000.jpg" 
+                alt="Nike shoe image 1" 
+                width="640"
+                height="640"
+                loading="lazy"
+                decoding="async"
+                itemprop="image" />
+            </picture>
+          </div>
+        </div>
+
+        <!-- 
+         * Thumbnails de las imágenes *
+         -->
+        <div class="img-select" aria-label="Miniaturas de la galería de imágenes">
+          <div class="img-item">
+            <a href="#" data-id="1" aria-label="Ver imagen 1">
+              <picture>
+                <source 
+                  srcset="https://dummyimage.com/640x640/d1c2d1/000000.avif" 
+                  type="image/avif" />
+                <source 
+                  srcset="https://dummyimage.com/640x640/d1c2d1/000000.webp" 
+                  type="image/webp" />
+                <img 
+                  src="https://dummyimage.com/640x640/d1c2d1/000000.jpg" 
+                  alt="Nike shoe thumbnail 1" 
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  decoding="async" />
+              </picture>
+            </a>
+          </div>
+          <div class="img-item">
+            <a href="#" data-id="2" aria-label="Ver imagen 2">
+              <picture>
+                <source 
+                  srcset="https://dummyimage.com/640x640/f283f2/000000.avif" 
+                  type="image/avif" />
+                <source 
+                  srcset="https://dummyimage.com/640x640/f283f2/000000.webp" 
+                  type="image/webp" />
+                <img 
+                  src="https://dummyimage.com/640x640/f283f2/000000.jpg" 
+                  alt="Nike shoe thumbnail 2" 
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  decoding="async" />
+              </picture>
+            </a>
+          </div>
+          <div class="img-item">
+            <a href="#" data-id="3" aria-label="Ver imagen 3">
+              <picture>
+                <source 
+                  srcset="https://dummyimage.com/640x640/ac8ef2/000000.avif" 
+                  type="image/avif" />
+                <source 
+                  srcset="https://dummyimage.com/640x640/ac8ef2/000000.webp" 
+                  type="image/webp" />
+                <img 
+                  src="https://dummyimage.com/640x640/ac8ef2/000000.jpg" 
+                  alt="Nike shoe thumbnail 3" 
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  decoding="async" />
+              </picture>
+            </a>
+          </div>
+          <div class="img-item">
+            <a href="#" data-id="4" aria-label="Ver imagen 4">
+              <picture>
+                <source 
+                  srcset="https://dummyimage.com/640x640/8da3f0/000000.avif" 
+                  type="image/avif" />
+                <source 
+                  srcset="https://dummyimage.com/640x640/8da3f0/000000.webp" 
+                  type="image/webp" />
+                <img 
+                  src="https://dummyimage.com/640x640/8da3f0/000000.jpg" 
+                  alt="Nike shoe thumbnail 4" 
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  decoding="async" />
+              </picture>
+            </a>
+          </div>
+        </div>
+      </aside>
+      <!-- Fin de la galería de imágenes -->
+
+      <!-- Contenido principal del producto -->
+      <div class="product-content">
+        <!-- Título principal, enlazado por aria-labelledby en la sección -->
+        <h2 
+          id="product-title" 
+          class="product-title"
+          itemprop="name">
+          nike shoes
+        </h2>
+
+        <!-- Información de la marca/tienda -->
+        <a 
+          href="#" 
+          class="product-link"
+          itemprop="brand"
+          itemscope
+          itemtype="https://schema.org/Brand"
+          rel="noopener"
+          aria-label="Visitar tienda Nike">
+          <span itemprop="name">visit nike store</span>
+        </a>
+
+        <!--* Calificación del producto (AggregateRating) para SEO -->
+        <!-- <div 
+          class="product-rating" 
+          itemprop="aggregateRating" 
+          itemscope
+          itemtype="https://schema.org/AggregateRating"
+          aria-label="Calificación del producto">
+          
+          <i class="bi bi-star-fill" aria-hidden="true"></i>
+          <i class="bi bi-star-fill" aria-hidden="true"></i>
+          <i class="bi bi-star-fill" aria-hidden="true"></i>
+          <i class="bi bi-star-fill" aria-hidden="true"></i>
+          <i class="bi bi-star-half" aria-hidden="true"></i>
+          <span>
+            <span itemprop="ratingValue">4.7</span>(
+            <span itemprop="reviewCount">21</span>)
+          </span>
+        </div> -->
+
+        <!-- Precios del producto -->
+        <div class="product-price">
+          <!-- Old price (no se marca con itemprop, ya no es vigente) -->
+          <p class="last-price">
+            Old Price: <span>$257.00</span>
+          </p>
+          <!-- New price con itemprop="price" y currency -->
+          <p class="new-price">
+            New Price: 
+            <span itemprop="price" content="249.00">
+              $249.00 (5%)
+            </span>
+            <meta itemprop="priceCurrency" content="USD" />
+          </p>
+        </div>
+
+        <!-- Detalles del producto (description) -->
+        <div class="product-detail">
+          <h2>about this item:</h2>
+          <p itemprop="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Illo eveniet veniam tempora fuga tenetur placeat sapiente 
+            architecto illum soluta consequuntur, aspernatur quidem at 
+            sequi ipsa!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.
+          </p>
+          <ul>
+            <li><i class="bi bi-check2-circle"></i> Color: <span>Black</span></li>
+            <li><i class="bi bi-check2-circle"></i> Available: <span>in stock</span></li>
+            <li><i class="bi bi-check2-circle"></i> Category: <span itemprop="category">Shoes</span></li>
+            <li><i class="bi bi-check2-circle"></i> Shipping Area: <span>All over the world</span></li>
+            <li><i class="bi bi-check2-circle"></i> Shipping Fee: <span>Free</span></li>
+          </ul>
+        </div>
+
+        <!-- Zona de compra -->
+        <div class="purchase-info" aria-label="Sección de compra">
+              <div class="quantity-selector" aria-label="Selector de cantidad">
+                <button 
+                  type="button" 
+                  class="quantity-decrease" 
+                  aria-label="Disminuir cantidad">
+                  -
+                </button>
+                <label for="quantity" class="visually-hidden">Cantidad: </label>
+                <input 
+                  type="number"
+                  id="quantity"
+                  min="1"
+                  value="1"
+                  step="1"
+                  name="quantity"
+                  aria-label="Cantidad a agregar al carrito">
+                <button 
+                  type="button" 
+                  class="quantity-increase" 
+                  aria-label="Aumentar cantidad">
+                  +
+                </button>
+              </div>
+          <button 
+            type="button"
+            class="btn"
+            aria-label="Agregar al carrito">
+            Comprar
+            <i class="bi bi-bag-heart"></i>
+          </button>
+          
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="social-links" aria-label="Compartir producto en redes sociales">
+          <p>Share At:</p>
+          <a 
+            href="#" 
+            rel="noopener"
+            aria-label="Compartir en Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a 
+            href="#" 
+            rel="noopener"
+            aria-label="Compartir en Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a 
+            href="#" 
+            rel="noopener"
+            aria-label="Compartir en WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+        <!-- Fin social-links -->
+      </div>
+      <!-- Fin product-content -->
+    </article>
+
+
+ <!--
+  Sección de información adicional debajo del producto,
+  con pestañas para "Descripción" y "Reseñas".
+-->
+<section class="product-information" aria-label="Información adicional del producto">
+    <!--
+      Navegación de pestañas. role="tablist" y aria-label ayudan a los lectores
+      de pantalla a identificar que son pestañas de contenido.
+    -->
+    <nav class="product-info-tabs" role="tablist" aria-label="Pestañas de información del producto">
+      <button
+        id="tab-description"
+        class="tab-link active"
+        role="tab"
+        aria-controls="description"
+        aria-selected="true"
+      >
+        Description
+      </button>
+      <button
+        id="tab-reviews"
+        class="tab-link"
+        role="tab"
+        aria-controls="reviews"
+        aria-selected="false"
+      >
+        Reviews
+      </button>
+    </nav>
+  
+    <!-- Contenido de la pestaña "Descripción" -->
+    <article
+      id="description"
+      class="tab-content active"
+      role="tabpanel"
+      aria-labelledby="tab-description"
+    >
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+        perferendis amet ullam quisquam ad pariatur quo accusantium quos
+        dolores commodi officiis, cumque iusto adipisci quae delectus
+        temporibus et, cupiditate aliquam.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi beatae
+        provident ipsum omnis dolor sapiente maiores reiciendis exercitationem
+        earum deleniti, reprehenderit iste ipsa saepe. Consectetur non et
+        excepturi molestias esse?
+      </p>
+    </article>
+  
+    <!-- Contenido de la pestaña "Reseñas" -->
+    <article
+      id="reviews"
+      class="tab-content"
+      role="tabpanel"
+      aria-labelledby="tab-reviews"
+      hidden
+    >
+      <!--
+        Contenedor para colocar la lista de reseñas a la izquierda
+        y el formulario de reseñas a la derecha
+      -->
+      <div class="reviews-layout">
+        <section class="review-list">
+          <!-- Cada reseña es un <article> para mantener la semántica. -->
+          <article class="review-item" aria-label="Review de Melissa Jones">
+            <header>
+              <figure class="reviewer-avatar">
+                <img
+                  src="https://via.placeholder.com/40"
+                  alt="Avatar de usuario"
+                />
+              </figure>
+              <div class="reviewer-info">
+                <h3 class="reviewer-name">Melissa Jones</h3>
+                <time datetime="2020-07-23">July 23, 2020</time>
+              </div>
+              <!-- rating con aria-label para lectores de pantalla -->
+              <span class="rating" aria-label="5 out of 5 stars">★★★★★</span>
+            </header>
+            <p>
+              I am grateful to the employees of BShop for the quality products
+              that I have been using for more than a year, try to work at
+              this level in the future. Thank you!
+            </p>
+          </article>
+  
+          <article class="review-item" aria-label="Review de Steve Gentley">
+            <header>
+              <figure class="reviewer-avatar">
+                <img
+                  src="https://via.placeholder.com/40"
+                  alt="Avatar de usuario"
+                />
+              </figure>
+              <div class="reviewer-info">
+                <h3 class="reviewer-name">Steve Gentley</h3>
+                <time datetime="2020-07-05">July 05, 2020</time>
+              </div>
+              <span class="rating" aria-label="5 out of 5 stars">★★★★★</span>
+            </header>
+            <p>
+              I am grateful to the employees of BShop for the quality products
+              that I have been using for more than a year, try to work
+              at this level in the future. Thank you!
+            </p>
+          </article>
+  
+          <article class="review-item" aria-label="Review de Amanda Clement">
+            <header>
+              <figure class="reviewer-avatar">
+                <img
+                  src="https://via.placeholder.com/40"
+                  alt="Avatar de usuario"
+                />
+              </figure>
+              <div class="reviewer-info">
+                <h3 class="reviewer-name">Amanda Clement</h3>
+                <time datetime="2020-06-15">June 15, 2020</time>
+              </div>
+              <span class="rating" aria-label="5 out of 5 stars">★★★★★</span>
+            </header>
+            <p>
+              I am grateful to the employees of BShop for the quality products
+              that I have been using for more than a year, try to work
+              at this level in the future. Thank you!
+            </p>
+          </article>
+        </section>
+  
+        <!-- Formulario de reseña con fondo rosado -->
+        <aside class="review-form" aria-label="Dejar una reseña">
+          <header>
+            <h2>Leave A Review</h2>
+            <p>Your email address will not be published.</p>
+          </header>
+          <form>
+            <!--
+              Sección de valoración por estrellas. Podrías
+              reemplazar estos inputs con el sistema de rating
+              que prefieras (radio buttons, un plugin, etc.).
+            -->
+            <div class="star-rating" aria-label="Rating">
+              <input type="radio" name="rating" id="star5" value="5" />
+              <label for="star5" aria-label="5 stars">★</label>
+  
+              <input type="radio" name="rating" id="star4" value="4" />
+              <label for="star4" aria-label="4 stars">★</label>
+  
+              <input type="radio" name="rating" id="star3" value="3" />
+              <label for="star3" aria-label="3 stars">★</label>
+  
+              <input type="radio" name="rating" id="star2" value="2" />
+              <label for="star2" aria-label="2 stars">★</label>
+  
+              <input type="radio" name="rating" id="star1" value="1" />
+              <label for="star1" aria-label="1 star">★</label>
             </div>
-            <!-- DETAIL MAIN BLOCK EOF   -->
+  
+            <label for="name">Enter your name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              aria-required="true"
+              required
+            />
+  
+            <label for="email">Enter your email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              aria-required="true"
+              required
+            />
+  
+            <label for="message">Enter your review</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              aria-required="true"
+              required
+            ></textarea>
+  
+            <button type="submit">SEND</button>
+          </form>
+        </aside>
+      </div>
+    </article>
+  </section>
+  
+  
+    <!-- Fin card -->
+  </section>
 
-            <!-- BEGIN PRODUCT -->
-            <div class="product">
-                <div class="wrapper">
-                    <div class="product-content">
-                        <div class="product-slider">
-                            <div class="product-slider__main">
-                                <div class="product-slider__main-item">
-                                    <div class="products-item__type">
-                                        <!-- <span class="products-item__sale">OFERTA</span> -->
-                                    </div>
-                                    <img loading="lazy" src="../../img/productos/Tienda/capilar/tonico-jengibre-romero.jpg" alt="Tonico de jengibre y romero">
-                                </div>
+            <!--! PRODUCTO -->
 
-                                <!-- <div class="product-slider__main-item">
-                                    <img loading="lazy" src="https://via.placeholder.com/570" alt="product">
-                                </div>
+            <!--? PRODUCTOS SIMILARES-->
+            
+            <!--! PRODUCTOS SIMILARES-->
 
-                                <div class="product-slider__main-item">
-                                    <img loading="lazy" src="https://via.placeholder.com/570" alt="product">
-                                </div> -->
-
-                               <!--  <div class="product-slider__main-item">
-                                    <img loading="lazy" src="https://via.placeholder.com/570" alt="product">
-                                </div> -->
-
-                               <!--  <div class="product-slider__main-item">
-                                    <img loading="lazy" src="https://via.placeholder.com/570" alt="product">
-                                </div> -->
-
-                            </div>
-
-                           <!--  <div class="product-slider__nav">
-
-                                <div class="product-slider__nav-item">
-                                    <img loading="lazy" src="https://via.placeholder.com/135" alt="product">
-                                </div>
-
-                                <div class="product-slider__nav-item">
-                                    <img loading="lazy" src="https://via.placeholder.com/135" alt="product">
-                                </div>
-                                <div class="product-slider__nav-item">
-                                    <img loading="lazy" src="https://via.placeholder.com/135" alt="product">
-                                </div>
-                                <div class="product-slider__nav-item">
-                                    <img loading="lazy" src="https://via.placeholder.com/135" alt="product">
-                                </div>
-                                <div class="product-slider__nav-item">
-                                    <img loading="lazy" src="https://via.placeholder.com/135" alt="product">
-                                </div>
-                            </div> -->
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-title">Tónico de jengibre y romero</h2>
-
-                            <span class="product-stock">En stock</span>
-                           <!--  <span class="product-num">SKU: IN1203</span> -->
-                            <span class="product-price no-discount"><span>$20.000</span>$20.000</span>
-                            <p class="product-text">Revitaliza tu cabello desde la raíz con el poder del jengibre y el romero.
-                                 El Tónico Capilar de Choe transforma tu rutina capilar, fortaleciendo, 
-                                 estimulando el crecimiento y devolviendo la vitalidad que tu cabello merece.</p>
-                            <div class="contacts-info__social">
-                                <span>Encuentralo en:</span>
-                                <ul>
-                                    <li><a href="https://web.facebook.com/sandra.quitian/" target="_blank"><i class="icon-facebook"></i></a></li>
-                                    
-                                    <li><a href="https://www.instagram.com/choe_fragancias_frutales/" target="_blank"><i class="icon-insta"></i></a></li>
-
-                                </ul>
-                            </div>
-                            <div class="product-options">
-                                <!-- <div class="product-info__color">
-                                    <span>Сolor:</span>
-                                    <ul>
-                                        <li style="background-color: #FCEDEA;"></li>
-                                        <li style="background-color: #FEE1DB;"></li>
-                                        <li style="background-color: #FFD9D1;" class="active"></li>
-                                        <li style="background-color: #FDC5B9;"></li>
-                                        <li style="background-color: #FDB7A8;"></li>
-                                        <li style="background-color: #FFA08A;"></li>
-                                    </ul>
-                                </div> -->
-                                <div class="product-info__quantity">
-                                    <span class="product-info__quantity-title">Cantidad:</span>
-                                    <div class="counter-box">
-                                        <span class="counter-link counter-link__prev">
-                                            <i class="icon-arrow"></i>
-                                        </span>
-                                        <input type="text" id="quantity" class="counter-input" disabled="disabled" value="1">
-                                        <span class="counter-link counter-link__next">
-                                            <i class="icon-arrow"></i>
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div class="product-buttons">
-                                    <a id="buyButton" href="#" class="btn btn-icon">
-                                        <i class="bi bi-bag-heart-fill"></i>Comprar
-                                    </a>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="product-detail">
-
-                        <div class="tab-wrap product-detail-tabs">
-                            <ul class="nav-tab-list tabs">
-                                <li class="active">
-                                    <a href="#product-tab_1">Beneficios</a>
-                                </li>
-                                <li class="">
-                                    <a href="#product-tab_2">Caracteristicas</a>
-                                </li>
-                            </ul>
-                            <div class="box-tab-cont">
-
-                                <div class="tab-cont  product-reviews" id="product-tab_1">
-                                    
-                                    <!-- <p class="tab-cont-title" >Beneficios:</p> -->
-                                    <ul class="tab-cont-beneficts">
-                                        <li class="product-beneficts"><span>Estimulación del crecimiento: </span>El jengibre activa la circulación en el cuero cabelludo, promoviendo un crecimiento capilar más rápido y saludable.</li>
-                                        <li class="product-beneficts"><span>Fortaleza desde la raíz</span>   El romero refuerza los folículos capilares, reduciendo la caída del cabello y aportando resistencia.</li>
-                                        <li class="product-beneficts"><span>Cabello más denso y brillante:</span>Ayuda a revitalizar las hebras capilares, mejorando su textura y luminosidad.</li>
-                                        <li class="product-beneficts"><span>Control de caspa:</span> Propiedades antimicrobianas naturales que mantienen el cuero cabelludo fresco y libre de irritaciones.</li>
-                                        <li class="product-beneficts"><span>Fragancia natural:</span> Deja un aroma fresco y herbal que despierta tus sentidos.</li>
-                                    </ul>
-                                   
-                                </div>
-
-                                <div class="tab-cont" id="product-tab_2">
-                                    <!-- <p  class="tab-cont-title">Características:</p> -->
-                                    <ul>
-                                        <li class="product-beneficts"><span>Ingredientes principales:</span> Jengibre y romero, reconocidos por sus propiedades estimulantes, fortalecedoras y revitalizantes.</li>
-                                        <li class="product-beneficts"><span>Fórmula: </span>  Ligera, no grasa y fácil de aplicar, ideal para el uso diario.</li>
-                                        <li class="product-beneficts"><span>Presentación: </span> Botella de 120 ml con aplicador para mayor precisión en el cuero cabelludo.</li>
-                                        <li class="product-beneficts"><span>Uso recomendado: </span>Aplicar directamente en el cuero cabelludo, masajear suavemente y dejar actuar. No es necesario enjuagar.</li>
-                                        <li class="product-beneficts"><span>Beneficios adicionales:</span> Ayuda a equilibrar la producción de grasa en el cuero cabelludo, dejando el cabello fresco y manejable.</li>
-
-                                    </ul>
-                                            
-                                        </div>
-                                        
-                                    
-                                        
-                                    </div>
-                                    
-                                </div> 
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <img class="promo-video__decor js-img" data-src="https://via.placeholder.com/1197x1371/FFFFFF"
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt=""> -->
-            </div>
-            <!-- PRODUCT EOF   -->
-            <!-- BEGIN NEW ARRIVALS -->
-            <!-- <section class="arrivals product-viewed">
-                <div class="trending-top">
-                    <span class="saint-text">Cosmetics</span>
-                    <h2>You have viewed</h2>
-                    <p>Nourish your skin with toxin-free cosmetic products. With the offers that you can’t refuse.</p>
-                </div>
-                <div class="products-items js-products-items">
-                    <a href="#" class="products-item">
-                        <div class="products-item__type">
-                            <span class="products-item__sale">sale</span>
-                            <span class="products-item__new">new</span>
-                        </div>
-                        <div class="products-item__img">
-                            <img data-src="https://via.placeholder.com/400x570" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-                                class="js-img" alt="">
-                            <div class="products-item__hover">
-                                <i class="icon-search"></i>
-                                <div class="products-item__hover-options">
-                                    <i class="icon-heart"></i>
-                                    <i class="icon-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-item__info">
-                            <span class="products-item__name">Detox body Cream</span>
-                            <span class="products-item__cost"><span>$249.95</span> $200.95</span>
-                        </div>
-                    </a>
-                    <a href="#" class="products-item">
-                        <div class="products-item__type">
-                            <span class="products-item__new">new</span>
-                        </div>
-                        <div class="products-item__img">
-                            <img data-src="https://via.placeholder.com/400x570" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-                                class="js-img" alt="">
-                            <div class="products-item__hover">
-                                <i class="icon-search"></i>
-                                <div class="products-item__hover-options">
-                                    <i class="icon-heart"></i>
-                                    <i class="icon-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-item__info">
-                            <span class="products-item__name">Detox body Cream</span>
-                            <span class="products-item__cost">$200.95</span>
-                        </div>
-                    </a>
-                    <a href="#" class="products-item">
-                        <div class="products-item__type">
-                            <span class="products-item__new">new</span>
-                        </div>
-                        <div class="products-item__img">
-                            <img data-src="https://via.placeholder.com/400x570" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-                                class="js-img" alt="">
-                            <div class="products-item__hover">
-                                <i class="icon-search"></i>
-                                <div class="products-item__hover-options">
-                                    <i class="icon-heart"></i>
-                                    <i class="icon-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-item__info">
-                            <span class="products-item__name">Detox body Cream</span>
-                            <span class="products-item__cost">$200.95</span>
-                        </div>
-                    </a>
-                    <a href="#" class="products-item">
-                        <div class="products-item__type">
-                            <span class="products-item__sale">sale</span>
-                            <span class="products-item__new">new</span>
-                        </div>
-                        <div class="products-item__img">
-                            <img data-src="https://via.placeholder.com/400x570" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-                                class="js-img" alt="">
-                            <div class="products-item__hover">
-                                <i class="icon-search"></i>
-                                <div class="products-item__hover-options">
-                                    <i class="icon-heart"></i>
-                                    <i class="icon-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-item__info">
-                            <span class="products-item__name">Detox body Cream</span>
-                            <span class="products-item__cost"><span>$249.95</span> $200.95</span>
-                        </div>
-                    </a>
-                    <a href="#" class="products-item">
-                        <div class="products-item__type">
-                            <span class="products-item__sale">sale</span>
-                        </div>
-                        <div class="products-item__img">
-                            <img data-src="https://via.placeholder.com/400x570" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-                                class="js-img" alt="">
-                            <div class="products-item__hover">
-                                <i class="icon-search"></i>
-                                <div class="products-item__hover-options">
-                                    <i class="icon-heart"></i>
-                                    <i class="icon-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-item__info">
-                            <span class="products-item__name">Detox body Cream</span>
-                            <span class="products-item__cost"><span>$249.95</span> $200.95</span>
-                        </div>
-                    </a>
-                </div>
-            </section> -->
-            <!-- NEW ARRIVALS EOF   -->
             <!-- BEGIN INSTA PHOTOS -->
             <!-- <div class="insta-photos">
                 <a href="#" class="insta-photo">
@@ -558,90 +800,150 @@
 
         <!-- CONTENT EOF   -->
 
-		<!-- BEGIN FOOTER -->
-
-		<footer class="footer">
-			<div class="wrapper">
-				<div class="footer-top">
+		<!--? FOOTER -->
+		<footer class="footer" role="contentinfo" aria-label="Pie de página">
+			<div class="footer-wrapper">
+				<!-- Social Media Section -->
+				<section class="footer-top" aria-label="Redes sociales y métodos de pago">
 					<div class="footer-top__social">
-						<span>Siguenos:</span>
-						<ul>
-							<li><a href="https://web.facebook.com/sandra.quitian/" target="_blank"><i class="icon-facebook"></i></a></li>
-							<!-- <li><a href="#"><i class="icon-twitter"></i></a></li> -->
-							<li><a href="https://www.instagram.com/choe_fragancias_frutales/" target="_blank"><i class="icon-insta"></i></a></li>
-							<li><a href="https://wa.me/573103624742?text=Bienvenido%20a%20choe.com,%20estamos%20aquí%20para%20ayudarte.%20¿En%20qué%20puedo%20informarte%20sobre%20nuestros%20productos%20o%20nuestra%20marca?" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
-						</ul>
-					</div>
-					<div class="footer-top__logo">
-						<img src="../../img/choe-logo.png"  style="width:114px; height:50px"
-							class="js-img" alt="Logo Choe">
-					</div>
-					<div class="footer-top__payments">
-						<span>Metodos de pago</span>
-						<ul>
-							<li><img src="../../img/daviplata.jpg"
-									class="js-img" alt="Daviplata"></li>
-							<li><img src="../../img/nequi.jpg"
-									class="js-img" alt="Nequi"></li>
-							<li><img src="../../img/efecty.jpg"
-									class="js-img" alt=""></li>
-							<li><img src="../../img/transfiya.jpg"
-									class="js-img" alt="Transfiya"></li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer-nav">
-					<div class="footer-nav__col">
-						<span class="footer-nav__col-title">Más Sobre Choe</span>
-						<ul>
-							<li><a href="../../about.html">Sobre Choe</a></li>
-							<li><a href="../../categories.html">Productos</a></li>
-							<li><a href="../../faq.html">Preguntas Frecuentes</a></li>
-							<li><a href="../../contacts.html">Contacto</a></li>
-						</ul>
-					</div>
-					<div class="footer-nav__col">
-						<span class="footer-nav__col-title">Categorias</span>
-						<ul>
-                            <li><a href="../../categories.html#difusores">Entorno</a></li>
-                            <li><a href="../../categories.html#corporal">Corporal</a></li>
-                            <li><a href="../../categories.html#capilar">Capilar</a></li>
-                            <li><a href="../../categories.html#vehicular">Vehicular</a></li>
-                        </ul>
-					</div>
-					<!-- <div class="footer-nav__col">
-						<span class="footer-nav__col-title">Useful links</span>
-						<ul>
-							<li><a href="#">Careers</a></li>
-							<li><a href="#">Privacy policy</a></li>
-							<li><a href="#">Terms of use</a></li>
-							<li><a href="#">Support</a></li>
-							<li><a href="#">Shipping details</a></li>
-							<li><a href="#">Information</a></li>
-						</ul>
-					</div> -->
-					<div class="footer-nav__col">
-						<span class="footer-nav__col-title">Contacto</span>
-						<ul>
-							<li><i class="icon-map-pin"></i> Villavicencio - Colombia</li>
+						<h2 class="footer-heading">Nuestras redes sociales</h2>
+						<ul class="social-list" role="list">
 							<li>
-								<i class="icon-smartphone"></i>
+								<a href="https://web.facebook.com/sandra.quitian/" 
+								   target="_blank" 
+								   rel="noopener noreferrer"
+								   aria-label="Síguenos en Facebook">
+									<i class="bi bi-facebook" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/choe_fragancias_frutales/" 
+								   target="_blank" 
+								   rel="noopener noreferrer"
+								   aria-label="Síguenos en Instagram">
+									<i class="bi bi-instagram" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://wa.me/573103624742?text=Bienvenido%20a%20choe.com,%20estamos%20aquí%20para%20ayudarte.%20¿En%20qué%20puedo%20informarte%20sobre%20nuestros%20productos%20o%20nuestra%20marca?" 
+								   target="_blank"
+								   rel="noopener noreferrer" 
+								   aria-label="Contáctanos por WhatsApp">
+									<i class="bi bi-whatsapp" aria-hidden="true"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Logo Section -->
+					<div class="footer-top__logo" itemscope itemtype="https://schema.org/Organization">
+						<a href="index.html" aria-label="Ir a página principal">
+							<img src="build/assets/img/logo.png"
+								 alt="Logo Choe" 
+								 
+								 loading="lazy"
+								 itemprop="logo">
+						</a>
+					</div>
+
+					<!-- Payment Methods -->
+					<div class="footer-top__payments">
+						<h2 class="footer-heading">Métodos de pago aceptados</h2>
+						<ul class="payment-list" role="list">
+							<li>
+								<img src="build/assets/img/daviplata.jpg"
+									 alt="Pago con Daviplata"
+									 loading="lazy"
+									 width="67" 
+									 height="40">
+							</li>
+							<li>
+								<img src="build/assets/img/nequi.jpg"
+									 alt="Pago con Nequi"
+									 loading="lazy"
+									 width="67"
+									 height="40">
+							</li>
+							<li>
+								<img src="build/assets/img/efecty.jpg"
+									 alt="Pago en Efecty"
+									 loading="lazy"
+									 width="67"
+									 height="40">
+							</li>
+							<li>
+								<img src="build/assets/img/transfiya.jpg"
+									 alt="Pago con Transfiya"
+									 loading="lazy"
+									 width="67"
+									 height="40">
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- Navigation Sections -->
+				<nav class="footer-nav" aria-label="Enlaces del pie de página">
+					<div class="footer-nav__col">
+						<h2 class="footer-nav__col-title">Más Sobre Choe</h2>
+						<ul role="list" class="footer-list">
+							<li><a href="about.html" aria-label="Conoce más sobre Choe">Sobre Choe</a></li>
+							<li><a href="categories.html" aria-label="Ver todos nuestros productos">Productos</a></li>
+							<li><a href="faq.html" aria-label="Consulta preguntas frecuentes">Preguntas Frecuentes</a></li>
+							<li><a href="contacts.html" aria-label="Contáctanos">Contacto</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-nav__col">
+						<h2 class="footer-nav__col-title">Categorías</h2>
+						<ul role="list" class="footer-list">
+							<li><a href="categories.html#difusores" aria-label="Ver productos de entorno">Entorno</a></li>
+							<li><a href="categories.html#corporal" aria-label="Ver productos corporales">Corporal</a></li>
+							<li><a href="categories.html#capilar" aria-label="Ver productos capilares">Capilar</a></li>
+							<li><a href="categories.html#vehicular" aria-label="Ver productos vehiculares">Vehicular</a></li>
+						</ul>
+					</div>
+
+					<!-- Contact Information -->
+					<div class="footer-nav__col" itemscope itemtype="https://schema.org/LocalBusiness"">
+						<h2 class="footer-nav__col-title">Contacto</h2>
+						<ul role="list" class="footer-list">
+							<li>
+								<i class="bi bi-geo-alt" aria-hidden="true"></i>
+								<span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+									<span itemprop="addressLocality">Villavicencio</span> - 
+									<span itemprop="addressCountry">Colombia</span>
+								</span>
+							</li>
+							<li>
+								<i class="bi bi-phone" aria-hidden="true"></i>
 								<div class="footer-nav__col-phones">
-									<a href="https://wa.me/573103624742?text=Bienvenido%20a%20choe.com,%20estamos%20aquí%20para%20ayudarte.%20¿En%20qué%20puedo%20informarte%20sobre%20nuestros%20productos%20o%20nuestra%20marca?">+57 3103624742</a>
-									
+									<a href="https://wa.me/573103624742" 
+									   itemprop="telephone"
+									   aria-label="Llamar al +57 3103624742">
+										+57 3103624742
+									</a>
 								</div>
 							</li>
-							<li><i class="icon-mail"></i><a href="mailto:info@choe.com">info@choe.com</a></li>
+							<li>
+								<i class="bi bi-envelope" aria-hidden="true"></i>
+								<a href="mailto:info@choe.com" 
+								   itemprop="email"
+								   aria-label="Enviar correo a info@choe.com">
+									info@choe.com
+								</a>
+							</li>
 						</ul>
 					</div>
-				</div>
-				<div class="footer-copy">
-					<span>&copy; Todos los derechos reservados. Choe 2024</span>
+				</nav>
+
+				<!-- Copyright -->
+				<div class="footer-copy" role="contentinfo">
+					<p>&copy; <time datetime="2025">2025</time> Todos los derechos reservados. <span>Choe</span> </p>
 				</div>
 			</div>
 		</footer>
-
-		<!-- FOOTER EOF   -->
+		<!--! FOOTER -->
 
     </div>
 
