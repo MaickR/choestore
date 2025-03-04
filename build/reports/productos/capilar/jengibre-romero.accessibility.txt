@@ -1,673 +1,27 @@
 C:\Users\Mike\Documents\Development\Projects\Choe\Choe - Fragancias que inspiran\pages\productos\capilar\jengibre-romero.html
 heading|issue|element|id|class|line|column|description
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_2.H25.2|<title>Tónico de Jengibre y Romero - Choe Fragancias</title>|||13|4|Check that the title element describes the document.
-ERROR|WCAG2A.Principle3.Guideline3_1.3_1_1.H57.2|<html xmlns="http://www.w3.org/1999/xhtml"><head>
-    <!--? METADATOS GENERALES -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="theme-color" content="#e6314b"> <!-- Color de la barra del navegador en móviles -->
-
-    <!--? SEO META TAGS -->
-    <title>Tónico de Jengibre y Romero - Choe Fragancias</title>
-    <meta name="description" content="Revitaliza tu cabello con nuestro Tónico de Jengibre y Romero. Estimula el crecimiento capilar y fortalece desde la raíz. Producto natural de Choe.">
-    <meta name="keywords" content="tónico capilar, jengibre y romero, crecimiento del cabello, productos capilares naturales, tratamiento anticaída, Choe">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Choe">
-    <meta name="copyright" content="Choe">
-    <link rel="canonical" href="https://www.choestore.com/productos/capilar/jengibre-romero.html">
-
-    <!--? OPEN GRAPH META TAGS (REDES SOCIALES) -->
-    <meta property="og:title" content="Tónico de Jengibre y Romero - Choe">
-    <meta property="og:description" content="Revitaliza tu cabello con nuestro Tónico de Jengibre y Romero. Tratamiento natural para el crecimiento y fortalecimiento capilar.">
-    <meta property="og:image" content="../../../img/productos/Tienda/capilar/tonico-jengibre-romero.jpg">
-    <meta property="og:url" content="https://www.choestore.com/productos/capilar/jengibre-romero.html">
-    <meta property="og:locale" content="es_CO">
-    <meta property="og:site_name" content="Choe">
-    <meta property="og:type" content="product">
-
-    <!--? TWITTER META TAGS -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Tónico de Jengibre y Romero - Choe">
-    <meta name="twitter:description" content="Revitaliza tu cabello con nuestro Tónico de Jengibre y Romero.">
-    <meta name="twitter:image" content="../../../img/productos/Tienda/capilar/tonico-jengibre-romero.jpg">
-
-    <!--? FAVICON -->
-    <link rel="icon" type="image/png" href="../../../favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/svg+xml" href="../../../favicon/favicon.svg">
-    <link rel="shortcut icon" href="../../../favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="../../../favicon/apple-touch-icon.png">
-    <meta name="apple-mobile-web-app-title" content="Choe">
-    <link rel="manifest" href="../../../favicon/site.webmanifest">
-
-    <!--? JSON-LD (STRUCTURED DATA) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "Tónico capilar de Jengibre y Romero",
-        "image": "../../../img/productos/Tienda/capilar/tonico-jengibre-romero.jpg",
-        "description": "Tónico capilar natural que combina jengibre y romero para estimular el crecimiento del cabello y fortalecer desde la raíz. Ideal para revitalizar el cabello y controlar la caspa.",
-        "brand": {
-            "@type": "Brand",
-            "name": "Choe"
-        },
-        "offers": {
-            "@type": "Offer",
-            "price": "20000",
-            "priceCurrency": "COP",
-            "availability": "https://schema.org/InStock"
-        },
-        "manufacturer": {
-            "@type": "Organization",
-            "name": "Choe",
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+57 3103624742",
-                "contactType": "customer service"
-            }
-        }
-    }
-    </script>
-    
-    <!--? FUENTES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&amp;display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://db.onlinewebfonts.com">
-	<link href="https://db.onlinewebfonts.com/c/9d4d315a044f24c1f1654fa90df10d13?family=Pistoletto-Black" rel="stylesheet">
-
-	<!--? BOOTSTRAP -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!--? ICONOS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-	
-    <!--? CSS -->
-    <link rel="preload" href="../../../css/style.css" as="style">
-    <link rel="stylesheet" href="../../../css/style.css">
-
-    <link rel="preload" href="../../../build/css/app.css" as="style">
-    <link rel="stylesheet" href="../../../build/css/app.css">
-</head>
-<body class="loaded">
-
-
-    <!-- BEGIN BODY -->
-
-    <header class="c-header" aria-label="Cabecera principal">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white" aria-label="Navegación principal">
-		  <div class="container-fluid c-header__container">
-			<a class="navbar-brand c-header__logo" href="index.html" aria-label="Ir a inicio">
-			  <img src="../../../build/assets/img/logo.png" alt="Choe Logo - Aromas y Fragancias" class="c-header__logo-img" loading="lazy" width="100" height="auto">
-			</a>
-	  
-			<!-- Menú escritorio -->
-			<ul class="navbar-nav c-header__nav-list d-none d-lg-flex flex-row align-items-center justify-content-center flex-grow-1">
-				<li class="nav-item">
-				  <a class="nav-link active" href="index.html" aria-current="page">Inicio</a>
-				</li>
-				<li class="nav-item dropdown">
-				  <!-- Quitamos data-bs-toggle y class dropdown-toggle -->
-				  <a class="nav-link" href="#" id="productosDropdown" aria-expanded="false">
-					Productos <i class="bi bi-chevron-down"></i>
-				  </a> 
-				  <ul class="dropdown-menu" aria-labelledby="productosDropdown">
-					<li><a class="dropdown-item" href="categories.html">Fragancias</a></li>
-					<li><a class="dropdown-item" href="splash-corporal.html">Splash Corporal</a></li>
-					<li><a class="dropdown-item" href="aromas-hogar.html">Aromas para el Hogar</a></li>
-					<li><a class="dropdown-item" href="ofertas.html">Ofertas</a></li>
-					<li><a class="dropdown-item" href="novedades.html">Novedades</a></li>
-				  </ul>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="blog.html">Inspiración Choe</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="nosotros.html">Nosotros</a>
-				</li>
-				<li class="nav-item dropdown">
-				  <!-- También quitar data-bs-toggle y dropdown-toggle aquí -->
-				  <a class="nav-link" href="#" id="contactoDropdown" aria-expanded="false">
-					Contacto <i class="bi bi-chevron-down"></i>
-				  </a>
-				  <ul class="dropdown-menu" aria-labelledby="contactoDropdown">
-					<li><a class="dropdown-item" href="contacto.html">Formulario</a></li>
-					<li><a class="dropdown-item" href="faq.html">Preguntas Frecuentes</a></li>
-				  </ul>
-				</li>
-			  </ul>
-			  
-			<!-- Íconos Sociales (Escritorio) y botón hamburguesa en móvil (igual que antes) -->
-			<ul class="navbar-nav c-header__social d-none d-lg-flex align-items-center flex-row" aria-label="Redes sociales">
-			  <li class="nav-item me-3">
-				<a class="nav-link" href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
-				  <i class="bi bi-instagram"></i>
-				</a>
-			  </li>
-			  <li class="nav-item me-3">
-				<a class="nav-link" href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
-				  <i class="bi bi-facebook"></i>
-				</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="https://wa.me/573103624742" target="_blank" rel="noopener" aria-label="WhatsApp">
-				  <i class="bi bi-whatsapp"></i>
-				</a>
-			  </li>
-			</ul>
-	  
-			<button class="c-header__burger d-lg-none" aria-label="Menú" aria-haspopup="true" aria-expanded="false">
-        		<i class="bi bi-list" aria-hidden="true"></i>
-      		</button>
-		  </div>
-		</nav>
-	  
-		<!-- Menú móvil deslizable (igual que antes, con close y submenús) -->
-		<div class="c-header__menu" role="dialog" aria-modal="true" aria-label="Menú móvil" aria-hidden="true">
-		  <button class="c-header__close" aria-label="Cerrar menú">×</button>
-		  <ul class="c-header__nav-list-mobile">
-			<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-			<li class="nav-item dropdown">
-			  <div class="c-header__mobile-item">
-				<a class="nav-link" href="#">Productos</a>
-				<span class="c-header__submenu-icon" aria-label="Mostrar submenú">►</span>
-			  </div>
-			  <ul class="c-header__submenu-mobile">
-				<li><a href="categories.html">Fragancias</a></li>
-				<li><a href="splash-corporal.html">Splash Corporal</a></li>
-				<li><a href="aromas-hogar.html">Aromas para el Hogar</a></li>
-				<li><a href="ofertas.html">Ofertas</a></li>
-				<li><a href="novedades.html">Novedades</a></li>
-			  </ul>
-			</li>
-			<li class="nav-item"><a class="nav-link" href="blog.html">Inspiración Choe</a></li>
-			<li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-			<li class="nav-item dropdown">
-			  <div class="c-header__mobile-item">
-				<a class="nav-link" href="#">Contacto</a>
-				<span class="c-header__submenu-icon" aria-label="Mostrar submenú">►</span>
-			  </div>
-			  <ul class="c-header__submenu-mobile">
-				<li><a href="contacto.html">Formulario</a></li>
-				<li><a href="faq.html">Preguntas Frecuentes</a></li>
-			  </ul>
-			</li>
-			<li class="c-header__social-mobile">
-			  <a href="https://instagram.com"><i class="bi bi-instagram"></i></a>
-			  <a href="https://facebook.com"><i class="bi bi-facebook"></i></a>
-			  <a href="https://wa.me/573103624742"><i class="bi bi-whatsapp"></i></a>
-			</li>
-		  </ul>
-		</div>
-	  </header> 
-
-    <div class="main-wrapper">
-
-        <!-- BEGIN CONTENT -->
-
-        <main class="content">
-
-            <!-- BEGIN DETAIL MAIN BLOCK -->
-            <section class="detail-block detail-block_margin" aria-label="Detalles del producto">
-                <div class="wrapper">
-                    <div class="detail-block__content">
-                        <h1>Detalles del producto</h1>
-                        <ul class="bread-crumbs">
-                            <li class="bread-crumbs__item">
-                                <a href="index.html" class="bread-crumbs__link">Inicio</a>
-                            </li>
-                            <li class="bread-crumbs__item">
-                                <a href="product.html" class="bread-crumbs__link">Producto</a>
-                            </li>
-                            <li class="bread-crumbs__item"> Tónico de jengibre y romero</li>
-                        </ul>
-                    </div>
-                </div>
-            </section></main></div>
-            <!-- DETAIL MAIN BLOCK EOF   -->
-
-            <!-- BEGIN PRODUCT -->
-            <div class="product">
-                <div class="wrapper">
-                    <div class="product-content">
-                        <div class="product-slider">
-                            <div class="product-slider__main">
-                                <div class="product-slider__main-item">
-                                    <div class="products-item__type">
-                                        <!-- <span class="products-item__sale">OFERTA</span> -->
-                                    </div>
-                                    <img loading="lazy" src="../../img/productos/Tienda/capilar/tonico-jengibre-romero.jpg" alt="Tonico de jengibre y romero">
-                                </div>
-
-                                <!-- <div class="product-slider__main-item">
-                                    <img loading="lazy" src="https://via.placeholder.com/570" alt="product">
-                                </div>
-
-                                <div class="product-slider__main-item">
-                                    <img loading="lazy" src="https://via.placeholder.com/570" alt="product">
-                                </div> -->
-
-                               <!--  <div class="product-slider__main-item">
-                                    <img loading="lazy" src="https://via.placeholder.com/570" alt="product">
-                                </div> -->
-
-                               <!--  <div class="product-slider__main-item">
-                                    <img loading="lazy" src="https://via.placeholder.com/570" alt="product">
-                                </div> -->
-
-                            </div>
-
-                           <!--  <div class="product-slider__nav">
-
-                                <div class="product-slider__nav-item">
-                                    <img loading="lazy" src="https://via.placeholder.com/135" alt="product">
-                                </div>
-
-                                <div class="product-slider__nav-item">
-                                    <img loading="lazy" src="https://via.placeholder.com/135" alt="product">
-                                </div>
-                                <div class="product-slider__nav-item">
-                                    <img loading="lazy" src="https://via.placeholder.com/135" alt="product">
-                                </div>
-                                <div class="product-slider__nav-item">
-                                    <img loading="lazy" src="https://via.placeholder.com/135" alt="product">
-                                </div>
-                                <div class="product-slider__nav-item">
-                                    <img loading="lazy" src="https://via.placeholder.com/135" alt="product">
-                                </div>
-                            </div> -->
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-title">Tónico de jengibre y romero</h2>
-
-                            <span class="product-stock">En stock</span>
-                           <!--  <span class="product-num">SKU: IN1203</span> -->
-                            <span class="product-price no-discount"><span>$20.000</span>$20.000</span>
-                            <p class="product-text">Revitaliza tu cabello desde la raíz con el poder del jengibre y el romero.
-                                 El Tónico Capilar de Choe transforma tu rutina capilar, fortaleciendo, 
-                                 estimulando el crecimiento y devolviendo la vitalidad que tu cabello merece.</p>
-                            <div class="contacts-info__social">
-                                <span>Encuentralo en:</span>
-                                <ul>
-                                    <li><a href="https://web.facebook.com/sandra.quitian/" target="_blank"><i class="icon-facebook"></i></a></li>
-                                    
-                                    <li><a href="https://www.instagram.com/choe_fragancias_frutales/" target="_blank"><i class="icon-insta"></i></a></li>
-
-                                </ul>
-                            </div>
-                            <div class="product-options">
-                                <!-- <div class="product-info__color">
-                                    <span>Сolor:</span>
-                                    <ul>
-                                        <li style="background-color: #FCEDEA;"></li>
-                                        <li style="background-color: #FEE1DB;"></li>
-                                        <li style="background-color: #FFD9D1;" class="active"></li>
-                                        <li style="background-color: #FDC5B9;"></li>
-                                        <li style="background-color: #FDB7A8;"></li>
-                                        <li style="background-color: #FFA08A;"></li>
-                                    </ul>
-                                </div> -->
-                                <div class="product-info__quantity">
-                                    <span class="product-info__quantity-title">Cantidad:</span>
-                                    <div class="counter-box">
-                                        <span class="counter-link counter-link__prev">
-                                            <i class="icon-arrow"></i>
-                                        </span>
-                                        <input type="text" id="quantity" class="counter-input" disabled="disabled" value="1">
-                                        <span class="counter-link counter-link__next">
-                                            <i class="icon-arrow"></i>
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div class="product-buttons">
-                                    <a id="buyButton" href="#" class="btn btn-icon">
-                                        <i class="bi bi-bag-heart-fill"></i>Comprar
-                                    </a>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="product-detail">
-
-                        <div class="tab-wrap product-detail-tabs">
-                            <ul class="nav-tab-list tabs">
-                                <li class="active">
-                                    <a href="#product-tab_1">Beneficios</a>
-                                </li>
-                                <li class="">
-                                    <a href="#product-tab_2">Caracteristicas</a>
-                                </li>
-                            </ul>
-                            <div class="box-tab-cont">
-
-                                <div class="tab-cont  product-reviews" id="product-tab_1">
-                                    
-                                    <!-- <p class="tab-cont-title" >Beneficios:</p> -->
-                                    <ul class="tab-cont-beneficts">
-                                        <li class="product-beneficts"><span>Estimulación del crecimiento: </span>El jengibre activa la circulación en el cuero cabelludo, promoviendo un crecimiento capilar más rápido y saludable.</li>
-                                        <li class="product-beneficts"><span>Fortaleza desde la raíz</span>   El romero refuerza los folículos capilares, reduciendo la caída del cabello y aportando resistencia.</li>
-                                        <li class="product-beneficts"><span>Cabello más denso y brillante:</span>Ayuda a revitalizar las hebras capilares, mejorando su textura y luminosidad.</li>
-                                        <li class="product-beneficts"><span>Control de caspa:</span> Propiedades antimicrobianas naturales que mantienen el cuero cabelludo fresco y libre de irritaciones.</li>
-                                        <li class="product-beneficts"><span>Fragancia natural:</span> Deja un aroma fresco y herbal que despierta tus sentidos.</li>
-                                    </ul>
-                                   
-                                </div>
-
-                                <div class="tab-cont" id="product-tab_2">
-                                    <!-- <p  class="tab-cont-title">Características:</p> -->
-                                    <ul>
-                                        <li class="product-beneficts"><span>Ingredientes principales:</span> Jengibre y romero, reconocidos por sus propiedades estimulantes, fortalecedoras y revitalizantes.</li>
-                                        <li class="product-beneficts"><span>Fórmula: </span>  Ligera, no grasa y fácil de aplicar, ideal para el uso diario.</li>
-                                        <li class="product-beneficts"><span>Presentación: </span> Botella de 120 ml con aplicador para mayor precisión en el cuero cabelludo.</li>
-                                        <li class="product-beneficts"><span>Uso recomendado: </span>Aplicar directamente en el cuero cabelludo, masajear suavemente y dejar actuar. No es necesario enjuagar.</li>
-                                        <li class="product-beneficts"><span>Beneficios adicionales:</span> Ayuda a equilibrar la producción de grasa en el cuero cabelludo, dejando el cabello fresco y manejable.</li>
-
-                                    </ul>
-                                            
-                                        </div>
-                                        
-                                    
-                                        
-                                    </div>
-                                    
-                                </div> 
-
-                            </div>
-                        </div>
-                    </div>
-                
-
-                <!-- <img class="promo-video__decor js-img" data-src="https://via.placeholder.com/1197x1371/FFFFFF"
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt=""> -->
-            
-            <!-- PRODUCT EOF   -->
-            <!-- BEGIN NEW ARRIVALS -->
-            <!-- <section class="arrivals product-viewed">
-                <div class="trending-top">
-                    <span class="saint-text">Cosmetics</span>
-                    <h2>You have viewed</h2>
-                    <p>Nourish your skin with toxin-free cosmetic products. With the offers that you can’t refuse.</p>
-                </div>
-                <div class="products-items js-products-items">
-                    <a href="#" class="products-item">
-                        <div class="products-item__type">
-                            <span class="products-item__sale">sale</span>
-                            <span class="products-item__new">new</span>
-                        </div>
-                        <div class="products-item__img">
-                            <img data-src="https://via.placeholder.com/400x570" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-                                class="js-img" alt="">
-                            <div class="products-item__hover">
-                                <i class="icon-search"></i>
-                                <div class="products-item__hover-options">
-                                    <i class="icon-heart"></i>
-                                    <i class="icon-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-item__info">
-                            <span class="products-item__name">Detox body Cream</span>
-                            <span class="products-item__cost"><span>$249.95</span> $200.95</span>
-                        </div>
-                    </a>
-                    <a href="#" class="products-item">
-                        <div class="products-item__type">
-                            <span class="products-item__new">new</span>
-                        </div>
-                        <div class="products-item__img">
-                            <img data-src="https://via.placeholder.com/400x570" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-                                class="js-img" alt="">
-                            <div class="products-item__hover">
-                                <i class="icon-search"></i>
-                                <div class="products-item__hover-options">
-                                    <i class="icon-heart"></i>
-                                    <i class="icon-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-item__info">
-                            <span class="products-item__name">Detox body Cream</span>
-                            <span class="products-item__cost">$200.95</span>
-                        </div>
-                    </a>
-                    <a href="#" class="products-item">
-                        <div class="products-item__type">
-                            <span class="products-item__new">new</span>
-                        </div>
-                        <div class="products-item__img">
-                            <img data-src="https://via.placeholder.com/400x570" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-                                class="js-img" alt="">
-                            <div class="products-item__hover">
-                                <i class="icon-search"></i>
-                                <div class="products-item__hover-options">
-                                    <i class="icon-heart"></i>
-                                    <i class="icon-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-item__info">
-                            <span class="products-item__name">Detox body Cream</span>
-                            <span class="products-item__cost">$200.95</span>
-                        </div>
-                    </a>
-                    <a href="#" class="products-item">
-                        <div class="products-item__type">
-                            <span class="products-item__sale">sale</span>
-                            <span class="products-item__new">new</span>
-                        </div>
-                        <div class="products-item__img">
-                            <img data-src="https://via.placeholder.com/400x570" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-                                class="js-img" alt="">
-                            <div class="products-item__hover">
-                                <i class="icon-search"></i>
-                                <div class="products-item__hover-options">
-                                    <i class="icon-heart"></i>
-                                    <i class="icon-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-item__info">
-                            <span class="products-item__name">Detox body Cream</span>
-                            <span class="products-item__cost"><span>$249.95</span> $200.95</span>
-                        </div>
-                    </a>
-                    <a href="#" class="products-item">
-                        <div class="products-item__type">
-                            <span class="products-item__sale">sale</span>
-                        </div>
-                        <div class="products-item__img">
-                            <img data-src="https://via.placeholder.com/400x570" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-                                class="js-img" alt="">
-                            <div class="products-item__hover">
-                                <i class="icon-search"></i>
-                                <div class="products-item__hover-options">
-                                    <i class="icon-heart"></i>
-                                    <i class="icon-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="products-item__info">
-                            <span class="products-item__name">Detox body Cream</span>
-                            <span class="products-item__cost"><span>$249.95</span> $200.95</span>
-                        </div>
-                    </a>
-                </div>
-            </section> -->
-            <!-- NEW ARRIVALS EOF   -->
-            <!-- BEGIN INSTA PHOTOS -->
-            <!-- <div class="insta-photos">
-                <a href="#" class="insta-photo">
-                    <img data-src="https://via.placeholder.com/320" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="js-img"
-                        alt="">
-                    <div class="insta-photo__hover">
-                        <i class="icon-insta"></i>
-                    </div>
-                </a>
-                <a href="#" class="insta-photo">
-                    <img data-src="https://via.placeholder.com/320" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="js-img"
-                        alt="">
-                    <div class="insta-photo__hover">
-                        <i class="icon-insta"></i>
-                    </div>
-                </a>
-                <a href="#" class="insta-photo">
-                    <img data-src="https://via.placeholder.com/320" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="js-img"
-                        alt="">
-                    <div class="insta-photo__hover">
-                        <i class="icon-insta"></i>
-                    </div>
-                </a>
-                <a href="#" class="insta-photo">
-                    <img data-src="https://via.placeholder.com/320" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="js-img"
-                        alt="">
-                    <div class="insta-photo__hover">
-                        <i class="icon-insta"></i>
-                    </div>
-                </a>
-                <a href="#" class="insta-photo">
-                    <img data-src="https://via.placeholder.com/320" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="js-img"
-                        alt="">
-                    <div class="insta-photo__hover">
-                        <i class="icon-insta"></i>
-                    </div>
-                </a>
-                <a href="#" class="insta-photo">
-                    <img data-src="https://via.placeholder.com/320" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="js-img"
-                        alt="">
-                    <div class="insta-photo__hover">
-                        <i class="icon-insta"></i>
-                    </div>
-                </a>
-            </div> -->
-            <!-- INSTA PHOTOS EOF   -->
-
-        
-
-        <!-- CONTENT EOF   -->
-
-		<!-- BEGIN FOOTER -->
-
-		<footer class="footer">
-			<div class="wrapper">
-				<div class="footer-top">
-					<div class="footer-top__social">
-						<span>Siguenos:</span>
-						<ul>
-							<li><a href="https://web.facebook.com/sandra.quitian/" target="_blank"><i class="icon-facebook"></i></a></li>
-							<!-- <li><a href="#"><i class="icon-twitter"></i></a></li> -->
-							<li><a href="https://www.instagram.com/choe_fragancias_frutales/" target="_blank"><i class="icon-insta"></i></a></li>
-							<li><a href="https://wa.me/573103624742?text=Bienvenido%20a%20choe.com,%20estamos%20aquí%20para%20ayudarte.%20¿En%20qué%20puedo%20informarte%20sobre%20nuestros%20productos%20o%20nuestra%20marca?" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
-						</ul>
-					</div>
-					<div class="footer-top__logo">
-						<img src="../../img/choe-logo.png" style="width:114px; height:50px" class="js-img" alt="Logo Choe">
-					</div>
-					<div class="footer-top__payments">
-						<span>Metodos de pago</span>
-						<ul>
-							<li><img src="../../img/daviplata.jpg" class="js-img" alt="Daviplata"></li>
-							<li><img src="../../img/nequi.jpg" class="js-img" alt="Nequi"></li>
-							<li><img src="../../img/efecty.jpg" class="js-img" alt=""></li>
-							<li><img src="../../img/transfiya.jpg" class="js-img" alt="Transfiya"></li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer-nav">
-					<div class="footer-nav__col">
-						<span class="footer-nav__col-title">Más Sobre Choe</span>
-						<ul>
-							<li><a href="../../about.html">Sobre Choe</a></li>
-							<li><a href="../../categories.html">Productos</a></li>
-							<li><a href="../../faq.html">Preguntas Frecuentes</a></li>
-							<li><a href="../../contacts.html">Contacto</a></li>
-						</ul>
-					</div>
-					<div class="footer-nav__col">
-						<span class="footer-nav__col-title">Categorias</span>
-						<ul>
-                            <li><a href="../../categories.html#difusores">Entorno</a></li>
-                            <li><a href="../../categories.html#corporal">Corporal</a></li>
-                            <li><a href="../../categories.html#capilar">Capilar</a></li>
-                            <li><a href="../../categories.html#vehicular">Vehicular</a></li>
-                        </ul>
-					</div>
-					<!-- <div class="footer-nav__col">
-						<span class="footer-nav__col-title">Useful links</span>
-						<ul>
-							<li><a href="#">Careers</a></li>
-							<li><a href="#">Privacy policy</a></li>
-							<li><a href="#">Terms of use</a></li>
-							<li><a href="#">Support</a></li>
-							<li><a href="#">Shipping details</a></li>
-							<li><a href="#">Information</a></li>
-						</ul>
-					</div> -->
-					<div class="footer-nav__col">
-						<span class="footer-nav__col-title">Contacto</span>
-						<ul>
-							<li><i class="icon-map-pin"></i> Villavicencio - Colombia</li>
-							<li>
-								<i class="icon-smartphone"></i>
-								<div class="footer-nav__col-phones">
-									<a href="https://wa.me/573103624742?text=Bienvenido%20a%20choe.com,%20estamos%20aquí%20para%20ayudarte.%20¿En%20qué%20puedo%20informarte%20sobre%20nuestros%20productos%20o%20nuestra%20marca?">+57 3103624742</a>
-									
-								</div>
-							</li>
-							<li><i class="icon-mail"></i><a href="mailto:info@choe.com">info@choe.com</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer-copy">
-					<span>© Todos los derechos reservados. Choe 2024</span>
-				</div>
-			</div>
-		</footer>
-
-		<!-- FOOTER EOF   -->
-
-    
-
-    <div class="icon-load"></div>
-
-    <!-- BODY EOF   -->
-    <script src="../../../js/custom.js"></script>
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../../../build/scripts/app.min.js"></script>
-    
-   
-
-
-<script class="jsdom" src="C:\Users\Mike\Documents\Development\Projects\Choe\Choe - Fragancias que inspiran\node_modules\access-sniff\dist\HTMLCS.min.js"></script></body></html>|||1|0|The html element should have a lang or xml:lang attribute which describes the language of the document.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="navbar-brand c-header__logo" href="index.html" aria-label="Ir a inicio">
-			  <img src="../../../build/assets/img/logo.png" alt="Choe Logo - Aromas y Fragancias" class="c-header__logo-img" loading="lazy" width="100" height="auto">
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_2.H25.2|<title>Tónico Capilar de Jengibre y Romero || Choe Fragancias Naturales</title>|13|4|Check that the title element describes the document.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="navbar-brand c-header__logo" href="index.html" aria-label="Ir a la página de inicio de Choestore">
+			  <img src="../../../build/assets/img/logo.png" alt="Logo Choestore - Aromas y Fragancias Naturales" class="c-header__logo-img" loading="lazy" width="100" height="auto">
 			</a>||navbar-brand c-header__logo|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="../../../build/assets/img/logo.png" alt="Choe Logo - Aromas y Fragancias" class="c-header__logo-img" loading="lazy" width="100" height="auto">||c-header__logo-img|1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="../../../build/assets/img/logo.png" alt="Choe Logo - Aromas y Fragancias" class="c-header__logo-img" loading="lazy" width="100" height="auto">||c-header__logo-img|1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="nav-link active" href="index.html" aria-current="page">Inicio</a>||nav-link active|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="nav-link" href="#" id="productosDropdown" aria-expanded="false">
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="../../../build/assets/img/logo.png" alt="Logo Choestore - Aromas y Fragancias Naturales" class="c-header__logo-img" loading="lazy" width="100" height="auto">||c-header__logo-img|1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="../../../build/assets/img/logo.png" alt="Logo Choestore - Aromas y Fragancias Naturales" class="c-header__logo-img" loading="lazy" width="100" height="auto">||c-header__logo-img|1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="nav-link " href="index.html" aria-current="page">Inicio</a>||nav-link |1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="nav-link active" role="button" href="#" id="productosDropdown" aria-expanded="false">
 					Productos <i class="bi bi-chevron-down"></i>
-				  </a>|productosDropdown|nav-link|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="dropdown-item" href="categories.html">Fragancias</a>||dropdown-item|119|9|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="dropdown-item" href="splash-corporal.html">Splash Corporal</a>||dropdown-item|120|9|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="dropdown-item" href="aromas-hogar.html">Aromas para el Hogar</a>||dropdown-item|121|9|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="dropdown-item" href="ofertas.html">Ofertas</a>||dropdown-item|122|9|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="dropdown-item" href="novedades.html">Novedades</a>||dropdown-item|123|9|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="nav-link" href="blog.html">Inspiración Choe</a>||nav-link|127|6|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="nav-link" href="nosotros.html">Nosotros</a>||nav-link|130|6|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+				  </a>|productosDropdown|nav-link active|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="dropdown-item" href="categories.html">Fragancias</a>||dropdown-item|201|9|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="dropdown-item" href="splash-corporal.html">Splash Corporal</a>||dropdown-item|202|9|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="dropdown-item" href="aromas-hogar.html">Aromas para el Hogar</a>||dropdown-item|203|9|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="dropdown-item" href="ofertas.html">Ofertas</a>||dropdown-item|204|9|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="dropdown-item" href="novedades.html">Novedades</a>||dropdown-item|205|9|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="nav-link" href="blog.html">Inspiración Choe</a>||nav-link|209|6|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="nav-link" href="nosotros.html">Nosotros</a>||nav-link|212|6|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
 NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="nav-link" href="#" id="contactoDropdown" aria-expanded="false">
 					Contacto <i class="bi bi-chevron-down"></i>
 				  </a>|contactoDropdown|nav-link|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="dropdown-item" href="contacto.html">Formulario</a>||dropdown-item|138|9|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="dropdown-item" href="faq.html">Preguntas Frecuentes</a>||dropdown-item|139|9|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="dropdown-item" href="contacto.html">Formulario</a>||dropdown-item|220|9|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="dropdown-item" href="faq.html">Preguntas Frecuentes</a>||dropdown-item|221|9|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
 NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="nav-link" href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
 				  <i class="bi bi-instagram"></i>
 				</a>||nav-link|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
@@ -680,45 +34,138 @@ NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a class="nav-li
 NOTICE|WCAG2A.Principle3.Guideline3_2.3_2_1.G107|<button class="c-header__burger d-lg-none" aria-label="Menú" aria-haspopup="true" aria-expanded="false">
         		<i class="bi bi-list" aria-hidden="true"></i>
       		</button>||c-header__burger d-lg-none|1|0|Check that a change of context does not occur when this input field receives focus.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="index.html" class="bread-crumbs__link">Inicio</a>||bread-crumbs__link|228|32|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="product.html" class="bread-crumbs__link">Producto</a>||bread-crumbs__link|231|32|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img loading="lazy" src="../../img/productos/Tienda/capilar/tonico-jengibre-romero.jpg" alt="Tonico de jengibre y romero">|||250|36|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img loading="lazy" src="../../img/productos/Tienda/capilar/tonico-jengibre-romero.jpg" alt="Tonico de jengibre y romero">|||250|36|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-ERROR|WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent|<a href="https://web.facebook.com/sandra.quitian/" target="_blank"><i class="icon-facebook"></i></a>|||303|40|Anchor element found with a valid href attribute, but no link content has been supplied.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://web.facebook.com/sandra.quitian/" target="_blank"><i class="icon-facebook"></i></a>|||303|40|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-ERROR|WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent|<a href="https://www.instagram.com/choe_fragancias_frutales/" target="_blank"><i class="icon-insta"></i></a>|||305|40|Anchor element found with a valid href attribute, but no link content has been supplied.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://www.instagram.com/choe_fragancias_frutales/" target="_blank"><i class="icon-insta"></i></a>|||305|40|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-ERROR|WCAG2A.Principle4.Guideline4_1.4_1_2.H91.InputText.Name|<input type="text" id="quantity" class="counter-input" disabled="disabled" value="1">|quantity|counter-input|327|40|This text input element does not have a name available to an accessibility API. Valid names are: label element, title attribute, aria-label attribute, aria-labelledby attribute.
-ERROR|WCAG2A.Principle1.Guideline1_3.1_3_1.F68|<input type="text" id="quantity" class="counter-input" disabled="disabled" value="1">|quantity|counter-input|327|40|This form field should be labelled in some way. Use the label element (either with a "for" attribute or wrapped around the form field), or "title", "aria-label" or "aria-labelledby" attributes as appropriate.
-NOTICE|WCAG2A.Principle3.Guideline3_2.3_2_1.G107|<input type="text" id="quantity" class="counter-input" disabled="disabled" value="1">|quantity|counter-input|327|40|Check that a change of context does not occur when this input field receives focus.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a id="buyButton" href="#" class="btn btn-icon">
-                                        <i class="bi bi-bag-heart-fill"></i>Comprar
-                                    </a>|buyButton|btn btn-icon|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="#product-tab_1">Beneficios</a>|||348|36|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="#product-tab_2">Caracteristicas</a>|||351|36|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-ERROR|WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent|<a href="https://web.facebook.com/sandra.quitian/" target="_blank"><i class="icon-facebook"></i></a>|||303|40|Anchor element found with a valid href attribute, but no link content has been supplied.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://web.facebook.com/sandra.quitian/" target="_blank"><i class="icon-facebook"></i></a>|||303|40|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-ERROR|WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent|<a href="https://www.instagram.com/choe_fragancias_frutales/" target="_blank"><i class="icon-insta"></i></a>|||305|40|Anchor element found with a valid href attribute, but no link content has been supplied.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://www.instagram.com/choe_fragancias_frutales/" target="_blank"><i class="icon-insta"></i></a>|||305|40|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-ERROR|WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent|<a href="https://wa.me/573103624742?text=Bienvenido%20a%20choe.com,%20estamos%20aquí%20para%20ayudarte.%20¿En%20qué%20puedo%20informarte%20sobre%20nuestros%20productos%20o%20nuestra%20marca?" target="_blank"><i class="bi bi-whatsapp"></i></a>|||572|11|Anchor element found with a valid href attribute, but no link content has been supplied.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://wa.me/573103624742?text=Bienvenido%20a%20choe.com,%20estamos%20aquí%20para%20ayudarte.%20¿En%20qué%20puedo%20informarte%20sobre%20nuestros%20productos%20o%20nuestra%20marca?" target="_blank"><i class="bi bi-whatsapp"></i></a>|||572|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="../../img/choe-logo.png" style="width:114px; height:50px" class="js-img" alt="Logo Choe">||js-img|1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="../../img/choe-logo.png" style="width:114px; height:50px" class="js-img" alt="Logo Choe">||js-img|1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="../../img/daviplata.jpg" class="js-img" alt="Daviplata">||js-img|1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="../../img/daviplata.jpg" class="js-img" alt="Daviplata">||js-img|1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="../../img/nequi.jpg" class="js-img" alt="Nequi">||js-img|1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="../../img/nequi.jpg" class="js-img" alt="Nequi">||js-img|1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-WARNING|WCAG2A.Principle1.Guideline1_1.1_1_1.H67.2|<img src="../../img/efecty.jpg" class="js-img" alt="">||js-img|1|0|Img element is marked so that it is ignored by Assistive Technology.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="../../img/efecty.jpg" class="js-img" alt="">||js-img|1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="../../img/transfiya.jpg" class="js-img" alt="Transfiya">||js-img|1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
-NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="../../img/transfiya.jpg" class="js-img" alt="Transfiya">||js-img|1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="../../about.html">Sobre Choe</a>|||597|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="../../categories.html">Productos</a>|||598|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="../../faq.html">Preguntas Frecuentes</a>|||599|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="../../contacts.html">Contacto</a>|||600|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="../../categories.html#difusores">Entorno</a>|||606|32|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="../../categories.html#corporal">Corporal</a>|||607|32|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="../../categories.html#capilar">Capilar</a>|||608|32|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="../../categories.html#vehicular">Vehicular</a>|||609|32|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://wa.me/573103624742?text=Bienvenido%20a%20choe.com,%20estamos%20aquí%20para%20ayudarte.%20¿En%20qué%20puedo%20informarte%20sobre%20nuestros%20productos%20o%20nuestra%20marca?">+57 3103624742</a>|||630|9|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
-NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="mailto:info@choe.com">info@choe.com</a>|||634|36|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="index.html" class="bread-crumbs__link" itemprop="item">
+                                    <span itemprop="name">Inicio</span>
+                                </a>||bread-crumbs__link|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="product.html" class="bread-crumbs__link" itemprop="item">
+                                         <span itemprop="name">Producto</span>
+                                     </a>||bread-crumbs__link|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="../../../build/assets/img/productos/Tienda/capilar/tonico-jengibre-romero.jpg" alt="Tónico de Jengibre y Romero" width="640" height="640" loading="lazy" decoding="async" role="img" aria-describedby="Imagen del Tónico de Jengibre y Romero" itemprop="image">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="../../../build/assets/img/productos/Tienda/capilar/tonico-jengibre-romero.jpg" alt="Tónico de Jengibre y Romero" width="640" height="640" loading="lazy" decoding="async" role="img" aria-describedby="Imagen del Tónico de Jengibre y Romero" itemprop="image">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="#" class="product-link" itemprop="brand" itemscope="" itemtype="https://schema.org/Brand" rel="noopener" aria-label="Visitar tienda Nike">
+            <span itemprop="name">Revitaliza y Fortalece tu Cabello</span>
+        </a>||product-link|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle3.Guideline3_2.3_2_1.G107|<button type="button" class="quantity-decrease" aria-label="Disminuir cantidad">
+                  -
+                </button>||quantity-decrease|1|0|Check that a change of context does not occur when this input field receives focus.
+NOTICE|WCAG2A.Principle3.Guideline3_2.3_2_1.G107|<input type="number" id="quantity" min="1" value="1" step="1" name="quantity" aria-label="Cantidad a agregar al carrito">|quantity||1|0|Check that a change of context does not occur when this input field receives focus.
+NOTICE|WCAG2A.Principle3.Guideline3_2.3_2_1.G107|<button type="button" class="quantity-increase" aria-label="Aumentar cantidad">
+                  +
+                </button>||quantity-increase|1|0|Check that a change of context does not occur when this input field receives focus.
+NOTICE|WCAG2A.Principle3.Guideline3_2.3_2_1.G107|<button type="button" class="btn" aria-label="Agregar al carrito">
+            Comprar
+            <i class="bi bi-bag-heart"></i>
+          </button>||btn|1|0|Check that a change of context does not occur when this input field receives focus.
+WARNING|WCAG2A.Principle1.Guideline1_3.1_3_1.H48|<div class="social-links" role="contentinfo" aria-label="Compartir producto en redes sociales">
+            <p id="social-share-label" aria-label="Compartir en redes sociales">Compartir:</p>
+          <a href="#" rel="noopener noreferrer" aria-label="Compartir en Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+
+          <a href="#" rel="noopener noreferrer" aria-label="Compartir en Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="#" rel="noopener noreferrer" aria-label="Compartir en WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>||social-links|1|0|If this element contains a navigation section, it is recommended that it be marked up as a list.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="#" rel="noopener noreferrer" aria-label="Compartir en Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>|||1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="#" rel="noopener noreferrer" aria-label="Compartir en Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>|||1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="#" rel="noopener noreferrer" aria-label="Compartir en WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>|||1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle3.Guideline3_2.3_2_1.G107|<button id="tab-description" class="tab-link active" role="tab" aria-controls="description" aria-selected="true">
+      Descripción
+    </button>|tab-description|tab-link active|1|0|Check that a change of context does not occur when this input field receives focus.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="/build/assets/img/productos/Destacados/capilar/tonico-capilar.jpg" alt="Imagen de producto relacionado 1">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="/build/assets/img/productos/Destacados/capilar/tonico-capilar.jpg" alt="Imagen de producto relacionado 1">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="#" class="relacionado-slider__button" aria-label="Leer más sobre Lorem Ipsum Dolor">
+            READ MORE
+          </a>||relacionado-slider__button|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp" alt="Imagen de producto relacionado 2">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp" alt="Imagen de producto relacionado 2">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="#" class="relacionado-slider__button" aria-label="Leer más sobre Lorem Ipsum Dolor2">
+            READ MORE
+          </a>||relacionado-slider__button|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp" alt="Imagen de producto relacionado 3">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp" alt="Imagen de producto relacionado 3">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="#" class="relacionado-slider__button" aria-label="Leer más sobre Lorem Ipsum Dolor">
+            READ MORE
+          </a>||relacionado-slider__button|1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://web.facebook.com/sandra.quitian/" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Facebook">
+									<i class="bi bi-facebook" aria-hidden="true"></i>
+								</a>|||1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://www.instagram.com/choe_fragancias_frutales/" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Instagram">
+									<i class="bi bi-instagram" aria-hidden="true"></i>
+								</a>|||1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://wa.me/573103624742?text=Bienvenido%20a%20choe.com,%20estamos%20aquí%20para%20ayudarte.%20¿En%20qué%20puedo%20informarte%20sobre%20nuestros%20productos%20o%20nuestra%20marca?" target="_blank" rel="noopener noreferrer" aria-label="Contáctanos por WhatsApp">
+									<i class="bi bi-whatsapp" aria-hidden="true"></i>
+								</a>|||1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="/index.html" aria-label="Ir a página principal">
+							<img src="../../../build/assets/img/logo.png" alt="Logo Choe" loading="lazy" itemprop="logo">
+						</a>|||1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="../../../build/assets/img/logo.png" alt="Logo Choe" loading="lazy" itemprop="logo">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="../../../build/assets/img/logo.png" alt="Logo Choe" loading="lazy" itemprop="logo">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="../../../build/assets/img/daviplata.jpg" alt="Pago con Daviplata" loading="lazy" width="67" height="40">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="../../../build/assets/img/daviplata.jpg" alt="Pago con Daviplata" loading="lazy" width="67" height="40">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="../../../build/assets/img/nequi.jpg" alt="Pago con Nequi" loading="lazy" width="67" height="40">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="../../../build/assets/img/nequi.jpg" alt="Pago con Nequi" loading="lazy" width="67" height="40">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="../../../build/assets/img/efecty.jpg" alt="Pago en Efecty" loading="lazy" width="67" height="40">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="../../../build/assets/img/efecty.jpg" alt="Pago en Efecty" loading="lazy" width="67" height="40">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G94.Image|<img src="../../../build/assets/img/transfiya.jpg" alt="Pago con Transfiya" loading="lazy" width="67" height="40">|||1|0|Ensure that the img element's alt text serves the same purpose and presents the same information as the image.
+NOTICE|WCAG2A.Principle1.Guideline1_1.1_1_1.G73,G74|<img src="../../../build/assets/img/transfiya.jpg" alt="Pago con Transfiya" loading="lazy" width="67" height="40">|||1|0|If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="about.html" aria-label="Conoce más sobre Choe">Sobre Choe</a>|||1032|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="categories.html" aria-label="Ver todos nuestros productos">Productos</a>|||1033|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="faq.html" aria-label="Consulta preguntas frecuentes">Preguntas Frecuentes</a>|||1034|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="contacts.html" aria-label="Contáctanos">Contacto</a>|||1035|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="categories.html#difusores" aria-label="Ver productos de entorno">Entorno</a>|||1042|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="categories.html#corporal" aria-label="Ver productos corporales">Corporal</a>|||1043|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="categories.html#capilar" aria-label="Ver productos capilares">Capilar</a>|||1044|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="categories.html#vehicular" aria-label="Ver productos vehiculares">Vehicular</a>|||1045|11|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="https://wa.me/573103624742" itemprop="telephone" aria-label="Llamar al +57 3103624742">
+										+57 3103624742
+									</a>|||1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+NOTICE|WCAG2A.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81|<a href="mailto:info@choe.com" itemprop="email" aria-label="Enviar correo a info@choe.com">
+									info@choe.com
+								</a>|||1|0|Check that the link text combined with programmatically determined link context identifies the purpose of the link.
+ERROR|WCAG2A.Principle1.Guideline1_3.1_3_1.F92,ARIA4|<div class="img-item" role="presentation">
+            <a href="#" data-id="1" aria-label="Ver imagen 1">
+              <picture>
+                <source srcset="https://dummyimage.com/640x640/d1c2d1/000000.avif" type="image/avif">
+                <source srcset="https://dummyimage.com/640x640/d1c2d1/000000.webp" type="image/webp">
+                <img src="https://dummyimage.com/640x640/d1c2d1/000000.jpg" alt="Nike shoe thumbnail 1" width="100" height="100" role="presentation" loading="lazy" decoding="async">
+              </picture>
+            </a>
+          </div>||img-item|1|0|This element's role is "presentation" but contains child elements with semantic meaning.
+ERROR|WCAG2A.Principle1.Guideline1_3.1_3_1.F92,ARIA4|<div class="img-item" role="presentation">
+            <a href="#" data-id="2" aria-label="Ver imagen 2">
+              <picture>
+                <source srcset="https://dummyimage.com/640x640/f283f2/000000.avif" type="image/avif">
+                <source srcset="https://dummyimage.com/640x640/f283f2/000000.webp" type="image/webp">
+                <img src="https://dummyimage.com/640x640/f283f2/000000.jpg" alt="Nike shoe thumbnail 2" width="100" height="100" loading="lazy" role="presentation" decoding="async">
+              </picture>
+            </a>
+          </div>||img-item|1|0|This element's role is "presentation" but contains child elements with semantic meaning.
+ERROR|WCAG2A.Principle1.Guideline1_3.1_3_1.F92,ARIA4|<div class="img-item" role="presentation">
+            <a href="#" data-id="3" aria-label="Ver imagen 3">
+              <picture>
+                <source srcset="https://dummyimage.com/640x640/ac8ef2/000000.avif" type="image/avif">
+                <source srcset="https://dummyimage.com/640x640/ac8ef2/000000.webp" type="image/webp">
+                <img src="https://dummyimage.com/640x640/ac8ef2/000000.jpg" alt="Nike shoe thumbnail 3" width="100" height="100" loading="lazy" role="presentation" decoding="async">
+              </picture>
+            </a>
+          </div>||img-item|1|0|This element's role is "presentation" but contains child elements with semantic meaning.
+ERROR|WCAG2A.Principle1.Guideline1_3.1_3_1.F92,ARIA4|<div class="img-item" role="presentation">
+            <a href="#" data-id="4" aria-label="Ver imagen 4">
+              <picture>
+                <source srcset="https://dummyimage.com/640x640/8da3f0/000000.avif" type="image/avif">
+                <source srcset="https://dummyimage.com/640x640/8da3f0/000000.webp" type="image/webp">
+                <img src="https://dummyimage.com/640x640/8da3f0/000000.jpg" alt="Nike shoe thumbnail 4" width="100" height="100" loading="lazy" role="presentation" decoding="async">
+              </picture>
+            </a>
+          </div>||img-item|1|0|This element's role is "presentation" but contains child elements with semantic meaning.

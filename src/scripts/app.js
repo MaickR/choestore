@@ -184,7 +184,7 @@ const banners = [
 
 //! ANIMACIONES DEL BANNER
 
-//? PRODUCTOS CON SWIPER.JS
+//? INDEX- PRODUCTOS CON SWIPER.JS
 document.addEventListener("DOMContentLoaded", () => {
   // Seleccionar todos los contenedores de Swiper
   document.querySelectorAll(".dest-container.swiper").forEach(swiperContainer => {
@@ -255,9 +255,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-//! PRODUCTOS CON SWIPER.JS
+//! INDEX- PRODUCTOS CON SWIPER.JS
 
-//? DESCUENTOS TEMPORADA
+//? INDEX- DESCUENTOS TEMPORADA
 const topCategoriesSlider = new Swiper('.top-categories__slider', {
   slidesPerView: 1,
   spaceBetween: 20,
@@ -283,9 +283,9 @@ const topCategoriesSlider = new Swiper('.top-categories__slider', {
     }
   }
 });
-//! DESCUENTOS TEMPORADA
+//! INDEX- DESCUENTOS TEMPORADA
 
-//? INSTAGRAM PHOTOS
+//? INDEX- INSTAGRAM PHOTOS
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile touch handling only
   if (window.innerWidth < 768) {
@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-//! INSTAGRAM PHOTOS
+//! INDEX- INSTAGRAM PHOTOS
 
 //? IMAGENES PRODUCTOS
 const createGalleryManager = () => {
@@ -386,56 +386,198 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 //! IMAGENES PRODUCTOS
 
-//? CONTROL DE CANTIDAD DE PRODUCTOS
-document.addEventListener('DOMContentLoaded', function () {
-  const quantityInput = document.getElementById('quantity');
-  const decreaseButton = document.querySelector('.quantity-decrease');
-  const increaseButton = document.querySelector('.quantity-increase');
+//? SECCION PRODUCTOS - CONTROL DE CANTIDAD DE PRODUCTOS
+document.addEventListener("DOMContentLoaded", function () {
+  /********************************************
+   * 1. CONTROL DE CANTIDAD DE PRODUCTO (+/-)
+   ********************************************/
+  const quantityInput = document.getElementById("quantity");
+  const decreaseBtn = document.querySelector(".quantity-decrease");
+  const increaseBtn = document.querySelector(".quantity-increase");
 
-  decreaseButton.addEventListener('click', function () {
-    let currentValue = parseInt(quantityInput.value);
+  // Evento para disminuir la cantidad
+  decreaseBtn.addEventListener("click", function () {
+    const currentValue = parseInt(quantityInput.value, 10) || 1;
     if (currentValue > 1) {
       quantityInput.value = currentValue - 1;
     }
   });
 
-  increaseButton.addEventListener('click', function () {
-    let currentValue = parseInt(quantityInput.value);
+  // Evento para aumentar la cantidad
+  increaseBtn.addEventListener("click", function () {
+    const currentValue = parseInt(quantityInput.value, 10) || 1;
     quantityInput.value = currentValue + 1;
   });
-});
-//! CONTROL DE CANTIDAD DE PRODUCTOS
 
-// Script para alternar entre las pestañas (Descripción y Reviews).
-document.addEventListener('DOMContentLoaded', function () {
-  const tabLinks = document.querySelectorAll('.tab-link');
-  const tabContents = document.querySelectorAll('.tab-content');
+  /********************************************
+   * 2. OBTENCIÓN DE DATOS DEL PRODUCTO
+   ********************************************/
+  const productTitleEl = document.getElementById("product-title");
+  const priceEl = document.querySelector(".product-price .new-price span[itemprop='price']");
+  const productDescEl = document.querySelector("[itemprop='description']");
+  const productImgEl = document.querySelector(".img-showcase img[itemprop='image']");
 
-  tabLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      // Desactivar todos los tabs
-      tabLinks.forEach(item => {
-        item.classList.remove('active');
-        item.setAttribute('aria-selected', 'false');
+  // Asume que la URL canónica del producto podría ser la actual o un link fijo:
+  const productURL = window.location.href; 
+
+  // Función para garantizar datos
+  function getTextContent(element) {
+    return element ? element.textContent.trim() : "";
+  }
+
+  // Datos del producto
+  const productTitle = getTextContent(productTitleEl) || "Producto sin título";
+  const productPrice = priceEl ? priceEl.textContent.trim() : "Precio desconocido";
+  const productDesc = getTextContent(productDescEl) || "Descripción no disponible";
+  const productImgSrc = productImgEl ? productImgEl.src : "";
+
+  /********************************************
+   * 3. FUNCIÓN PARA OBTENER SALUDO BASADO EN HORA (COLOMBIA)
+   ********************************************/
+  function getTimeGreeting() {
+    // Hora local del usuario (asumiendo la misma zona horaria que Colombia)
+    const hour = new Date().getHours();
+    if (hour < 12) {
+      return "Buenos días";
+    } else if (hour < 18) {
+      return "Buenas tardes";
+    } else {
+      return "Buenas noches";
+    }
+  }
+
+  /********************************************
+   * 4. BOTÓN "COMPRAR" -> MENSAJE DE WHATSAPP
+   ********************************************/
+  const buyButton = document.querySelector(".btn[aria-label='Agregar al carrito']");
+
+  buyButton.addEventListener("click", function () {
+    // Obtener la cantidad
+    const quantityValue = parseInt(quantityInput.value, 10) || 1;
+    // Crear el saludo + mensaje
+    const greeting = getTimeGreeting();
+    // Armar el texto del mensaje
+    // Nota: Se usa \n para saltos de línea y encodeURIComponent para URL
+    let message = `${greeting},\n\n` +
+      `Vengo de Choestore.com y me interesa el producto "${productTitle}" ` +
+      `que se encuentra con un valor de ${productPrice} y deseo adquirirlo en una ` +
+      `cantidad de ${quantityValue} unidades.`;
+
+    // Formar la URL de WhatsApp: https://wa.me/<phone>?text=<encodedText>
+    const phoneNumber = "573103624742"; // Sin '+' al inicio, WhatsApp usa formato 'countrycode + number'
+    const whatsAppURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    // Abrir en nueva pestaña para mayor seguridad y conveniencia
+    window.open(whatsAppURL, "_blank");
+  });
+
+  /********************************************
+   * 5. BOTONES DE REDES SOCIALES PARA COMPARTIR
+   ********************************************/
+  // a) Compartir en Facebook
+  const facebookLink = document.querySelector("a[aria-label='Compartir en Facebook']");
+  if (facebookLink) {
+    facebookLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      // Facebook share link
+      // Comparte la URL del producto; se puede añadir un quote, pero FB no siempre lo respeta
+      const fbShareURL = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(productURL);
+      window.open(fbShareURL, "_blank");
+    });
+  }
+
+  // b) Compartir en Instagram
+  // Instagram no soporta un "share link" oficial en desktop. 
+  // Se suele redirigir al perfil de Instagram o usar la app. 
+  // Como aproximación, podrías abrir el link del producto:
+  const instagramLink = document.querySelector("a[aria-label='Compartir en Instagram']");
+  if (instagramLink) {
+    instagramLink.addEventListener("click", function(e) {
+      e.preventDefault();
+      const instaShareText = `Mira este producto: ${productTitle}\n\n${productDesc}\n${productURL}`;
+      const instaShareURL = "instagram://share?text=" + encodeURIComponent(instaShareText);
+      // Intentamos abrir la app de Instagram; si falla, se muestra un mensaje
+      window.location.href = instaShareURL;
+      setTimeout(function() {
+        alert("La opción de compartir en Instagram no está disponible desde el navegador. Por favor, copia el enlace y compártelo manualmente.");
+      }, 1500);
+    });
+  }
+
+  // c) Compartir en WhatsApp
+  // Este enlace difiere al botón "Comprar" (que es un chat directo con Choe).
+  // Aquí, el usuario comparte el producto con sus contactos (no con la tienda).
+  const whatsAppShareLink = document.querySelector("a[aria-label='Compartir en WhatsApp']");
+    if (whatsAppShareLink) {
+      whatsAppShareLink.addEventListener("click", function(e) {
+        e.preventDefault();
+        const shareMessage = `¡Mira este producto en Choestore.com!\n\n${productTitle}\n\n${productDesc}\n\nLink: ${productURL}`;
+        // Copiar mensaje al portapapeles para mayor comodidad
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(shareMessage).then(function() {
+            alert("Mensaje copiado al portapapeles. Ahora puedes pegarlo en tu estado o enviarlo a un contacto.");
+          });
+        }
+        const waShareURL = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareMessage)}`;
+        window.open(waShareURL, "_blank");
       });
+    }
+  });
+//! SECCION PRODUCTOS - CONTROL DE CANTIDAD DE PRODUCTOS
 
-      // Ocultar todos los paneles
-      tabContents.forEach(content => {
+//? SECCION PRODUCTOS - CARACTERISTICAS PRODUCTOS
+document.addEventListener("DOMContentLoaded", function() {
+  const tabLinks = document.querySelectorAll(".tab-link");
+  const tabContents = document.querySelectorAll(".tab-content");
+  
+  // Asignamos comportamiento a cada botón de pestaña
+  tabLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      // Quitamos 'active' y aria-selected="false" a todos los botones
+      tabLinks.forEach((l) => {
+        l.classList.remove("active");
+        l.setAttribute("aria-selected", "false");
+      });
+      
+      // Ocultamos todo el contenido
+      tabContents.forEach((content) => {
         content.hidden = true;
       });
-
-      // Activar el tab actual
-      link.classList.add('active');
-      link.setAttribute('aria-selected', 'true');
-
-      // Mostrar el panel correspondiente
-      const panelId = link.getAttribute('aria-controls');
-      const tabPanel = document.getElementById(panelId);
-      tabPanel.hidden = false;
+      
+      // Activamos solo la pestaña clicada
+      link.classList.add("active");
+      link.setAttribute("aria-selected", "true");
+      
+      // Mostramos solo el <article> correspondiente
+      const controlledTab = document.getElementById(link.getAttribute("aria-controls"));
+      controlledTab.hidden = false;
     });
   });
 });
+//! SECCION PRODUCTOS - CARACTERISTICAS PRODUCTOS
 
+//? SECCION PRODUCTOS - PRODUCTOS RELACIONADOS  
+/* 
+  Inicialización de Swiper.js para el slider de productos relacionados
+  - Se ha renombrado la clase de .blog-slider a .relacionado-slider
+  - Ajustamos la paginación con la clase .relacionado-slider__pagination
+  - Mantemos el efecto 'fade' y el loop
+  - autoHeight en false para que respete la altura definida por CSS 
+    (evitando scroll extra en pantallas pequeñas)
+*/
 
+var swiper = new Swiper('.relacionado-slider', {
+  spaceBetween: 30,
+  effect: 'fade',
+  loop: true,
+  mousewheel: {
+    invert: false,
+  },
+  autoHeight: false,
+  pagination: {
+    el: '.relacionado-slider__pagination',
+    clickable: true,
+  },
+});
 
-  
+//! SECCION PRODUCTO - PRODUCTOS RELACIONADOS  

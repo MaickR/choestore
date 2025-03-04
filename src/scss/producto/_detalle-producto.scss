@@ -1,198 +1,296 @@
-/***********************************************
- * SCSS de la sección de información del producto
- ***********************************************/
- .product-information {
-    margin-top: 2rem;
-  
-    /* ------------ Navegación de pestañas ------------ */
-    .product-info-tabs {
-      display: flex;
-      border-bottom: 1px solid #ccc;
-  
-      .tab-link {
-        background: none;
-        border: none;
-        padding: 1rem 1.5rem;
-        cursor: pointer;
-        font-weight: bold;
-        transition: background-color 0.3s;
-  
-        &:hover {
-          background-color: #eee;
-        }
-  
-        &.active {
-          color: #fff;
-          background-color: #f06292;
-        }
+.product-information {
+  margin-top: 2rem;
+  .product-info-tabs {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    .tab-link {
+      background: none;
+      border: none;
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: #eee;
+      }
+      &.active {
+        color: #fff;
+        background-color: #f06292;
       }
     }
-  
-    /* ------------- Contenido de pestañas ------------- */
-    .tab-content {
-      padding: 1rem 0;
-  
-      &[hidden] {
-        display: none;
-      }
-  
-      /* --------- Distribución de reseñas y formulario --------- */
-      .reviews-layout {
-        display: flex;
+  }
+  .tab-content {
+    padding: 1rem 0;
+    &[hidden] {
+      display: none;
+    }
+    .reviews-layout {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 2rem;
+      align-items: flex-start;
+      @media screen and (max-width: 480px) {
         flex-wrap: wrap;
-        gap: 2rem;
-  
-        /* 
-          Ajusta la proporción de cada bloque según tus necesidades.
-          En pantallas grandes estarán lado a lado.
-        */
-        .review-list {
-          flex: 1 1 60%;
+        margin: 12px;
+      }
+      .review-list {
+        flex: 1 1 60%;
+        max-height: 420px; // Aproximadamente 3 reseñas visibles
+        overflow-y: auto;
+        padding-right: 1rem;
+      }
+      .review-form {
+        flex: 1 1 35%;
+        background-color: #fde4ec;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        position: relative;
+        header {
+          margin-bottom: 1.5rem;
+          .review-title {
+            color: #d81b60;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            text-align: center;
+          }
+          .review-subtitle {
+            font-size: 0.95rem;
+            color: #666;
+            text-align: center;
+          }
         }
-  
-        .review-form {
-          flex: 1 1 35%;
-          background-color: #fde4ec;
-          padding: 2rem;
-          border-radius: 0.5rem;
-          position: relative;
-  
-          header {
-            margin-bottom: 1rem;
-  
-            h2 {
-              margin-bottom: 0.2rem;
-            }
-            p {
-              font-size: 0.9rem;
-              color: #555;
+        .star-rating {
+          margin: 1rem 0;
+          display: flex;
+          justify-content: center;
+          flex-direction: row-reverse;
+          input[type="radio"] {
+            display: none;
+          }
+          label {
+            font-size: 2rem;
+            color: #ccc;
+            cursor: pointer;
+            transition: color 0.3s;
+            margin-right: 0.5rem;
+            &:hover,
+            &:hover ~ label {
+              color: #f06292;
             }
           }
-  
-          form {
+          // Al marcar una opción, las estrellas desde la seleccionada hasta la izquierda se llenan
+          input[type="radio"]:checked ~ label,
+          input[type="radio"]:checked ~ label ~ label {
+            color: #f06292;
+          }
+        }
+        // Nuevos estilos para los campos de información del usuario
+        .user-info-fields {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          margin-bottom: 1rem;
+          .form-group {
             display: flex;
             flex-direction: column;
-  
-            .star-rating {
-              display: flex;
-              justify-content: flex-start;
-              margin-bottom: 1rem;
-  
-              /* Ocultamos los inputs, mostrando solo las estrellas */
-              input[type='radio'] {
-                display: none;
+            label {
+              font-weight: 600;
+              margin-bottom: 0.5rem;
+            }
+            input {
+              padding: 0.8rem;
+              border: 2px solid #f8a5c4;
+              border-radius: 6px;
+              font-size: 1rem;
+              transition: border-color 0.3s;
+              &:focus {
+                outline: none;
+                border-color: #f06292;
+                box-shadow: 0 0 2px rgb(240 98 146 / 0.25);
               }
-  
-              label {
-                font-size: 1.5rem;
-                color: #ccc;
-                cursor: pointer;
-                margin-right: 0.2rem;
-  
-                &:hover,
-                &:hover ~ label {
-                  color: #f06292;
+            }
+            .phone-input-wrapper {
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              .country-flag {
+                display: flex;
+                align-items: center;
+                gap: 0.2rem;
+                img {
+                  border-radius: 2px;
+                }
+                .country-code {
+                  font-weight: 600;
                 }
               }
-  
-              /* 
-                Si quisieras destacar visualmente la estrella seleccionada,
-                podrías usar un selector como:
-                input[type='radio']:checked ~ label {}
-                pero la lógica exacta varía según la marca que desees.
-              */
             }
-  
-            label {
-              margin-bottom: 0.4rem;
-              font-weight: 600;
-            }
-  
-            input,
-            textarea {
-              margin-bottom: 1rem;
-              padding: 0.6rem;
-              border-radius: 4px;
-              border: 1px solid #ccc;
-            }
-  
-            button {
-              align-self: flex-start;
-              padding: 0.6rem 1.2rem;
-              background-color: #000;
-              color: #fff;
-              border: none;
-              border-radius: 4px;
-              cursor: pointer;
-              font-weight: bold;
-              transition: background-color 0.3s;
-  
-              &:hover {
-                background-color: #333;
-              }
-            }
-          }
-  
-          /* 
-            Si quieres añadir una figura decorativa en la esquina, 
-            podrías hacerlo con un pseudo-elemento:
-          */
-          &::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 80px;
-            height: 80px;
-            background-image: url('tu-figura-rosada.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            opacity: 0.4;
-            pointer-events: none;
           }
         }
+        .comment-box {
+          position: relative;
+          margin: 1rem 0;
+          textarea {
+            width: 100%;
+            min-height: 120px;
+            padding: 1rem;
+            border: 2px solid #f8a5c4;
+            border-radius: 6px;
+            resize: vertical;
+            &:focus {
+              outline: none;
+              border-color: #f06292;
+              box-shadow: 0 0 2px rgb(240 98 146 / 0.25);
+            }
+          }
+          .char-counter {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgb(255 255 255 / 0.9);
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.9rem;
+            color: #666;
+          }
+        }
+        .terms-checkbox {
+          margin: 1.5rem 0;
+          font-size: 0.9rem;
+          a {
+            transition: color 0.3s;
+            &:hover {
+              color: #d81b60;
+            }
+          }
+        }
+        .submit-btn {
+          width: 100%;
+          padding: 1rem;
+          background: #d81b60;
+          color: #fff;
+          border: none;
+          border-radius: 6px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: background 0.3s;
+          &:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+          }
+          &:not(:disabled):hover {
+            background: #b7154d;
+          }
+        }
+        .error-messages {
+          color: #dc3545;
+          margin-top: 1rem;
+          font-size: 0.9rem;
+          p {
+            margin: 0.2rem 0;
+          }
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 80px;
+          height: 80px;
+          background-image: url(tu-figura-rosada.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          opacity: 0.4;
+          pointer-events: none;
+        }
       }
-  
-      /* ------------- Estilos de las reseñas ------------- */
       .review-item {
         border: 1px solid #ccc;
         padding: 1rem;
         margin-bottom: 1rem;
         border-radius: 0.25rem;
-  
         header {
           display: flex;
           align-items: center;
           flex-wrap: wrap;
           margin-bottom: 0.5rem;
-  
-          .reviewer-avatar img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 1rem;
+          .reviewer-avatar {
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              margin-right: 1rem;
+            }
           }
-  
           .reviewer-info {
             display: flex;
             flex-direction: column;
             margin-right: auto;
             .reviewer-name {
-              font-weight: bold;
+              font-weight: 700;
             }
             time {
               font-size: 0.85rem;
               color: #888;
             }
           }
-  
           .rating {
-            color: #f39c12; /* Color dorado para las estrellas */
-            font-weight: bold;
+            color: #f39c12;
+            font-weight: 700;
             margin-left: 1rem;
           }
         }
       }
     }
+    ul {
+      display: grid;
+      gap: 0.75rem;
+      padding: 0 0 0 1.5rem;
+      margin-top: 1rem;
+      list-style: none;
+      justify-items: start;
+      justify-content: start;
+      li {
+        font-family: "Merienda", cursive;
+        padding-left: 0.5rem;
+        font-weight: 600;
+        @media (max-width: 991px) {
+          font-size: 0.95rem;
+        }
+        @media (max-width: 768px) {
+          font-size: 0.9rem;
+        }
+        @media (max-width: 575px) {
+          font-size: 0.85rem;
+        }
+        i.bi.bi-check2-circle {
+          color: green;
+          font-size: 1rem;
+          @media (max-width: 991px) {
+            font-size: 0.95rem;
+          }
+          @media (max-width: 768px) {
+            font-size: 0.9rem;
+          }
+          @media (max-width: 575px) {
+            font-size: 0.85rem;
+          }
+        }
+        span {
+          font-weight: 400;
+          margin-left: 0.5em;
+          @media (max-width: 991px) {
+            font-size: 0.95rem;
+          }
+          @media (max-width: 768px) {
+            font-size: 0.9rem;
+          }
+          @media (max-width: 575px) {
+            font-size: 0.85rem;
+          }
+        }
+      }
+    }
   }
-  
+}

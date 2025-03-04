@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+
+/* 
+  Estilos base y tipografía
+*/
+* {
+  box-sizing: border-box;
+}
+
+/* 
+  Sección de productos relacionados
+  - Usamos el prefijo 'relacionado-' para los elementos del slider
+  - Ajustamos colores y estilos acorde a la estética de choestore.com (#d05278 y variantes)
+*/
+.relacionado-slider {
+  /* Contenedor principal del slider */
+  width: 95%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 14px 80px rgba(208, 82, 120, 0.2);
+  padding: 25px;
+  border-radius: 25px;
+  transition: all 0.3s;
+
+  /* 
+    Altura fija en escritorio, para lucir como "tarjeta" y 
+    permitir centrar el paginador en la mitad vertical.
+  */
+  @media screen and (min-width: 992px) {
+    height: 400px;
+  }
+
+  /*
+    Ajustes en pantallas entre 769px y 991px
+    - Mantenemos altura de 400px y max-width 680px 
+  */
+  @media screen and (max-width: 991px) and (min-width: 769px) {
+    max-width: 680px;
+    height: 400px;
+  }
+
+  /* 
+    En tablets y móviles (<=768px):
+    - Ocupa todo el alto y ancho disponibles para evitar scroll.
+    - Usamos display:flex para centrar verticalmente el contenido 
+      (imagen + texto + botón + paginador) en una sola pantalla.
+  */
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    height: 100%; 
+    margin: 0 auto;
+    border-radius: 0;
+    display: flex;
+    aspect-ratio: 2/1.3;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Evitamos scroll en pantallas pequeñas */
+  } 
+
+  @media screen and (max-width: 580px) {
+    aspect-ratio: auto;
+    max-height: 125vh;
+  }
+
+  /* 
+    Ajustes en pantallas con poca altura pero con ancho >= 992px 
+    - Reducimos la altura para que todo se muestre sin scroll 
+  */
+  @media screen and (max-height: 500px) and (min-width: 992px) {
+    height: 350px;
+  }
+
+  /* Envoltorio de slides Swiper */
+  &__wrp {
+    /* 
+      Para que cada slide ocupe 100% del contenedor y 
+      no genere scroll vertical.
+    */
+    height: 100%;
+  }
+
+  /* Elemento individual (cada "slide") */
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    
+
+    /* 
+      En pantallas pequeñas, se muestran en columna 
+      para ocupar el alto y ancho de forma más cómoda 
+    */
+    @media screen and (max-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      
+    }
+
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+    }
+
+    /* 
+      Efecto Swiper: cuando el slide está activo 
+      mostramos la imagen y el contenido con transiciones 
+    */
+    &.swiper-slide-active {
+      .relacionado-slider__img {
+        img {
+          opacity: 1;
+          transition-delay: 0.3s;
+        }
+      }
+      .relacionado-slider__content {
+        > * {
+          opacity: 1;
+          transform: none;
+          font-family: "Merienda", cursive;
+          @for $i from 0 to 15 {
+            &:nth-child(#{$i + 1}) {
+              transition-delay: $i * 0.1 + 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* Imagen del producto */
+  &__img {
+    position: relative;
+    width: fit-content;
+    height: -webkit-fill-available;
+    flex-shrink: 0;
+    border-radius: 20px;
+    transform: translateX(-80px);
+    overflow: hidden;
+    background-image: linear-gradient(147deg, #d05278 0%, #b23f65 74%);
+    box-shadow: 4px 13px 30px 1px rgba(208, 82, 120, 0.2);
+
+
+    /* Imagen real */
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      opacity: 0;
+      border-radius: 20px;
+      transition: all 0.3s;
+      aspect-ratio: auto;
+
+      @media screen and (max-width: 580px) {
+      aspect-ratio: 1/2;
+      }
+    }
+
+    /* Ajustes en pantallas <= 768px */
+    @media screen and (max-width: 768px) {
+      transform: none;
+      /* width: 70%; */ /* Ajustamos la imagen para que entre en la pantalla */
+      height: auto; 
+     /*  max-height: 40%;
+      margin: 0 auto; */
+    }
+
+    /* Ajustes en pantallas muy pequeñas (<=576px) */
+    @media screen and (max-width: 576px) {
+      width: 80%;
+      max-height: 40%;
+    }
+
+    /* Ajuste en pantallas con poca altura */
+    @media screen and (max-height: 500px) and (min-width: 992px) {
+      height: 270px;
+    }
+  }
+
+  /* Contenedor del contenido textual (fecha, título, texto, botón) */
+  &__content {
+    flex: 1;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 20px;
+      text-align: center;
+      padding: 0 20px; /* Reducimos padding para que quepa todo sin scroll */
+    }
+
+    @media screen and (max-width: 576px) {
+      padding: 0 15px;
+      flex: none;
+    }
+
+    /* Inicialmente ocultamos elementos (animación de entrada) */
+    > * {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: all 0.4s;
+    }
+  }
+
+  /* Fecha o código */
+  &__code {
+    color: #7b7992;
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 500;
+  }
+
+  /* Título */
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0d0925;
+    margin-bottom: 20px;
+
+    /* Ajuste de tamaño en pantallas pequeñas para que no cause scroll */
+    @media screen and (max-width: 576px) {
+      font-size: 20px;
+    }
+  }
+
+  /* Texto */
+  &__text {
+    color: #4e4a67;
+    margin-bottom: 30px;
+    line-height: 1.5em;
+
+    /* Ajuste de tamaño en pantallas pequeñas */
+    @media screen and (max-width: 576px) {
+      font-size: 14px;
+    }
+  }
+
+  /* Botón de acción */
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(147deg, #d05278 0%, #b23f65 74%);
+    padding: 15px 35px;
+    border-radius: 50px;
+    color: #fff;
+    box-shadow: 0 14px 80px rgba(208, 82, 120, 0.4);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+  }
+
+  /*
+    Paginación de Swiper
+    - Ajustamos la posición y el estilo de las "balas" 
+  */
+  .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+  }
+
+  &__pagination {
+    position: absolute;
+    z-index: 21;
+    right: 20px;
+    width: 11px !important;
+    text-align: center;
+    left: auto !important;
+    /* 
+      Ajuste para que se vea más arriba en pantallas grandes 
+      (centrado verticalmente, pero un poco más alto que el 50%).
+    */
+    top: 45%;
+    bottom: auto !important;
+    transform: translateY(-45%);
+
+    /* Ajustes en pantallas <= 768px */
+    @media screen and (max-width: 768px) {
+      /* 
+        Lo movemos abajo pero separándolo del botón. 
+        left: 50% para centrar horizontalmente.
+      */
+      top: auto;
+      bottom: 10%;
+      left: 50% !important;
+      transform: translateX(-50%);
+      width: auto !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Espaciado de las balas */
+    &.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: 8px 0;
+      @media screen and (max-width: 768px) {
+        margin: 0 5px;
+      }
+
+      @media screen and (max-width: 576px) {
+        margin: 12px 5px;
+      }
+    }
+
+    /* Estilo de las balas de paginación */
+    .swiper-pagination-bullet {
+      width: 11px;
+      height: 11px;
+      display: block;
+      border-radius: 10px;
+      background: #062744;
+      opacity: 0.2;
+      transition: all 0.3s;
+
+      &-active {
+        opacity: 1;
+        background: #b23f65;
+        height: 30px;
+        box-shadow: 0 0 20px rgba(208, 82, 120, 0.3);
+
+        @media screen and (max-width: 768px) {
+          height: 11px;
+          width: 30px;
+        }
+      }
+    }
+  }
+}
